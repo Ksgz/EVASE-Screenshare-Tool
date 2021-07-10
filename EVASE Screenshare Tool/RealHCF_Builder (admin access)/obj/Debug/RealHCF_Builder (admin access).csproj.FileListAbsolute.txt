@@ -1,0 +1,10 @@
+C:\Users\Rasib\Desktop\RealHCF_Builder (admin access)\bin\Debug\RealHCF Builder.exe
+C:\Users\Rasib\Desktop\RealHCF_Builder (admin access)\bin\Debug\RealHCF Builder.pdb
+C:\Users\Rasib\Desktop\RealHCF_Builder (admin access)\obj\Debug\RealHCF_Builder (admin access).csprojAssemblyReference.cache
+C:\Users\Rasib\Desktop\RealHCF_Builder (admin access)\obj\Debug\RealHCF_Builder.frmMain.resources
+C:\Users\Rasib\Desktop\RealHCF_Builder (admin access)\obj\Debug\RealHCF_Builder.Properties.Resources.resources
+C:\Users\Rasib\Desktop\RealHCF_Builder (admin access)\obj\Debug\RealHCF_Builder.RealHCF_Screenshare_Tool.frmMain.resources
+C:\Users\Rasib\Desktop\RealHCF_Builder (admin access)\obj\Debug\RealHCF_Builder (admin access).csproj.GenerateResource.cache
+C:\Users\Rasib\Desktop\RealHCF_Builder (admin access)\obj\Debug\RealHCF_Builder (admin access).csproj.CoreCompileInputs.cache
+C:\Users\Rasib\Desktop\RealHCF_Builder (admin access)\obj\Debug\RealHCF Builder.exe
+C:\Users\Rasib\Desktop\RealHCF_Builder (admin access)\obj\Debug\RealHCF Builder.pdb

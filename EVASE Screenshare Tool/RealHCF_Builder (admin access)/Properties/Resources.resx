@@ -1,0 +1,3640 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DiscordTheme" xml:space="preserve">
+    <value>#region Imports
+
+using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Drawing.Drawing2D;
+using System.ComponentModel;
+using System.Drawing.Text;
+
+#endregion
+
+//|------DO-NOT-REMOVE------|
+//
+// Original: MonoFlat
+// Creator: HazelDev
+// Site   : HazelDev.com
+// Created: 20.Sep.2014
+// Changed: 24.Jan.2015
+// Version: 1.2.0
+//
+// Modified: Discord
+// Modification author: iProgramIt (https://allym.me)
+//
+//|------DO-NOT-REMOVE------|
+
+namespace RealHCF_Screenshare_Tool {
+
+    #region  RoundRectangle
+
+    sealed class RoundRectangle {
+        public static GraphicsPath RoundRect(Rectangle Rectangle, int Curve) {
+            GraphicsPath P = new GraphicsPath();
+            int ArcRectangleWidth = Curve * 2;
+            P.AddArc(new Rectangle(Rectangle.X, Rectangle.Y, ArcRectangleWidth, ArcRectangleWidth), -180, 90);
+            P.AddArc(new Rectangle(Rectangle.Width - ArcRectangleWidth + Rectangle.X, Rectangle.Y, ArcRectangleWidth, ArcRectangleWidth), -90, 90);
+            P.AddArc(new Rectangle(Rectangle.Width - ArcRectangleWidth + Rectangle.X, Rectangle.Height - ArcRectangleWidth + Rectangle.Y, ArcRectangleWidth, ArcRectangleWidth), 0, 90);
+            P.AddArc(new Rectangle(Rectangle.X, Rectangle.Height - ArcRectangleWidth + Rectangle.Y, ArcRectangleWidth, ArcRectangleWidth), 90, 90);
+            P.AddLine(new Point(Rectangle.X, Rectangle.Height - ArcRectangleWidth + Rectangle.Y), new Point(Rectangle.X, Curve + Rectangle.Y));
+            return P;
+        }
+    }
+
+    #endregion
+    #region  ThemeContainer
+
+    public class Discord_ThemeContainer : ContainerControl {
+
+        #region  Enums
+
+        public enum MouseState {
+            None = 0,
+            Over = 1,
+            Down = 2,
+            Block = 3
+        }
+
+        #endregion
+        #region  Variables
+        private bool fInit = false;
+        private PrivateFontCollection pfc =
+            new PrivateFontCollection();
+        private Rectangle HeaderRect;
+        protected MouseState State;
+        private int MoveHeight;
+        private Point MouseP = new Point(0, 0);
+        private bool Cap = false;
+        private bool HasShown;
+
+        #endregion
+        #region  Properties
+
+        private bool _Sizable = true;
+        public bool Sizable {
+            get {
+                return _Sizable;
+            }
+            set {
+                _Sizable = value;
+            }
+        }
+
+        private bool _SmartBounds = true;
+        public bool SmartBounds {
+            get {
+                return _SmartBounds;
+            }
+            set {
+                _SmartBounds = value;
+            }
+        }
+
+        private bool _RoundCorners = true;
+        public bool RoundCorners {
+            get {
+                return _RoundCorners;
+            }
+            set {
+                _RoundCorners = value;
+                Invalidate();
+            }
+        }
+
+        private bool _IsParentForm;
+        protected bool IsParentForm {
+            get {
+                return _IsParentForm;
+            }
+        }
+
+        protected bool IsParentMdi {
+            get {
+                if (Parent == null) {
+                    return false;
+                }
+                return Parent.Parent != null;
+            }
+        }
+
+        private bool _ControlMode;
+        protected bool ControlMode {
+            get {
+                return _ControlMode;
+            }
+            set {
+                _ControlMode = value;
+                Invalidate();
+            }
+        }
+
+        private FormStartPosition _StartPosition;
+        public FormStartPosition StartPosition {
+            get {
+                if (_IsParentForm &amp;&amp; !_ControlMode) {
+                    return ParentForm.StartPosition;
+                } else {
+                    return _StartPosition;
+                }
+            }
+            set {
+                _StartPosition = value;
+
+                if (_IsParentForm &amp;&amp; !_ControlMode) {
+                    ParentForm.StartPosition = value;
+                }
+            }
+        }
+
+        #endregion
+        #region  EventArgs
+
+        protected sealed override void OnParentChanged(EventArgs e) {
+            base.OnParentChanged(e);
+
+            if (Parent == null) {
+                return;
+            }
+            _IsParentForm = Parent is Form;
+
+            if (!_ControlMode) {
+                InitializeMessages();
+
+                if (_IsParentForm) {
+                    this.ParentForm.FormBorderStyle = FormBorderStyle.None;
+                    this.ParentForm.TransparencyKey = Color.Fuchsia;
+
+                    if (!DesignMode) {
+                        ParentForm.Shown += FormShown;
+                    }
+                }
+                Parent.BackColor = BackColor;
+                //   Parent.MinimumSize = New Size(261, 65)
+            }
+        }
+
+        protected sealed override void OnSizeChanged(EventArgs e) {
+            base.OnSizeChanged(e);
+            if (!_ControlMode) {
+                HeaderRect = new Rectangle(0, 0, Width - 14, MoveHeight - 7);
+            }
+            Invalidate();
+        }
+
+        protected override void OnMouseDown(System.Windows.Forms.MouseEventArgs e) {
+            base.OnMouseDown(e);
+            Focus();
+            if (e.Button == MouseButtons.Left) {
+                SetState(MouseState.Down);
+            }
+            if (!(_IsParentForm &amp;&amp; ParentForm.WindowState == FormWindowState.Maximized || _ControlMode)) {
+                if (HeaderRect.Contains(e.Location)) {
+                    Capture = false;
+                    WM_LMBUTTONDOWN = true;
+                    DefWndProc(ref Messages[0]);
+                } else if (_Sizable &amp;&amp; !(Previous == 0)) {
+                    Capture = false;
+                    WM_LMBUTTONDOWN = true;
+                    DefWndProc(ref Messages[Previous]);
+                }
+            }
+        }
+
+        protected override void OnMouseUp(System.Windows.Forms.MouseEventArgs e) {
+            base.OnMouseUp(e);
+            Cap = false;
+        }
+
+        protected override void OnMouseMove(System.Windows.Forms.MouseEventArgs e) {
+            base.OnMouseMove(e);
+            if (!(_IsParentForm &amp;&amp; ParentForm.WindowState == FormWindowState.Maximized)) {
+                if (_Sizable &amp;&amp; !_ControlMode) {
+                    InvalidateMouse();
+                }
+            }
+            if (Cap) {
+                Parent.Location = (System.Drawing.Point)((object)(System.Convert.ToDouble(MousePosition) - System.Convert.ToDouble(MouseP)));
+            }
+        }
+
+        protected override void OnInvalidated(System.Windows.Forms.InvalidateEventArgs e) {
+            base.OnInvalidated(e);
+            ParentForm.Text = Text;
+        }
+
+        protected override void OnPaintBackground(PaintEventArgs e) {
+            base.OnPaintBackground(e);
+        }
+
+        protected override void OnTextChanged(System.EventArgs e) {
+            base.OnTextChanged(e);
+            Invalidate();
+        }
+
+        private void FormShown(object sender, EventArgs e) {
+            if (_ControlMode || HasShown) {
+                return;
+            }
+
+            if (_StartPosition == FormStartPosition.CenterParent || _StartPosition == FormStartPosition.CenterScreen) {
+                Rectangle SB = Screen.PrimaryScreen.Bounds;
+                Rectangle CB = ParentForm.Bounds;
+                ParentForm.Location = new Point(SB.Width / 2 - CB.Width / 2, SB.Height / 2 - CB.Width / 2);
+            }
+            HasShown = true;
+        }
+
+        #endregion
+        #region  Mouse &amp; Size
+
+        private void SetState(MouseState current) {
+            State = current;
+            Invalidate();
+        }
+
+        private Point GetIndexPoint;
+        private bool B1x;
+        private bool B2x;
+        private bool B3;
+        private bool B4;
+        private int GetIndex() {
+            GetIndexPoint = PointToClient(MousePosition);
+            B1x = GetIndexPoint.X &lt; 7;
+            B2x = GetIndexPoint.X &gt; Width - 7;
+            B3 = GetIndexPoint.Y &lt; 7;
+            B4 = GetIndexPoint.Y &gt; Height - 7;
+
+            if (B1x &amp;&amp; B3) {
+                return 4;
+            }
+            if (B1x &amp;&amp; B4) {
+                return 7;
+            }
+            if (B2x &amp;&amp; B3) {
+                return 5;
+            }
+            if (B2x &amp;&amp; B4) {
+                return 8;
+            }
+            if (B1x) {
+                return 1;
+            }
+            if (B2x) {
+                return 2;
+            }
+            if (B3) {
+                return 3;
+            }
+            if (B4) {
+                return 6;
+            }
+            return 0;
+        }
+
+        private int Current;
+        private int Previous;
+        private void InvalidateMouse() {
+            Current = GetIndex();
+            if (Current == Previous) {
+                return;
+            }
+
+            Previous = Current;
+            switch (Previous) {
+                case 0:
+                    Cursor = Cursors.Default;
+                    break;
+                case 6:
+                    Cursor = Cursors.SizeNS;
+                    break;
+                case 8:
+                    Cursor = Cursors.SizeNWSE;
+                    break;
+                case 7:
+                    Cursor = Cursors.SizeNESW;
+                    break;
+            }
+        }
+
+        private Message[] Messages = new Message[9];
+        private void InitializeMessages() {
+            Messages[0] = Message.Create(Parent.Handle, 161, new IntPtr(2), IntPtr.Zero);
+            for (int I = 1; I &lt;= 8; I++) {
+                Messages[I] = Message.Create(Parent.Handle, 161, new IntPtr(I + 9), IntPtr.Zero);
+            }
+        }
+
+        private void CorrectBounds(Rectangle bounds) {
+            if (Parent.Width &gt; bounds.Width) {
+                Parent.Width = bounds.Width;
+            }
+            if (Parent.Height &gt; bounds.Height) {
+                Parent.Height = bounds.Height;
+            }
+
+            int X = Parent.Location.X;
+            int Y = Parent.Location.Y;
+
+            if (X &lt; bounds.X) {
+                X = bounds.X;
+            }
+            if (Y &lt; bounds.Y) {
+                Y = bounds.Y;
+            }
+
+            int Width = bounds.X + bounds.Width;
+            int Height = bounds.Y + bounds.Height;
+
+            if (X + Parent.Width &gt; Width) {
+                X = Width - Parent.Width;
+            }
+            if (Y + Parent.Height &gt; Height) {
+                Y = Height - Parent.Height;
+            }
+
+            Parent.Location = new Point(X, Y);
+        }
+
+        private bool WM_LMBUTTONDOWN;
+        protected override void WndProc(ref Message m) {
+            base.WndProc(ref m);
+
+            if (WM_LMBUTTONDOWN &amp;&amp; m.Msg == 513) {
+                WM_LMBUTTONDOWN = false;
+
+                SetState(MouseState.Over);
+                if (!_SmartBounds) {
+                    return;
+                }
+
+                if (IsParentMdi) {
+                    CorrectBounds(new Rectangle(Point.Empty, Parent.Parent.Size));
+                } else {
+                    CorrectBounds(Screen.FromControl(Parent).WorkingArea);
+                }
+            }
+        }
+
+        #endregion
+
+        protected override void CreateHandle() {
+            base.CreateHandle();
+        }
+
+        public Discord_ThemeContainer() {
+            SetStyle((ControlStyles)(139270), true);
+            BackColor = Color.FromArgb(47, 49, 54);
+            Padding = new Padding(10, 70, 10, 9);
+            DoubleBuffered = true;
+            Dock = DockStyle.Fill;
+            MoveHeight = 25;
+            Font = new Font("Segoe UI", 9);
+        }
+        public void InitFont() {
+            fInit = true;
+        }
+
+        protected override void OnPaint(PaintEventArgs e) {
+            base.OnPaint(e);
+            Graphics G = e.Graphics;
+            // 44,47,51
+            G.Clear(Color.FromArgb(112, 102, 119));
+            G.FillRectangle(new SolidBrush(Color.FromArgb(86, 82, 100)), new Rectangle(0, 0, Width, 20));
+
+            if (_RoundCorners == true) {
+                // Draw Left upper corner
+                G.FillRectangle(Brushes.Fuchsia, 0, 0, 1, 1);
+                G.FillRectangle(Brushes.Fuchsia, 1, 0, 1, 1);
+                G.FillRectangle(Brushes.Fuchsia, 2, 0, 1, 1);
+                G.FillRectangle(Brushes.Fuchsia, 3, 0, 1, 1);
+                G.FillRectangle(Brushes.Fuchsia, 0, 1, 1, 1);
+                G.FillRectangle(Brushes.Fuchsia, 0, 2, 1, 1);
+                G.FillRectangle(Brushes.Fuchsia, 0, 3, 1, 1);
+                G.FillRectangle(Brushes.Fuchsia, 1, 1, 1, 1);
+
+                G.FillRectangle(new SolidBrush(Color.FromArgb(35, 39, 42)), 1, 3, 1, 1);
+                G.FillRectangle(new SolidBrush(Color.FromArgb(35, 39, 42)), 1, 2, 1, 1);
+                G.FillRectangle(new SolidBrush(Color.FromArgb(35, 39, 42)), 2, 1, 1, 1);
+                G.FillRectangle(new SolidBrush(Color.FromArgb(35, 39, 42)), 3, 1, 1, 1);
+
+                // Draw right upper corner
+                G.FillRectangle(Brushes.Fuchsia, Width - 1, 0, 1, 1);
+                G.FillRectangle(Brushes.Fuchsia, Width - 2, 0, 1, 1);
+                G.FillRectangle(Brushes.Fuchsia, Width - 3, 0, 1, 1);
+                G.FillRectangle(Brushes.Fuchsia, Width - 4, 0, 1, 1);
+                G.FillRectangle(Brushes.Fuchsia, Width - 1, 1, 1, 1);
+                G.FillRectangle(Brushes.Fuchsia, Width - 1, 2, 1, 1);
+                G.FillRectangle(Brushes.Fuchsia, Width - 1, 3, 1, 1);
+                G.FillRectangle(Brushes.Fuchsia, Width - 2, 1, 1, 1);
+
+                G.FillRectangle(new SolidBrush(Color.FromArgb(114, 137, 218)), Width - 2, 3, 1, 1);
+                G.FillRectangle(new SolidBrush(Color.FromArgb(114, 137, 218)), Width - 2, 2, 1, 1);
+                G.FillRectangle(new SolidBrush(Color.FromArgb(114, 137, 218)), Width - 3, 1, 1, 1);
+                G.FillRectangle(new SolidBrush(Color.FromArgb(114, 137, 218)), Width - 4, 1, 1, 1);
+
+                // Draw Left bottom corner
+                G.FillRectangle(Brushes.Fuchsia, 0, Height - 1, 1, 1);
+                G.FillRectangle(Brushes.Fuchsia, 0, Height - 2, 1, 1);
+                G.FillRectangle(Brushes.Fuchsia, 0, Height - 3, 1, 1);
+                G.FillRectangle(Brushes.Fuchsia, 0, Height - 4, 1, 1);
+                G.FillRectangle(Brushes.Fuchsia, 1, Height - 1, 1, 1);
+                G.FillRectangle(Brushes.Fuchsia, 2, Height - 1, 1, 1);
+                G.FillRectangle(Brushes.Fuchsia, 3, Height - 1, 1, 1);
+                G.FillRectangle(Brushes.Fuchsia, 1, Height - 1, 1, 1);
+                G.FillRectangle(Brushes.Fuchsia, 1, Height - 2, 1, 1);
+
+                G.FillRectangle(new SolidBrush(Color.FromArgb(44, 47, 51)), 1, Height - 3, 1, 1);
+                G.FillRectangle(new SolidBrush(Color.FromArgb(44, 47, 51)), 1, Height - 4, 1, 1);
+                G.FillRectangle(new SolidBrush(Color.FromArgb(44, 47, 51)), 3, Height - 2, 1, 1);
+                G.FillRectangle(new SolidBrush(Color.FromArgb(44, 47, 51)), 2, Height - 2, 1, 1);
+
+                // Draw right bottom corner
+                G.FillRectangle(Brushes.Fuchsia, Width - 1, Height, 1, 1);
+                G.FillRectangle(Brushes.Fuchsia, Width - 2, Height, 1, 1);
+                G.FillRectangle(Brushes.Fuchsia, Width - 3, Height, 1, 1);
+                G.FillRectangle(Brushes.Fuchsia, Width - 4, Height, 1, 1);
+                G.FillRectangle(Brushes.Fuchsia, Width - 1, Height - 1, 1, 1);
+                G.FillRectangle(Brushes.Fuchsia, Width - 1, Height - 2, 1, 1);
+                G.FillRectangle(Brushes.Fuchsia, Width - 1, Height - 3, 1, 1);
+                G.FillRectangle(Brushes.Fuchsia, Width - 2, Height - 1, 1, 1);
+                G.FillRectangle(Brushes.Fuchsia, Width - 3, Height - 1, 1, 1);
+                G.FillRectangle(Brushes.Fuchsia, Width - 4, Height - 1, 1, 1);
+                G.FillRectangle(Brushes.Fuchsia, Width - 1, Height - 4, 1, 1);
+                G.FillRectangle(Brushes.Fuchsia, Width - 2, Height - 2, 1, 1);
+
+                G.FillRectangle(new SolidBrush(Color.FromArgb(44, 47, 51)), Width - 2, Height - 3, 1, 1);
+                G.FillRectangle(new SolidBrush(Color.FromArgb(44, 47, 51)), Width - 2, Height - 4, 1, 1);
+                G.FillRectangle(new SolidBrush(Color.FromArgb(44, 47, 51)), Width - 4, Height - 2, 1, 1);
+                G.FillRectangle(new SolidBrush(Color.FromArgb(44, 47, 51)), Width - 3, Height - 2, 1, 1);
+            }
+
+            if (fInit)
+                G.DrawString(Text, new Font("Segoe UI", 10), new SolidBrush(Color.FromArgb(255, 254, 255)), new Rectangle(4, 2, Width - 1, Height), new StringFormat() { Alignment = StringAlignment.Near, LineAlignment = StringAlignment.Near });
+            else
+                G.DrawString(Text, new Font("Segoe UI", 10), new SolidBrush(Color.FromArgb(255, 254, 255)), new Rectangle(4, 2, Width - 1, Height), new StringFormat() { Alignment = StringAlignment.Near, LineAlignment = StringAlignment.Near });
+        }
+    }
+    #endregion
+    #region ControlBox
+
+    class Discord_ControlBox : Control {
+
+        #region Enums
+
+        public enum ButtonHoverState {
+            Minimize,
+            Maximize,
+            Close,
+            None
+        }
+
+        #endregion
+        #region Variables
+
+        private ButtonHoverState ButtonHState = ButtonHoverState.None;
+
+        #endregion
+        #region Properties
+
+        private bool _EnableMaximize = true;
+        public bool EnableMaximizeButton {
+            get { return _EnableMaximize; }
+            set {
+                _EnableMaximize = value;
+                Invalidate();
+            }
+        }
+
+        private bool _EnableMinimize = true;
+        public bool EnableMinimizeButton {
+            get { return _EnableMinimize; }
+            set {
+                _EnableMinimize = value;
+                Invalidate();
+            }
+        }
+
+        private bool _EnableHoverHighlight = false;
+        public bool EnableHoverHighlight {
+            get { return _EnableHoverHighlight; }
+            set {
+                _EnableHoverHighlight = value;
+                Invalidate();
+            }
+        }
+
+        #endregion
+        #region EventArgs
+
+        protected override void OnResize(EventArgs e) {
+            base.OnResize(e);
+            Size = new Size(100, 25);
+        }
+
+        protected override void OnMouseMove(MouseEventArgs e) {
+            base.OnMouseMove(e);
+            int X = e.Location.X;
+            int Y = e.Location.Y;
+            if (Y &gt; 0 &amp;&amp; Y &lt; (Height - 2)) {
+                if (X &gt; 0 &amp;&amp; X &lt; 34) {
+                    ButtonHState = ButtonHoverState.Minimize;
+                } else if (X &gt; 33 &amp;&amp; X &lt; 65) {
+                    ButtonHState = ButtonHoverState.Maximize;
+                } else if (X &gt; 64 &amp;&amp; X &lt; Width) {
+                    ButtonHState = ButtonHoverState.Close;
+                } else {
+                    ButtonHState = ButtonHoverState.None;
+                }
+            } else {
+                ButtonHState = ButtonHoverState.None;
+            }
+            Invalidate();
+        }
+
+        protected override void OnMouseUp(MouseEventArgs e) {
+            base.OnMouseDown(e);
+            switch (ButtonHState) {
+                case ButtonHoverState.Close:
+                    Parent.FindForm().Close();
+                    break;
+                case ButtonHoverState.Minimize:
+                    if (_EnableMinimize == true) {
+                        Parent.FindForm().WindowState = FormWindowState.Minimized;
+                    }
+                    break;
+                case ButtonHoverState.Maximize:
+                    if (_EnableMaximize == true) {
+                        if (Parent.FindForm().WindowState == FormWindowState.Normal) {
+                            Parent.FindForm().WindowState = FormWindowState.Maximized;
+                        } else {
+                            Parent.FindForm().WindowState = FormWindowState.Normal;
+                        }
+                    }
+                    break;
+            }
+        }
+        protected override void OnMouseLeave(EventArgs e) {
+            base.OnMouseLeave(e);
+            ButtonHState = ButtonHoverState.None;
+            Invalidate();
+        }
+
+        protected override void OnMouseDown(MouseEventArgs e) {
+            base.OnMouseDown(e);
+            Focus();
+        }
+
+        #endregion
+
+        public Discord_ControlBox()
+            : base() {
+            DoubleBuffered = true;
+            Anchor = AnchorStyles.Top | AnchorStyles.Right;
+        }
+
+        protected override void OnCreateControl() {
+            base.OnCreateControl();
+            try {
+                Location = new Point(Parent.Width - 104, -5);
+            } catch (Exception) {
+            }
+        }
+
+        protected override void OnPaint(PaintEventArgs e) {
+            base.OnPaint(e);
+            Graphics G = e.Graphics;
+            G.Clear(Color.FromArgb(86, 82, 100));
+
+            if (_EnableHoverHighlight == true) {
+                switch (ButtonHState) {
+                    case ButtonHoverState.None:
+                        G.Clear(Color.FromArgb(35, 39, 42));
+                        break;
+                    case ButtonHoverState.Minimize:
+                        if (_EnableMinimize == true) {
+                            G.FillRectangle(new SolidBrush(Color.FromArgb(86, 82, 100)), new Rectangle(3, 0, 30, Height));
+                        }
+                        break;
+                    case ButtonHoverState.Maximize:
+                        if (_EnableMaximize == true) {
+                            G.FillRectangle(new SolidBrush(Color.FromArgb(86, 82, 100)), new Rectangle(35, 0, 30, Height));
+                        }
+                        break;
+                    case ButtonHoverState.Close:
+                        G.FillRectangle(new SolidBrush(Color.FromArgb(86, 82, 100)), new Rectangle(66, 0, 35, Height));
+                        break;
+                }
+            }
+
+            //Close
+            G.DrawString("r", new Font("Marlett", 12), new SolidBrush(Color.FromArgb(255, 254, 255)), new Point(Width - 16, 8), new StringFormat { Alignment = StringAlignment.Center });
+
+            //Maximize
+            switch (Parent.FindForm().WindowState) {
+                case FormWindowState.Maximized:
+                    if (_EnableMaximize == true) {
+                        G.DrawString("2", new Font("Marlett", 12), new SolidBrush(Color.FromArgb(255, 254, 255)), new Point(51, 7), new StringFormat { Alignment = StringAlignment.Center });
+                    } else {
+                        G.DrawString("2", new Font("Marlett", 12), new SolidBrush(Color.LightGray), new Point(51, 7), new StringFormat { Alignment = StringAlignment.Center });
+                    }
+                    break;
+                case FormWindowState.Normal:
+                    if (_EnableMaximize == true) {
+                        G.DrawString("1", new Font("Marlett", 12), new SolidBrush(Color.FromArgb(255, 254, 255)), new Point(51, 7), new StringFormat { Alignment = StringAlignment.Center });
+                    } else {
+                        G.DrawString("1", new Font("Marlett", 12), new SolidBrush(Color.LightGray), new Point(51, 7), new StringFormat { Alignment = StringAlignment.Center });
+                    }
+                    break;
+            }
+
+            //Minimize
+            if (_EnableMinimize == true) {
+                G.DrawString("0", new Font("Marlett", 12), new SolidBrush(Color.FromArgb(255, 254, 255)), new Point(20, 7), new StringFormat { Alignment = StringAlignment.Center });
+            } else {
+                G.DrawString("0", new Font("Marlett", 12), new SolidBrush(Color.LightGray), new Point(20, 7), new StringFormat { Alignment = StringAlignment.Center });
+            }
+        }
+    }
+
+    #endregion
+    #region  Button
+
+    public class Discord_Button : Control {
+
+        #region  Variables
+
+        private int MouseState;
+        private GraphicsPath Shape;
+        private LinearGradientBrush UntoggledGB;
+        private LinearGradientBrush InactiveGB;
+        private LinearGradientBrush PressedGB;
+        private Rectangle R1;
+        private Pen P1;
+        private Pen P2;
+        private Pen P3;
+        private Image _Image;
+        private Size _ImageSize;
+        private StringAlignment _TextAlignment = StringAlignment.Center;
+        private Color _TextColor = Color.White;
+        private ContentAlignment _ImageAlign = ContentAlignment.MiddleLeft;
+
+        #endregion
+        #region  Image Designer
+
+        private static PointF ImageLocation(StringFormat SF, SizeF Area, SizeF ImageArea) {
+            PointF MyPoint = new PointF();
+            switch (SF.Alignment) {
+                case StringAlignment.Center:
+                    MyPoint.X = (float)((Area.Width - ImageArea.Width) / 2);
+                    break;
+                case StringAlignment.Near:
+                    MyPoint.X = 2;
+                    break;
+                case StringAlignment.Far:
+                    MyPoint.X = Area.Width - ImageArea.Width - 2;
+                    break;
+
+            }
+
+            switch (SF.LineAlignment) {
+                case StringAlignment.Center:
+                    MyPoint.Y = (float)((Area.Height - ImageArea.Height) / 2);
+                    break;
+                case StringAlignment.Near:
+                    MyPoint.Y = 2;
+                    break;
+                case StringAlignment.Far:
+                    MyPoint.Y = Area.Height - ImageArea.Height - 2;
+                    break;
+            }
+            return MyPoint;
+        }
+
+        private StringFormat GetStringFormat(ContentAlignment _ContentAlignment) {
+            StringFormat SF = new StringFormat();
+            switch (_ContentAlignment) {
+                case ContentAlignment.MiddleCenter:
+                    SF.LineAlignment = StringAlignment.Center;
+                    SF.Alignment = StringAlignment.Center;
+                    break;
+                case ContentAlignment.MiddleLeft:
+                    SF.LineAlignment = StringAlignment.Center;
+                    SF.Alignment = StringAlignment.Near;
+                    break;
+                case ContentAlignment.MiddleRight:
+                    SF.LineAlignment = StringAlignment.Center;
+                    SF.Alignment = StringAlignment.Far;
+                    break;
+                case ContentAlignment.TopCenter:
+                    SF.LineAlignment = StringAlignment.Near;
+                    SF.Alignment = StringAlignment.Center;
+                    break;
+                case ContentAlignment.TopLeft:
+                    SF.LineAlignment = StringAlignment.Near;
+                    SF.Alignment = StringAlignment.Near;
+                    break;
+                case ContentAlignment.TopRight:
+                    SF.LineAlignment = StringAlignment.Near;
+                    SF.Alignment = StringAlignment.Far;
+                    break;
+                case ContentAlignment.BottomCenter:
+                    SF.LineAlignment = StringAlignment.Far;
+                    SF.Alignment = StringAlignment.Center;
+                    break;
+                case ContentAlignment.BottomLeft:
+                    SF.LineAlignment = StringAlignment.Far;
+                    SF.Alignment = StringAlignment.Near;
+                    break;
+                case ContentAlignment.BottomRight:
+                    SF.LineAlignment = StringAlignment.Far;
+                    SF.Alignment = StringAlignment.Far;
+                    break;
+            }
+            return SF;
+        }
+
+        #endregion
+        #region  Properties
+
+        public Image Image {
+            get {
+                return _Image;
+            }
+            set {
+                if (value == null) {
+                    _ImageSize = Size.Empty;
+                } else {
+                    _ImageSize = value.Size;
+                }
+
+                _Image = value;
+                Invalidate();
+            }
+        }
+
+        protected Size ImageSize {
+            get {
+                return _ImageSize;
+            }
+        }
+
+        public ContentAlignment ImageAlign {
+            get {
+                return _ImageAlign;
+            }
+            set {
+                _ImageAlign = value;
+                Invalidate();
+            }
+        }
+
+        public StringAlignment TextAlignment {
+            get {
+                return this._TextAlignment;
+            }
+            set {
+                this._TextAlignment = value;
+                this.Invalidate();
+            }
+        }
+
+        public override Color ForeColor {
+            get {
+                return this._TextColor;
+            }
+            set {
+                this._TextColor = value;
+                this.Invalidate();
+            }
+        }
+
+        #endregion
+        #region  EventArgs
+
+        protected override void OnMouseUp(MouseEventArgs e) {
+            MouseState = 0;
+            Invalidate();
+            base.OnMouseUp(e);
+        }
+        protected override void OnMouseDown(MouseEventArgs e) {
+            MouseState = 1;
+            Focus();
+            Invalidate();
+            base.OnMouseDown(e);
+        }
+
+        protected override void OnMouseLeave(EventArgs e) {
+            MouseState = 0;
+            Invalidate();
+            base.OnMouseLeave(e);
+        }
+
+        protected override void OnTextChanged(System.EventArgs e) {
+            Invalidate();
+            base.OnTextChanged(e);
+        }
+
+        #endregion
+
+        public Discord_Button() {
+            SetStyle((System.Windows.Forms.ControlStyles)(ControlStyles.AllPaintingInWmPaint | ControlStyles.OptimizedDoubleBuffer | ControlStyles.ResizeRedraw | ControlStyles.SupportsTransparentBackColor | ControlStyles.UserPaint), true);
+
+            BackColor = Color.Transparent;
+            DoubleBuffered = true;
+            Font = new Font("Segoe UI", 12);
+            ForeColor = Color.White;
+            Size = new Size(146, 41);
+            _TextAlignment = StringAlignment.Center;
+            P1 = new Pen(Color.FromArgb(114, 137, 218)); // P1 = Border color
+            P3 = new Pen(Color.FromArgb(91, 110, 174)); // P3 = Border color when pressed
+            P2 = new Pen(Color.Transparent); // P2 = Border color when untoggled.
+        }
+
+        protected override void OnResize(System.EventArgs e) {
+            base.OnResize(e);
+            if (Width &gt; 0 &amp;&amp; Height &gt; 0) {
+
+                Shape = new GraphicsPath();
+                R1 = new Rectangle(0, 0, Width, Height);
+
+                InactiveGB = new LinearGradientBrush(new Rectangle(0, 0, Width, Height), Color.FromArgb(114, 137, 218), Color.FromArgb(114, 137, 218), 90.0F);
+                UntoggledGB = new LinearGradientBrush(new Rectangle(0, 0, Width, Height), Color.Transparent, Color.Transparent, 90.0F);
+                PressedGB = new LinearGradientBrush(new Rectangle(0, 0, Width, Height), Color.FromArgb(91, 110, 174), Color.FromArgb(91, 110, 174), 90.0F);
+            }
+
+            Shape.AddArc(0, 0, 10, 10, 180, 90);
+            Shape.AddArc(Width - 11, 0, 10, 10, -90, 90);
+            Shape.AddArc(Width - 11, Height - 11, 10, 10, 0, 90);
+            Shape.AddArc(0, Height - 11, 10, 10, 90, 90);
+            Shape.CloseAllFigures();
+            Invalidate();
+        }
+
+        protected override void OnPaint(PaintEventArgs e) {
+            var G = e.Graphics;
+            G.SmoothingMode = SmoothingMode.HighQuality;
+            PointF ipt = ImageLocation(GetStringFormat(ImageAlign), Size, ImageSize);
+
+            if (MouseState == 0) drawGBP(G, ipt, InactiveGB, P1);
+            else drawGBP(G, ipt, PressedGB, P3);
+
+            base.OnPaint(e);
+        }
+
+        private void drawGBP(Graphics G, PointF ipt,
+            LinearGradientBrush gb, Pen p) {
+            //Pressed
+            G.FillPath(gb, Shape);
+            // Fill button body with PressedGB color gradient
+            G.DrawPath(p, Shape);
+            // Draw button border [PressedGB]
+
+            if (Image != null)
+                G.DrawImage(_Image, ipt.X, ipt.Y, ImageSize.Width, ImageSize.Height);
+
+            G.DrawString(Text, Font, new SolidBrush(ForeColor), R1, new StringFormat {
+                Alignment = _TextAlignment,
+                LineAlignment = StringAlignment.Center
+            });
+        }
+    }
+    public class Discord_Menu_Button : Control {
+
+        #region  Variables
+
+        private int MouseState;
+        private GraphicsPath Shape;
+        private LinearGradientBrush UntoggledGB;
+        private LinearGradientBrush InactiveGB;
+        private LinearGradientBrush PressedGB;
+        private Rectangle R1;
+        private Pen P1;
+        private Pen P2;
+        private Pen P3;
+        private Image _Image;
+        private Size _ImageSize;
+        private StringAlignment _TextAlignment = StringAlignment.Center;
+        private Color _TextColor = Color.White;
+        private ContentAlignment _ImageAlign = ContentAlignment.MiddleLeft;
+        private bool _Toggled = false;
+
+        #endregion
+        #region  Image Designer
+
+        private static PointF ImageLocation(StringFormat SF, SizeF Area, SizeF ImageArea) {
+            PointF MyPoint = new PointF();
+            switch (SF.Alignment) {
+                case StringAlignment.Center:
+                    MyPoint.X = (float)((Area.Width - ImageArea.Width) / 2);
+                    break;
+                case StringAlignment.Near:
+                    MyPoint.X = 2;
+                    break;
+                case StringAlignment.Far:
+                    MyPoint.X = Area.Width - ImageArea.Width - 2;
+                    break;
+
+            }
+
+            switch (SF.LineAlignment) {
+                case StringAlignment.Center:
+                    MyPoint.Y = (float)((Area.Height - ImageArea.Height) / 2);
+                    break;
+                case StringAlignment.Near:
+                    MyPoint.Y = 2;
+                    break;
+                case StringAlignment.Far:
+                    MyPoint.Y = Area.Height - ImageArea.Height - 2;
+                    break;
+            }
+            return MyPoint;
+        }
+
+        private StringFormat GetStringFormat(ContentAlignment _ContentAlignment) {
+            StringFormat SF = new StringFormat();
+            switch (_ContentAlignment) {
+                case ContentAlignment.MiddleCenter:
+                    SF.LineAlignment = StringAlignment.Center;
+                    SF.Alignment = StringAlignment.Center;
+                    break;
+                case ContentAlignment.MiddleLeft:
+                    SF.LineAlignment = StringAlignment.Center;
+                    SF.Alignment = StringAlignment.Near;
+                    break;
+                case ContentAlignment.MiddleRight:
+                    SF.LineAlignment = StringAlignment.Center;
+                    SF.Alignment = StringAlignment.Far;
+                    break;
+                case ContentAlignment.TopCenter:
+                    SF.LineAlignment = StringAlignment.Near;
+                    SF.Alignment = StringAlignment.Center;
+                    break;
+                case ContentAlignment.TopLeft:
+                    SF.LineAlignment = StringAlignment.Near;
+                    SF.Alignment = StringAlignment.Near;
+                    break;
+                case ContentAlignment.TopRight:
+                    SF.LineAlignment = StringAlignment.Near;
+                    SF.Alignment = StringAlignment.Far;
+                    break;
+                case ContentAlignment.BottomCenter:
+                    SF.LineAlignment = StringAlignment.Far;
+                    SF.Alignment = StringAlignment.Center;
+                    break;
+                case ContentAlignment.BottomLeft:
+                    SF.LineAlignment = StringAlignment.Far;
+                    SF.Alignment = StringAlignment.Near;
+                    break;
+                case ContentAlignment.BottomRight:
+                    SF.LineAlignment = StringAlignment.Far;
+                    SF.Alignment = StringAlignment.Far;
+                    break;
+            }
+            return SF;
+        }
+
+        #endregion
+        #region  Properties
+
+        public Image Image {
+            get {
+                return _Image;
+            }
+            set {
+                if (value == null) {
+                    _ImageSize = Size.Empty;
+                } else {
+                    _ImageSize = value.Size;
+                }
+
+                _Image = value;
+                Invalidate();
+            }
+        }
+
+        protected Size ImageSize {
+            get {
+                return _ImageSize;
+            }
+        }
+
+        public ContentAlignment ImageAlign {
+            get {
+                return _ImageAlign;
+            }
+            set {
+                _ImageAlign = value;
+                Invalidate();
+            }
+        }
+
+        public StringAlignment TextAlignment {
+            get {
+                return this._TextAlignment;
+            }
+            set {
+                this._TextAlignment = value;
+                this.Invalidate();
+            }
+        }
+
+        public override Color ForeColor {
+            get {
+                return this._TextColor;
+            }
+            set {
+                this._TextColor = value;
+                this.Invalidate();
+            }
+        }
+
+        public bool Toggleable { get; set; }
+        public bool Toggled {
+            get {
+                return this._Toggled;
+            }
+            set {
+                this._Toggled = value;
+                this.Invalidate();
+            }
+        }
+
+        public bool DisableColoration { get; set; }
+
+        #endregion
+        #region  EventArgs
+
+        protected override void OnMouseUp(MouseEventArgs e) {
+            MouseState = 0;
+            Invalidate();
+            base.OnMouseUp(e);
+        }
+        protected override void OnMouseDown(MouseEventArgs e) {
+            MouseState = 1;
+            Focus();
+            Invalidate();
+            base.OnMouseDown(e);
+        }
+
+        protected override void OnMouseLeave(EventArgs e) {
+            MouseState = 0;
+            Invalidate();
+            base.OnMouseLeave(e);
+        }
+
+        protected override void OnTextChanged(System.EventArgs e) {
+            Invalidate();
+            base.OnTextChanged(e);
+        }
+
+        #endregion
+
+        public Discord_Menu_Button() {
+            SetStyle((System.Windows.Forms.ControlStyles)(ControlStyles.AllPaintingInWmPaint | ControlStyles.OptimizedDoubleBuffer | ControlStyles.ResizeRedraw | ControlStyles.SupportsTransparentBackColor | ControlStyles.UserPaint), true);
+
+            BackColor = Color.Transparent;
+            DoubleBuffered = true;
+            Font = new Font("Segoe UI", 12);
+            if (!DisableColoration)
+                ForeColor = Color.FromArgb(153, 170, 181);
+            Size = new Size(146, 41);
+            _TextAlignment = StringAlignment.Center;
+            P1 = new Pen(Color.FromArgb(114, 137, 218)); // P1 = Border color
+            P3 = new Pen(Color.FromArgb(91, 110, 174)); // P3 = Border color when pressed
+            P2 = new Pen(Color.Transparent); // P2 = Border color when untoggled.
+        }
+
+        protected override void OnResize(System.EventArgs e) {
+            base.OnResize(e);
+            if (Width &gt; 0 &amp;&amp; Height &gt; 0) {
+
+                Shape = new GraphicsPath();
+                R1 = new Rectangle(0, 0, Width, Height);
+
+                InactiveGB = new LinearGradientBrush(new Rectangle(0, 0, Width, Height), Color.FromArgb(114, 137, 218), Color.FromArgb(114, 137, 218), 90.0F);
+                UntoggledGB = new LinearGradientBrush(new Rectangle(0, 0, Width, Height), Color.Transparent, Color.Transparent, 90.0F);
+                PressedGB = new LinearGradientBrush(new Rectangle(0, 0, Width, Height), Color.FromArgb(91, 110, 174), Color.FromArgb(91, 110, 174), 90.0F);
+            }
+
+            Shape.AddArc(0, 0, 10, 10, 180, 90);
+            Shape.AddArc(Width - 11, 0, 10, 10, -90, 90);
+            Shape.AddArc(Width - 11, Height - 11, 10, 10, 0, 90);
+            Shape.AddArc(0, Height - 11, 10, 10, 90, 90);
+            Shape.CloseAllFigures();
+            Invalidate();
+        }
+
+        protected override void OnPaint(PaintEventArgs e) {
+            var G = e.Graphics;
+            G.SmoothingMode = SmoothingMode.HighQuality;
+            PointF ipt = ImageLocation(GetStringFormat(ImageAlign), Size, ImageSize);
+
+            if (!Toggleable) {
+                if (MouseState == 0) drawGBP(G, ipt, InactiveGB, P1);
+                else drawGBP(G, ipt, PressedGB, P3);
+            } else {
+                if (Toggled) drawGBP(G, ipt, InactiveGB, P1);
+                else drawGBP(G, ipt, UntoggledGB, P2);
+            }
+
+
+            base.OnPaint(e);
+        }
+
+        private void drawGBP(Graphics G, PointF ipt,
+            LinearGradientBrush gb, Pen p) {
+            //Pressed
+            G.FillPath(gb, Shape);
+            // Fill button body with PressedGB color gradient
+            G.DrawPath(p, Shape);
+            // Draw button border [PressedGB]
+
+            if (Image != null)
+                G.DrawImage(_Image, ipt.X, ipt.Y, ImageSize.Width, ImageSize.Height);
+
+            Color c;
+            if (Toggleable) {
+                if (Toggled) c = Color.White;
+                else c = ForeColor;
+            } else {
+                if (MouseState == 1) c = Color.White;
+                else c = ForeColor;
+            }
+            G.DrawString(Text, Font, new SolidBrush(c), R1, new StringFormat {
+                Alignment = _TextAlignment,
+                LineAlignment = StringAlignment.Center
+            });
+        }
+    }
+
+    #endregion
+    #region  Social Button
+
+    public class Discord_SocialButton : Control {
+
+        #region  Variables
+
+        private Image _Image;
+        private Size _ImageSize;
+        private Color EllipseColor; // VBConversions Note: Initial value cannot be assigned here since it is non-static.  Assignment has been moved to the class constructors.
+
+        #endregion
+        #region  Properties
+
+        public Image Image {
+            get {
+                return _Image;
+            }
+            set {
+                if (value == null) {
+                    _ImageSize = Size.Empty;
+                } else {
+                    _ImageSize = value.Size;
+                }
+
+                _Image = value;
+                Invalidate();
+            }
+        }
+
+        protected Size ImageSize {
+            get {
+                return _ImageSize;
+            }
+        }
+
+        #endregion
+        #region  EventArgs
+
+        protected override void OnResize(EventArgs e) {
+            base.OnResize(e);
+            this.Size = new Size(54, 54);
+        }
+
+        protected override void OnMouseEnter(EventArgs e) {
+            base.OnMouseEnter(e);
+            EllipseColor = Color.FromArgb(114, 137, 218);
+            Refresh();
+        }
+        protected override void OnMouseLeave(EventArgs e) {
+            base.OnMouseLeave(e);
+            EllipseColor = Color.FromArgb(35, 39, 42);
+            Refresh();
+        }
+
+        protected override void OnMouseDown(MouseEventArgs e) {
+            base.OnMouseDown(e);
+            EllipseColor = Color.FromArgb(91, 110, 174);
+            Focus();
+            Refresh();
+        }
+        protected override void OnMouseUp(MouseEventArgs e) {
+            base.OnMouseUp(e);
+            EllipseColor = Color.FromArgb(114, 137, 218);
+            Refresh();
+        }
+
+        #endregion
+        #region  Image Designer
+
+        private static PointF ImageLocation(StringFormat SF, SizeF Area, SizeF ImageArea) {
+            PointF MyPoint = new PointF();
+            switch (SF.Alignment) {
+                case StringAlignment.Center:
+                    MyPoint.X = (float)((Area.Width - ImageArea.Width) / 2);
+                    break;
+            }
+
+            switch (SF.LineAlignment) {
+                case StringAlignment.Center:
+                    MyPoint.Y = (float)((Area.Height - ImageArea.Height) / 2);
+                    break;
+            }
+            return MyPoint;
+        }
+
+        private StringFormat GetStringFormat(ContentAlignment _ContentAlignment) {
+            StringFormat SF = new StringFormat();
+            switch (_ContentAlignment) {
+                case ContentAlignment.MiddleCenter:
+                    SF.LineAlignment = StringAlignment.Center;
+                    SF.Alignment = StringAlignment.Center;
+                    break;
+            }
+            return SF;
+        }
+
+        #endregion
+
+        public Discord_SocialButton() {
+            DoubleBuffered = true;
+            EllipseColor = Color.FromArgb(35, 39, 42);
+        }
+
+        protected override void OnPaint(System.Windows.Forms.PaintEventArgs e) {
+            Graphics G = e.Graphics;
+            G.Clear(Parent.BackColor);
+            G.SmoothingMode = SmoothingMode.HighQuality;
+
+            PointF ImgPoint = ImageLocation(GetStringFormat(ContentAlignment.MiddleCenter), Size, ImageSize);
+            G.FillEllipse(new SolidBrush(EllipseColor), new Rectangle(0, 0, 53, 53));
+
+            // HINTS:
+            // The best size for the drawn image is 32x32\
+            // The best matching color of drawn image is (RGB: 31, 40, 49)
+            if (Image != null) {
+                G.DrawImage(_Image, (int)ImgPoint.X, (int)ImgPoint.Y, ImageSize.Width, ImageSize.Height);
+            }
+        }
+    }
+
+    #endregion
+    #region  Label
+
+    public class Discord_Label : Label {
+
+        public Discord_Label() {
+            Font = new Font("Segoe UI", 9);
+            ForeColor = Color.FromArgb(153, 170, 181);
+            BackColor = Color.Transparent;
+        }
+    }
+
+    #endregion
+    #region  Link Label
+    public class Discord_LinkLabel : LinkLabel {
+
+        public Discord_LinkLabel() {
+            Font = new Font("Segoe UI", 9, FontStyle.Regular);
+            BackColor = Color.Transparent;
+            LinkColor = Color.FromArgb(114, 137, 218);
+            ActiveLinkColor = Color.FromArgb(91, 110, 174);
+            VisitedLinkColor = Color.FromArgb(114, 137, 218);
+            LinkBehavior = LinkBehavior.NeverUnderline;
+        }
+    }
+
+    #endregion
+    #region  Header Label
+
+    public class Discord_HeaderLabel : Label {
+
+        public Discord_HeaderLabel() {
+            Font = new Font("Segoe UI", 11, FontStyle.Bold);
+            ForeColor = Color.FromArgb(255, 255, 255);
+            BackColor = Color.Transparent;
+        }
+    }
+
+    #endregion
+    #region  Toggle Button
+
+    [DefaultEvent("ToggledChanged")]
+    public class Discord_Toggle : Control {
+
+        #region  Enums
+
+        public enum _Type {
+            CheckMark,
+            OnOff,
+            YesNo,
+            IO
+        }
+
+        #endregion
+        #region  Variables
+
+        public delegate void ToggledChangedEventHandler();
+        private ToggledChangedEventHandler ToggledChangedEvent;
+
+        public event ToggledChangedEventHandler ToggledChanged {
+            add {
+                ToggledChangedEvent = (ToggledChangedEventHandler)System.Delegate.Combine(ToggledChangedEvent, value);
+            }
+            remove {
+                ToggledChangedEvent = (ToggledChangedEventHandler)System.Delegate.Remove(ToggledChangedEvent, value);
+            }
+        }
+
+        private bool _Toggled;
+        private _Type ToggleType;
+        private Rectangle Bar;
+        private int _Width;
+        private int _Height;
+
+        #endregion
+        #region  Properties
+
+        public bool Toggled {
+            get {
+                return _Toggled;
+            }
+            set {
+                _Toggled = value;
+                Invalidate();
+                ToggledChangedEvent.Invoke();
+            }
+        }
+
+        public _Type Type {
+            get {
+                return ToggleType;
+            }
+            set {
+                ToggleType = value;
+                Invalidate();
+            }
+        }
+
+        #endregion
+        #region  EventArgs
+
+        protected override void OnResize(EventArgs e) {
+            base.OnResize(e);
+            this.Size = new Size(76, 33);
+        }
+
+        protected override void OnMouseUp(System.Windows.Forms.MouseEventArgs e) {
+            base.OnMouseUp(e);
+            Toggled = !Toggled;
+            Focus();
+        }
+
+        #endregion
+
+        public Discord_Toggle() {
+            SetStyle((System.Windows.Forms.ControlStyles)(ControlStyles.AllPaintingInWmPaint | ControlStyles.DoubleBuffer | ControlStyles.ResizeRedraw | ControlStyles.UserPaint), true);
+        }
+
+        protected override void OnPaint(System.Windows.Forms.PaintEventArgs e) {
+            base.OnPaint(e);
+            System.Drawing.Graphics G = e.Graphics;
+
+            G.SmoothingMode = SmoothingMode.HighQuality;
+            G.Clear(Parent.BackColor);
+            _Width = Width - 1;
+            _Height = Height - 1;
+
+            GraphicsPath GP = default(GraphicsPath);
+            GraphicsPath GP2 = new GraphicsPath();
+            Rectangle BaseRect = new Rectangle(0, 0, _Width, _Height);
+            Rectangle ThumbRect = new Rectangle(_Width / 2, 0, 38, _Height);
+
+            G.SmoothingMode = (System.Drawing.Drawing2D.SmoothingMode)2;
+            G.PixelOffsetMode = (System.Drawing.Drawing2D.PixelOffsetMode)2;
+            G.TextRenderingHint = (System.Drawing.Text.TextRenderingHint)5;
+            G.Clear(BackColor);
+
+            GP = RoundRectangle.RoundRect(BaseRect, 4);
+            ThumbRect = new Rectangle(4, 4, 36, _Height - 8);
+            GP2 = RoundRectangle.RoundRect(ThumbRect, 4);
+            G.FillPath(new SolidBrush(Color.FromArgb(35, 39, 42)), GP);
+            G.FillPath(new SolidBrush(Color.FromArgb(44, 47, 51)), GP2);
+
+            if (_Toggled) {
+                GP = RoundRectangle.RoundRect(BaseRect, 4);
+                ThumbRect = new Rectangle((_Width / 2) - 2, 4, 36, _Height - 8);
+                GP2 = RoundRectangle.RoundRect(ThumbRect, 4);
+                G.FillPath(new SolidBrush(Color.FromArgb(114, 137, 218)), GP);
+                G.FillPath(new SolidBrush(Color.FromArgb(44, 47, 51)), GP2);
+            }
+
+            // Draw string
+            switch (ToggleType) {
+                case _Type.CheckMark:
+                    if (Toggled) {
+                        G.DrawString("ü", new Font("Wingdings", 18, FontStyle.Regular), Brushes.WhiteSmoke, Bar.X + 18, Bar.Y + 19, new StringFormat() { Alignment = StringAlignment.Center, LineAlignment = StringAlignment.Center });
+                    } else {
+                        G.DrawString("r", new Font("Marlett", 14, FontStyle.Regular), Brushes.DimGray, Bar.X + 59, Bar.Y + 18, new StringFormat() { Alignment = StringAlignment.Center, LineAlignment = StringAlignment.Center });
+                    }
+                    break;
+                case _Type.OnOff:
+                    if (Toggled) {
+                        G.DrawString("ON", new Font("Segoe UI", 12, FontStyle.Regular), Brushes.WhiteSmoke, Bar.X + 18, Bar.Y + 16, new StringFormat() { Alignment = StringAlignment.Center, LineAlignment = StringAlignment.Center });
+                    } else {
+                        G.DrawString("OFF", new Font("Segoe UI", 12, FontStyle.Regular), Brushes.DimGray, Bar.X + 57, Bar.Y + 16, new StringFormat() { Alignment = StringAlignment.Center, LineAlignment = StringAlignment.Center });
+                    }
+                    break;
+                case _Type.YesNo:
+                    if (Toggled) {
+                        G.DrawString("YES", new Font("Segoe UI", 12, FontStyle.Regular), Brushes.WhiteSmoke, Bar.X + 19, Bar.Y + 16, new StringFormat() { Alignment = StringAlignment.Center, LineAlignment = StringAlignment.Center });
+                    } else {
+                        G.DrawString("NO", new Font("Segoe UI", 12, FontStyle.Regular), Brushes.DimGray, Bar.X + 56, Bar.Y + 16, new StringFormat() { Alignment = StringAlignment.Center, LineAlignment = StringAlignment.Center });
+                    }
+                    break;
+                case _Type.IO:
+                    if (Toggled) {
+                        G.DrawString("I", new Font("Segoe UI", 12, FontStyle.Regular), Brushes.WhiteSmoke, Bar.X + 18, Bar.Y + 16, new StringFormat() { Alignment = StringAlignment.Center, LineAlignment = StringAlignment.Center });
+                    } else {
+                        G.DrawString("O", new Font("Segoe UI", 12, FontStyle.Regular), Brushes.DimGray, Bar.X + 57, Bar.Y + 16, new StringFormat() { Alignment = StringAlignment.Center, LineAlignment = StringAlignment.Center });
+                    }
+                    break;
+            }
+        }
+    }
+
+    #endregion
+    #region  CheckBox
+
+    [DefaultEvent("CheckedChanged")]
+    public class Discord_CheckBox : Control {
+
+        #region  Variables
+
+        private int X;
+        private bool _Checked = false;
+        private GraphicsPath Shape;
+
+        #endregion
+        #region  Properties
+
+        public bool Checked {
+            get {
+                return _Checked;
+            }
+            set {
+                _Checked = value;
+                Invalidate();
+            }
+        }
+
+        #endregion
+        #region  EventArgs
+
+        public delegate void CheckedChangedEventHandler(object sender);
+        private CheckedChangedEventHandler CheckedChangedEvent;
+
+        public event CheckedChangedEventHandler CheckedChanged {
+            add {
+                CheckedChangedEvent = (CheckedChangedEventHandler)System.Delegate.Combine(CheckedChangedEvent, value);
+            }
+            remove {
+                CheckedChangedEvent = (CheckedChangedEventHandler)System.Delegate.Remove(CheckedChangedEvent, value);
+            }
+        }
+
+
+        protected override void OnMouseMove(System.Windows.Forms.MouseEventArgs e) {
+            base.OnMouseMove(e);
+            X = e.Location.X;
+            Invalidate();
+        }
+        protected override void OnMouseDown(System.Windows.Forms.MouseEventArgs e) {
+            _Checked = !_Checked;
+            Focus();
+            CheckedChangedEvent.Invoke(this);
+            base.OnMouseDown(e);
+        }
+
+        protected override void OnResize(EventArgs e) {
+            base.OnResize(e);
+
+            this.Height = 16;
+
+            Shape = new GraphicsPath();
+            Shape.AddArc(0, 0, 10, 10, 180, 90);
+            Shape.AddArc(Width - 11, 0, 10, 10, -90, 90);
+            Shape.AddArc(Width - 11, Height - 11, 10, 10, 0, 90);
+            Shape.AddArc(0, Height - 11, 10, 10, 90, 90);
+            Shape.CloseAllFigures();
+            Invalidate();
+        }
+
+        #endregion
+
+        public Discord_CheckBox() {
+            Width = 148;
+            Height = 16;
+            Font = new Font("Microsoft Sans Serif", 9);
+            DoubleBuffered = true;
+        }
+
+        protected override void OnPaint(PaintEventArgs e) {
+            base.OnPaint(e);
+            Graphics G = e.Graphics;
+            G.Clear(Parent.BackColor);
+
+            if (_Checked) {
+                G.FillRectangle(new SolidBrush(Color.FromArgb(35, 39, 42)), new Rectangle(0, 0, 16, 16));
+                G.FillRectangle(new SolidBrush(Color.FromArgb(35, 39, 42)), new Rectangle(1, 1, 16 - 2, 16 - 2));
+            } else {
+                G.FillRectangle(new SolidBrush(Color.FromArgb(35, 39, 42)), new Rectangle(0, 0, 16, 16));
+                G.FillRectangle(new SolidBrush(Color.FromArgb(35, 39, 42)), new Rectangle(1, 1, 16 - 2, 16 - 2));
+            }
+
+            if (Enabled == true) {
+                if (_Checked) {
+                    G.DrawString("a", new Font("Marlett", 16), new SolidBrush(Color.FromArgb(114, 137, 218)), new Point(-5, -3));
+                }
+            } else {
+                if (_Checked) {
+                    G.DrawString("a", new Font("Marlett", 16), new SolidBrush(Color.Gray), new Point(-5, -3));
+                }
+            }
+
+            G.DrawString(Text, Font, new SolidBrush(Color.FromArgb(153, 170, 181)), new Point(20, 0));
+        }
+    }
+    #endregion
+    #region  Radio Button
+
+    [DefaultEvent("CheckedChanged")]
+    public class Discord_RadioButton : Control {
+
+        #region  Variables
+
+        private int X;
+        private bool _Checked;
+
+        #endregion
+        #region  Properties
+
+        public bool Checked {
+            get {
+                return _Checked;
+            }
+            set {
+                _Checked = value;
+                InvalidateControls();
+                CheckedChangedEvent.Invoke(this);
+                Invalidate();
+            }
+        }
+
+        #endregion
+        #region  EventArgs
+
+        public delegate void CheckedChangedEventHandler(object sender);
+        private CheckedChangedEventHandler CheckedChangedEvent;
+
+        public event CheckedChangedEventHandler CheckedChanged {
+            add {
+                CheckedChangedEvent = (CheckedChangedEventHandler)System.Delegate.Combine(CheckedChangedEvent, value);
+            }
+            remove {
+                CheckedChangedEvent = (CheckedChangedEventHandler)System.Delegate.Remove(CheckedChangedEvent, value);
+            }
+        }
+
+
+        protected override void OnMouseDown(System.Windows.Forms.MouseEventArgs e) {
+            if (!_Checked) {
+                @Checked = true;
+            }
+            Focus();
+            base.OnMouseDown(e);
+        }
+        protected override void OnMouseMove(System.Windows.Forms.MouseEventArgs e) {
+            base.OnMouseMove(e);
+            X = e.X;
+            Invalidate();
+        }
+        protected override void OnTextChanged(System.EventArgs e) {
+            base.OnTextChanged(e);
+            int textSize = 0;
+            textSize = (int)(this.CreateGraphics().MeasureString(Text, Font).Width);
+            this.Width = 28 + textSize;
+        }
+
+        protected override void OnResize(EventArgs e) {
+            base.OnResize(e);
+            this.Height = 17;
+        }
+
+        #endregion
+
+        public Discord_RadioButton() {
+            Width = 159;
+            Height = 17;
+            DoubleBuffered = true;
+        }
+
+        private void InvalidateControls() {
+            if (!IsHandleCreated || !_Checked) {
+                return;
+            }
+
+            foreach (Control _Control in Parent.Controls) {
+                if (_Control != this &amp;&amp; _Control is Discord_RadioButton) {
+                    ((Discord_RadioButton)_Control).Checked = false;
+                }
+            }
+        }
+
+        protected override void OnPaint(PaintEventArgs e) {
+            base.OnPaint(e);
+            Graphics G = e.Graphics;
+            G.Clear(Parent.BackColor);
+            G.SmoothingMode = SmoothingMode.HighQuality;
+
+            G.FillEllipse(new SolidBrush(Color.FromArgb(35, 39, 42)), new Rectangle(0, 0, 16, 16));
+
+            if (_Checked) {
+                G.DrawString("a", new Font("Marlett", 15), new SolidBrush(Color.FromArgb(114, 137, 218)), new Point(-3, -2));
+            }
+
+            G.DrawString(Text, Font, new SolidBrush(Color.FromArgb(153, 170, 181)), new Point(20, 0));
+        }
+    }
+
+    #endregion
+    #region  TextBox
+
+    [DefaultEvent("TextChanged")]
+    public class Discord_TextBox : Control {
+
+        #region  Variables
+
+        public TextBox DiscordTB = new TextBox();
+        private int _maxchars = 32767;
+        private bool _ReadOnly;
+        private bool _Multiline;
+        private Image _Image;
+        private Size _ImageSize;
+        private HorizontalAlignment ALNType;
+        private bool isPasswordMasked = false;
+        private Pen P1;
+        private SolidBrush B1;
+        private GraphicsPath Shape;
+
+        #endregion
+        #region  Properties
+
+        public HorizontalAlignment TextAlignment {
+            get {
+                return ALNType;
+            }
+            set {
+                ALNType = value;
+                Invalidate();
+            }
+        }
+        public int MaxLength {
+            get {
+                return _maxchars;
+            }
+            set {
+                _maxchars = value;
+                DiscordTB.MaxLength = MaxLength;
+                Invalidate();
+            }
+        }
+
+        public bool UseSystemPasswordChar {
+            get {
+                return isPasswordMasked;
+            }
+            set {
+                DiscordTB.UseSystemPasswordChar = UseSystemPasswordChar;
+                isPasswordMasked = value;
+                Invalidate();
+            }
+        }
+        public bool ReadOnly {
+            get {
+                return _ReadOnly;
+            }
+            set {
+                _ReadOnly = value;
+                if (DiscordTB != null) {
+                    DiscordTB.ReadOnly = value;
+                }
+            }
+        }
+        public bool Multiline {
+            get {
+                return _Multiline;
+            }
+            set {
+                _Multiline = value;
+                if (DiscordTB != null) {
+                    DiscordTB.Multiline = value;
+
+                    if (value) {
+                        DiscordTB.Height = Height - 23;
+                    } else {
+                        Height = DiscordTB.Height + 23;
+                    }
+                }
+            }
+        }
+
+        public Image Image {
+            get {
+                return _Image;
+            }
+            set {
+                if (value == null) {
+                    _ImageSize = Size.Empty;
+                } else {
+                    _ImageSize = value.Size;
+                }
+
+                _Image = value;
+
+                if (Image == null) {
+                    DiscordTB.Location = new Point(8, 10);
+                } else {
+                    DiscordTB.Location = new Point(35, 11);
+                }
+                Invalidate();
+            }
+        }
+
+        protected Size ImageSize {
+            get {
+                return _ImageSize;
+            }
+        }
+
+        #endregion
+        #region  EventArgs
+
+        private void _Enter(object Obj, EventArgs e) {
+            P1 = new Pen(Color.FromArgb(114, 137, 218));
+            Refresh();
+        }
+
+        private void _Leave(object Obj, EventArgs e) {
+            P1 = new Pen(Color.FromArgb(44, 47, 51));
+            Refresh();
+        }
+
+        private void OnBaseTextChanged(object s, EventArgs e) {
+            Text = DiscordTB.Text;
+        }
+
+        protected override void OnTextChanged(System.EventArgs e) {
+            base.OnTextChanged(e);
+            DiscordTB.Text = Text;
+            Invalidate();
+        }
+
+        protected override void OnForeColorChanged(System.EventArgs e) {
+            base.OnForeColorChanged(e);
+            DiscordTB.ForeColor = ForeColor;
+            Invalidate();
+        }
+
+        protected override void OnFontChanged(System.EventArgs e) {
+            base.OnFontChanged(e);
+            DiscordTB.Font = Font;
+        }
+
+        protected override void OnPaintBackground(PaintEventArgs e) {
+            base.OnPaintBackground(e);
+        }
+
+        private void _OnKeyDown(object Obj, KeyEventArgs e) {
+            if (e.Control &amp;&amp; e.KeyCode == Keys.A) {
+                DiscordTB.SelectAll();
+                e.SuppressKeyPress = true;
+            }
+            if (e.Control &amp;&amp; e.KeyCode == Keys.C) {
+                DiscordTB.Copy();
+                e.SuppressKeyPress = true;
+            }
+        }
+
+        protected override void OnResize(System.EventArgs e) {
+            base.OnResize(e);
+            if (_Multiline) {
+                DiscordTB.Height = Height - 23;
+            } else {
+                Height = DiscordTB.Height + 23;
+            }
+
+            Shape = new GraphicsPath();
+            Shape.AddArc(0, 0, 10, 10, 180, 90);
+            Shape.AddArc(Width - 11, 0, 10, 10, -90, 90);
+            Shape.AddArc(Width - 11, Height - 11, 10, 10, 0, 90);
+            Shape.AddArc(0, Height - 11, 10, 10, 90, 90);
+            Shape.CloseAllFigures();
+        }
+
+        protected override void OnGotFocus(System.EventArgs e) {
+            base.OnGotFocus(e);
+            DiscordTB.Focus();
+        }
+
+        public void _TextChanged(System.Object sender, System.EventArgs e) {
+            Text = DiscordTB.Text;
+        }
+
+        public void _BaseTextChanged(System.Object sender, System.EventArgs e) {
+            DiscordTB.Text = Text;
+        }
+
+        #endregion
+
+        public void AddTextBox() {
+            DiscordTB.Location = new Point(8, 10);
+            DiscordTB.Text = String.Empty;
+            DiscordTB.BorderStyle = BorderStyle.None;
+            DiscordTB.TextAlign = HorizontalAlignment.Left;
+            DiscordTB.Font = new Font("Tahoma", 11);
+            DiscordTB.UseSystemPasswordChar = UseSystemPasswordChar;
+            DiscordTB.Multiline = false;
+            DiscordTB.BackColor = Color.FromArgb(35, 39, 42);
+            DiscordTB.ScrollBars = ScrollBars.None;
+            DiscordTB.KeyDown += _OnKeyDown;
+            DiscordTB.Enter += _Enter;
+            DiscordTB.Leave += _Leave;
+            DiscordTB.TextChanged += OnBaseTextChanged;
+        }
+
+        public Discord_TextBox() {
+            SetStyle(ControlStyles.SupportsTransparentBackColor, true);
+            SetStyle(ControlStyles.UserPaint, true);
+
+            AddTextBox();
+            Controls.Add(DiscordTB);
+
+            P1 = new Pen(Color.FromArgb(44, 47, 51));
+            B1 = new SolidBrush(Color.FromArgb(35, 39, 42));
+            BackColor = Color.Transparent;
+            ForeColor = Color.FromArgb(176, 183, 191);
+
+            Text = null;
+            Font = new Font("Tahoma", 11);
+            Size = new Size(135, 43);
+            DoubleBuffered = true;
+        }
+
+        protected override void OnPaint(System.Windows.Forms.PaintEventArgs e) {
+            base.OnPaint(e);
+            Bitmap B = new Bitmap(Width, Height);
+            Graphics G = Graphics.FromImage(B);
+
+            G.SmoothingMode = SmoothingMode.AntiAlias;
+
+
+            if (Image == null) {
+                DiscordTB.Width = Width - 18;
+            } else {
+                DiscordTB.Width = Width - 45;
+            }
+
+            DiscordTB.TextAlign = TextAlignment;
+            DiscordTB.UseSystemPasswordChar = UseSystemPasswordChar;
+
+            G.Clear(Color.Transparent);
+
+            G.FillPath(B1, Shape);
+            G.DrawPath(P1, Shape);
+
+            if (Image != null) {
+                G.DrawImage(_Image, 5, 8, 24, 24);
+                // 24x24 is the perfect size of the image
+            }
+
+            e.Graphics.DrawImage((Image)(B.Clone()), 0, 0);
+            G.Dispose();
+            B.Dispose();
+        }
+    }
+
+    #endregion
+    #region  Panel
+
+    public class Discord_Panel : ContainerControl {
+
+        private GraphicsPath Shape;
+
+        public Discord_Panel() {
+            SetStyle(ControlStyles.SupportsTransparentBackColor, true);
+            SetStyle(ControlStyles.UserPaint, true);
+
+            BackColor = Color.FromArgb(44, 47, 51);
+            this.Size = new Size(187, 117);
+            Padding = new Padding(5, 5, 5, 5);
+            DoubleBuffered = true;
+        }
+
+        protected override void OnResize(System.EventArgs e) {
+            base.OnResize(e);
+
+            Shape = new GraphicsPath();
+            Shape.AddArc(0, 0, 10, 10, 180, 90);
+            Shape.AddArc(Width - 11, 0, 10, 10, -90, 90);
+            Shape.AddArc(Width - 11, Height - 11, 10, 10, 0, 90);
+            Shape.AddArc(0, Height - 11, 10, 10, 90, 90);
+            Shape.CloseAllFigures();
+        }
+
+        protected override void OnPaint(System.Windows.Forms.PaintEventArgs e) {
+            base.OnPaint(e);
+            Bitmap B = new Bitmap(Width, Height);
+            var G = Graphics.FromImage(B);
+
+            G.SmoothingMode = SmoothingMode.HighQuality;
+            //47, 49, 54
+            G.Clear(Color.FromArgb(44, 47, 51)); // Set control background to transparent
+            G.FillPath(new SolidBrush(Color.FromArgb(44, 47, 51)), Shape); // Draw RTB background
+            G.DrawPath(new Pen(Color.FromArgb(47, 49, 54)), Shape); // Draw border
+
+            G.Dispose();
+            e.Graphics.DrawImage((Image)(B.Clone()), 0, 0);
+            B.Dispose();
+        }
+    }
+
+    #endregion
+    #region  Separator
+
+    public class Discord_Separator : Control {
+
+        public Discord_Separator() {
+            SetStyle(ControlStyles.ResizeRedraw, true);
+            this.Size = (System.Drawing.Size)(new Point(120, 10));
+        }
+
+        protected override void OnPaint(System.Windows.Forms.PaintEventArgs e) {
+            base.OnPaint(e);
+            e.Graphics.DrawLine(new Pen(Color.FromArgb(153, 170, 181)), 0, 5, Width, 5);
+        }
+    }
+
+    #endregion
+    #region  TrackBar
+
+    [DefaultEvent("ValueChanged")]
+    public class Discord_TrackBar : Control {
+
+        #region  Enums
+
+        public enum ValueDivisor {
+            By1 = 1,
+            By10 = 10,
+            By100 = 100,
+            By1000 = 1000
+        }
+
+        #endregion
+        #region  Variables
+
+        private Rectangle FillValue;
+        private Rectangle PipeBorder;
+        private Rectangle TrackBarHandleRect;
+        private bool Cap;
+        private int ValueDrawer;
+
+        private Size ThumbSize = new Size(14, 14);
+        private Rectangle TrackThumb;
+
+        private int _Minimum = 0;
+        private int _Maximum = 10;
+        private int _Value = 0;
+
+        private bool _JumpToMouse = false;
+        private ValueDivisor DividedValue = ValueDivisor.By1;
+
+        #endregion
+        #region  Properties
+
+        public int Minimum {
+            get {
+                return _Minimum;
+            }
+            set {
+
+                if (value &gt;= _Maximum) {
+                    value = _Maximum - 10;
+                }
+                if (_Value &lt; value) {
+                    _Value = value;
+                }
+
+                _Minimum = value;
+                Invalidate();
+            }
+        }
+
+        public int Maximum {
+            get {
+                return _Maximum;
+            }
+            set {
+
+                if (value &lt;= _Minimum) {
+                    value = _Minimum + 10;
+                }
+                if (_Value &gt; value) {
+                    _Value = value;
+                }
+
+                _Maximum = value;
+                Invalidate();
+            }
+        }
+
+        public delegate void ValueChangedEventHandler();
+        private ValueChangedEventHandler ValueChangedEvent;
+
+        public event ValueChangedEventHandler ValueChanged {
+            add {
+                ValueChangedEvent = (ValueChangedEventHandler)System.Delegate.Combine(ValueChangedEvent, value);
+            }
+            remove {
+                ValueChangedEvent = (ValueChangedEventHandler)System.Delegate.Remove(ValueChangedEvent, value);
+            }
+        }
+
+        public int Value {
+            get {
+                return _Value;
+            }
+            set {
+                if (_Value != value) {
+                    if (value &lt; _Minimum) {
+                        _Value = _Minimum;
+                    } else {
+                        if (value &gt; _Maximum) {
+                            _Value = _Maximum;
+                        } else {
+                            _Value = value;
+                        }
+                    }
+                    Invalidate();
+                    ValueChangedEvent.Invoke();
+                }
+            }
+        }
+
+        public ValueDivisor ValueDivison {
+            get {
+                return DividedValue;
+            }
+            set {
+                DividedValue = value;
+                Invalidate();
+            }
+        }
+
+        [Browsable(false)]
+        public float ValueToSet {
+            get {
+                return _Value / (int)DividedValue;
+            }
+            set {
+                Value = (int)(value * (int)DividedValue);
+            }
+        }
+
+        public bool JumpToMouse {
+            get {
+                return _JumpToMouse;
+            }
+            set {
+                _JumpToMouse = value;
+                Invalidate();
+            }
+        }
+
+        #endregion
+        #region  EventArgs
+
+        protected override void OnMouseMove(MouseEventArgs e) {
+            base.OnMouseMove(e);
+            checked {
+                bool flag = this.Cap &amp;&amp; e.X &gt; -1 &amp;&amp; e.X &lt; this.Width + 1;
+                if (flag) {
+                    this.Value = this._Minimum + (int)Math.Round((double)(this._Maximum - this._Minimum) * ((double)e.X / (double)this.Width));
+                }
+            }
+        }
+
+        protected override void OnMouseDown(MouseEventArgs e) {
+            base.OnMouseDown(e);
+            if (e.Button == MouseButtons.Left) {
+                this.ValueDrawer = (int)Math.Round(((double)(this._Value - this._Minimum) / (double)(this._Maximum - this._Minimum)) * (double)(this.Width - 11));
+                TrackBarHandleRect = new Rectangle(ValueDrawer, 0, 25, 25);
+                Cap = TrackBarHandleRect.Contains(e.Location);
+                Focus();
+                if (_JumpToMouse) {
+                    this.Value = this._Minimum + (int)Math.Round((double)(this._Maximum - this._Minimum) * ((double)e.X / (double)this.Width));
+                }
+            }
+        }
+
+        protected override void OnMouseUp(MouseEventArgs e) {
+            base.OnMouseUp(e);
+            Cap = false;
+        }
+
+        #endregion
+
+        public Discord_TrackBar() {
+            SetStyle((System.Windows.Forms.ControlStyles)(ControlStyles.AllPaintingInWmPaint | ControlStyles.UserPaint | ControlStyles.ResizeRedraw | ControlStyles.DoubleBuffer), true);
+
+            Size = new Size(80, 22);
+            MinimumSize = new Size(47, 22);
+        }
+
+        protected override void OnResize(EventArgs e) {
+            base.OnResize(e);
+            Height = 22;
+        }
+
+        protected override void OnPaint(System.Windows.Forms.PaintEventArgs e) {
+            base.OnPaint(e);
+            Graphics G = e.Graphics;
+
+            G.Clear(BackColor);
+            G.SmoothingMode = SmoothingMode.AntiAlias;
+            TrackThumb = new Rectangle(7, 10, Width - 16, 2);
+            PipeBorder = new Rectangle(1, 10, Width - 3, 2);
+
+            try {
+                this.ValueDrawer = (int)Math.Round(((double)(this._Value - this._Minimum) / (double)(this._Maximum - this._Minimum)) * (double)(this.Width));
+            } catch (Exception) {
+            }
+
+            TrackBarHandleRect = new Rectangle(ValueDrawer, 0, 3, 20);
+
+            G.FillRectangle(new SolidBrush(Color.FromArgb(124, 131, 137)), PipeBorder);
+            FillValue = new Rectangle(0, 10, TrackBarHandleRect.X + TrackBarHandleRect.Width - 4, 3);
+
+            G.ResetClip();
+
+            G.SmoothingMode = SmoothingMode.Default;
+            G.DrawRectangle(new Pen(Color.FromArgb(124, 131, 137)), PipeBorder); // Draw pipe border
+            G.FillRectangle(new SolidBrush(Color.FromArgb(114, 137, 218)), FillValue);
+
+            G.ResetClip();
+
+            G.SmoothingMode = SmoothingMode.HighQuality;
+
+            G.FillEllipse(new SolidBrush(Color.FromArgb(114, 137, 218)), this.TrackThumb.X + (int)Math.Round(unchecked((double)this.TrackThumb.Width * ((double)this.Value / (double)this.Maximum))) - (int)Math.Round((double)this.ThumbSize.Width / 2.0), this.TrackThumb.Y + (int)Math.Round((double)this.TrackThumb.Height / 2.0) - (int)Math.Round((double)this.ThumbSize.Height / 2.0), this.ThumbSize.Width, this.ThumbSize.Height);
+            G.DrawEllipse(new Pen(Color.FromArgb(114, 137, 218)), this.TrackThumb.X + (int)Math.Round(unchecked((double)this.TrackThumb.Width * ((double)this.Value / (double)this.Maximum))) - (int)Math.Round((double)this.ThumbSize.Width / 2.0), this.TrackThumb.Y + (int)Math.Round((double)this.TrackThumb.Height / 2.0) - (int)Math.Round((double)this.ThumbSize.Height / 2.0), this.ThumbSize.Width, this.ThumbSize.Height);
+        }
+    }
+
+    #endregion
+
+}</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="DiscordTitle" type="System.Byte[], mscorlib">
+    <value>
+        T1RUTwAJAIAAAwAQQ0ZGIIOZIiUAABJkAACiGE9TLzJqV+f6AAABAAAAAGBjbWFw1nndowAACMAAAAmE
+        aGVhZGJxQ24AAACcAAAANmhoZWEGwwNeAAAA1AAAACRobXR4powAAAAAtHwAAASwbWF4cAEsUAAAAAD4
+        AAAABm5hbWVOOzXmAAABYAAAB19wb3N0AAMAAAAAEkQAAAAgAAEAAAABAACfrud0Xw889QADA+gAAAAA
+        AAAAAAAAAAAAAAAA/8f+xAOTA8oAAAADAAIAAAAAAAAAAQAAAvT/DAAAA5MAAP+SA8wAAQAAAAAAAAAA
+        AAAAAAAAASwAAFAAASwAAAADAkMB9AAFAAACigK7AAAAjAKKArsAAAHfADEBAgAAAAAAAAAAAAAAAIAA
+        AA8AAAAAAAAAAAAAAABYWFhYAEAAAAIbAvT/DAAAA8oBPAAAAAEAAAAAAsQCxAAgACAAAAAAACIBngAB
+        AAAAAAAAAGAC0wABAAAAAAABAAcAAAABAAAAAAACAAcAFQABAAAAAAADAEQE9QABAAAAAAAEAA8AKgAB
+        AAAAAAAFAA0BjAABAAAAAAAGAA4AVwABAAAAAAAHAFYD8wABAAAAAAAIADQA8AABAAAAAAAJAA8AgQAB
+        AAAAAAAKAGABswABAAAAAAALAAEAAgABAAAAAAAMABYArgABAAAAAAANAAEAAgABAAAAAAAOAAEAAgAB
+        AAAAAAAQAAcAAAABAAAAAAARAAcAFQADAAEECQAAAMADMwADAAEECQABAA4ABwADAAEECQACAA4AHAAD
+        AAEECQADAIgFOQADAAEECQAEAB4AOQADAAEECQAFABoBmQADAAEECQAGABwAZQADAAEECQAHAKwESQAD
+        AAEECQAIAGgBJAADAAEECQAJAB4AkAADAAEECQAKAMACEwADAAEECQALAAIACwADAAEECQAMACwAxAAD
+        AAEECQANAAIACwADAAEECQAOAAIACwADAAEECQAQAA4ABwADAAEECQARAA4AHE15IEZvbnQATQB5ACAA
+        RgBvAG4AdFJlZ3VsYXIAUgBlAGcAdQBsAGEAck15IEZvbnQgUmVndWxhcgBNAHkAIABGAG8AbgB0ACAA
+        UgBlAGcAdQBsAGEAck15IEZvbnRSZWd1bGFyAE0AeQAgAEYAbwBuAHQAUgBlAGcAdQBsAGEAclN2ZXRv
+        c2xhdiBTaW1vdgBTAHYAZQB0AG8AcwBsAGEAdgAgAFMAaQBtAG8Admh0dHA6Ly9mb250ZmFicmljLmNv
+        bS8AaAB0AHQAcAA6AC8ALwBmAG8AbgB0AGYAYQBiAHIAaQBjAC4AYwBvAG0AL6kgMjAwOSBEZXNpZ25l
+        ZCBieSBTdmV0b3NsYXYgU2ltb3YgqSBGb250ZmFicmljLCBJbmMAqQAgADIAMAAwADkAIABEAGUAcwBp
+        AGcAbgBlAGQAIABiAHkAIABTAHYAZQB0AG8AcwBsAGEAdgAgAFMAaQBtAG8AdgAgAKkAIABGAG8AbgB0
+        AGYAYQBiAHIAaQBjACwAIABJAG4AY1ZlcnNpb24gMC4wMDEAVgBlAHIAcwBpAG8AbgAgADAALgAwADAA
+        MUNvcHlyaWdodCAoYykgMjAwMiBieSCpIDIwMDkgRGVzaWduZWQgYnkgU3ZldG9zbGF2IFNpbW92IKkg
+        Rm9udGZhYnJpYywgSW5jLiBBbGwgcmlnaHRzIHJlc2VydmVkLgBDAG8AcAB5AHIAaQBnAGgAdAAgACgA
+        YwApACAAMgAwADAAMgAgAGIAeQAgAKkAIAAyADAAMAA5ACAARABlAHMAaQBnAG4AZQBkACAAYgB5ACAA
+        UwB2AGUAdABvAHMAbABhAHYAIABTAGkAbQBvAHYAIACpACAARgBvAG4AdABmAGEAYgByAGkAYwAsACAA
+        SQBuAGMALgAgAEEAbABsACAAcgBpAGcAaAB0AHMAIAByAGUAcwBlAHIAdgBlAGQALkNvcHlyaWdodCAo
+        YykgMjAxNCBieSCpIDIwMDkgRGVzaWduZWQgYnkgU3ZldG9zbGF2IFNpbW92IKkgRm9udGZhYnJpYywg
+        SW5jLiBBbGwgcmlnaHRzIHJlc2VydmVkLgBDAG8AcAB5AHIAaQBnAGgAdAAgACgAYwApACAAMgAwADEA
+        NAAgAGIAeQAgAKkAIAAyADAAMAA5ACAARABlAHMAaQBnAG4AZQBkACAAYgB5ACAAUwB2AGUAdABvAHMA
+        bABhAHYAIABTAGkAbQBvAHYAIACpACAARgBvAG4AdABmAGEAYgByAGkAYwAsACAASQBuAGMALgAgAEEA
+        bABsACAAcgBpAGcAaAB0AHMAIAByAGUAcwBlAHIAdgBlAGQALlVuaSBTYW5zIEhlYXZ5IGlzIGEgdHJh
+        ZGVtYXJrIG9mIKkgMjAwOSBEZXNpZ25lZCBieSBTdmV0b3NsYXYgU2ltb3YgqSBGb250ZmFicmljLCBJ
+        bmMuAFUAbgBpACAAUwBhAG4AcwAgAEgAZQBhAHYAeQAgAGkAcwAgAGEAIAB0AHIAYQBkAGUAbQBhAHIA
+        awAgAG8AZgAgAKkAIAAyADAAMAA5ACAARABlAHMAaQBnAG4AZQBkACAAYgB5ACAAUwB2AGUAdABvAHMA
+        bABhAHYAIABTAGkAbQBvAHYAIACpACAARgBvAG4AdABmAGEAYgByAGkAYwAsACAASQBuAGMALqkgMjAw
+        OSBEZXNpZ25lZCBieSBTdmV0b3NsYXYgU2ltb3YgqSBGb250ZmFicmljLCBJbmM6TXkgRm9udCBSZWd1
+        bGFyAKkAIAAyADAAMAA5ACAARABlAHMAaQBnAG4AZQBkACAAYgB5ACAAUwB2AGUAdABvAHMAbABhAHYA
+        IABTAGkAbQBvAHYAIACpACAARgBvAG4AdABmAGEAYgByAGkAYwAsACAASQBuAGMAOgBNAHkAIABGAG8A
+        bgB0ACAAUgBlAGcAdQBsAGEAcgAAAAABAAMAAQAAAAwABAl4AAACWgIAAAgAWgAAACAAIQAiACMAJAAl
+        ACYAJwAoACkAKgArACwALQAuAC8AMAAxADIAMwA0ADUANgA3ADgAOQA6ADsAPAA9AD4APwBAAEEAQgBD
+        AEQARQBGAEcASABJAEoASwBMAE0ATgBPAFAAUQBSAFMAVABVAFYAVwBYAFkAWgBbAFwAXQBeAF8AYABh
+        AGIAYwBkAGUAZgBnAGgAaQBqAGsAbABtAG4AbwBwAHEAcgBzAHQAdQB2AHcAeAB5AHoAewB8AH0AfgCg
+        AKEAogCjAKQApQCmAKcAqACpAKoAqwCsAK0ArgCvALAAsQCyALMAtAC1ALYAtwC4ALkAugC7ALwAvQC+
+        AL8AwADBAMIAwwDEAMUAxgDHAMgAyQDKAMsAzADNAM4AzwDQANEA0gDTANQA1QDWANcA2ADZANoA2wDc
+        AN0A3gDfAOAA4QDiAOMA5ADlAOYA5wDoAOkA6gDrAOwA7QDuAO8A8ADxAPIA8wD0APUA9gD3APgA+QD6
+        APsA/AD9AP4A/wEAAQEBAgEDAQQBBQEGAQcBCgELAQwBDQEOAQ8BEAERARIBEwEWARcBGAEZARoBGwEe
+        AR8BIAEhASIBIwEmAScBKgErAS4BLwEwATEBMgEzATYBNwE5AToBOwE8AT0BPgE/AUABQQFCAUMBRAFF
+        AUYBRwFIAUoBSwFMAU0BUAFRAVIBUwFUAVUBVgFXAVgBWQFaAVsBXgFfAWABYQFiAWMBZAFlAWYBZwFq
+        AWsBbgFvAXABcQFyAXMBdAF1AXYBdwF4AXkBegF7AXwBfQF+AZICGAIZAhoCG///AAAAAAAgACEAIgAj
+        ACQAJQAmACcAKAApACoAKwAsAC0ALgAvADAAMQAyADMANAA1ADYANwA4ADkAOgA7ADwAPQA+AD8AQABB
+        AEIAQwBEAEUARgBHAEgASQBKAEsATABNAE4ATwBQAFEAUgBTAFQAVQBWAFcAWABZAFoAWwBcAF0AXgBf
+        AGAAYQBiAGMAZABlAGYAZwBoAGkAagBrAGwAbQBuAG8AcABxAHIAcwB0AHUAdgB3AHgAeQB6AHsAfAB9
+        AH4AoAChAKIAowCkAKUApgCnAKgAqQCqAKsArACtAK4ArwCwALEAsgCzALQAtQC2ALcAuAC5ALoAuwC8
+        AL0AvgC/AMAAwQDCAMMAxADFAMYAxwDIAMkAygDLAMwAzQDOAM8A0ADRANIA0wDUANUA1gDXANgA2QDa
+        ANsA3ADdAN4A3wDgAOEA4gDjAOQA5QDmAOcA6ADpAOoA6wDsAO0A7gDvAPAA8QDyAPMA9AD1APYA9wD4
+        APkA+gD7APwA/QD+AP8BAAEBAQIBAwEEAQUBBgEHAQoBCwEMAQ0BDgEPARABEQESARMBFgEXARgBGQEa
+        ARsBHgEfASABIQEiASMBJgEnASoBKwEuAS8BMAExATIBMwE2ATcBOQE6ATsBPAE9AT4BPwFAAUEBQgFD
+        AUQBRQFGAUcBSAFKAUsBTAFNAVABUQFSAVMBVAFVAVYBVwFYAVkBWgFbAV4BXwFgAWEBYgFjAWQBZQFm
+        AWcBagFrAW4BbwFwAXEBcgFzAXQBdQF2AXcBeAF5AXoBewF8AX0BfgGSAhgCGQIaAhv//wAA/+H/4f/h
+        /+H/4f/h/+H/4f/h/+H/4f/h/+H/4f/h/+H/4f/h/+H/4f/h/+H/4f/h/+H/4f/h/+H/4f/h/+H/4f/h
+        /+H/4f/h/+H/4f/h/+H/4f/h/+H/4f/h/+H/4f/h/+H/4f/h/+H/4f/h/+H/4f/h/+H/4f/h/+H/4f/h
+        /+H/4f/h/+H/4f/h/+H/4f/h/+H/4f/h/+H/4f/h/+H/4f/h/+H/4f/h/+H/4f/h/+H/4f/h/+H/4f/h
+        /+H/4f/A/8D/wP/A/8D/wP/A/8D/wP/A/8D/wP/A/8D/wP/A/8D/wP/A/8D/wP/A/8D/wP/A/8D/wP/A
+        /8D/wP/A/8D/wP/A/8D/wP/A/8D/wP/A/8D/wP/A/8D/wP/A/8D/wP/A/8D/wP/A/8D/wP/A/8D/wP/A
+        /8D/wP/A/8D/wP/A/8D/wP/A/8D/wP/A/8D/wP/A/8D/wP/A/8D/wP/A/8D/wP/A/8D/wP/A/8D/wP/A
+        /8D/wP/A/8D/wP/A/8D/wP/A/8D/wP/A/8D/wP/A/8D/vv++/77/vv++/77/vv++/77/vv+8/7z/vP+8
+        /7z/vP+6/7r/uv+6/7r/uv+4/7j/tv+2/7T/tP+0/7T/tP+0/7L/sv+x/7H/sf+x/7H/sf+x/7H/sf+x
+        /7H/sf+x/7H/sf+x/7D/sP+w/7D/rv+u/67/rv+u/67/rv+u/67/rv+u/67/rP+s/6z/rP+s/6z/rP+s
+        /6z/rP+q/6r/qP+o/6j/qP+o/6j/qP+o/6j/qP+o/6j/qP+o/6j/qP+o/5X/EP8Q/xD/EAABAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEABAEAAQEBD015IEZvbnRSZWd1bGFyAAEBASj4GwD4
+        HAL4HQP4HgSL+9D5iPonBR0AAArRDx0AAA0oEYsdAACiGBIBLwIAAQAOAB0AJAArADAANgA+AEgATgBV
+        AF4AaQByAHwAhACIAI0AkwCZAJ4AogClAKgArQCxALUAuAC9AMIAxgDLANQA2ADdAOQA7ADuAO8A8ADx
+        APIA8wD0APUA9gD3APgA+QD6APsA/AD9AP4A/wEAAQEBAgEDAQQBBQEGAQcBCAETARwBKAEzAT0BQgFD
+        AUQBRQFGAUcBSAFJAUoBSwFMAU0BTgFPAVABUQFSAVMBVAFVAVYBVwFYAVkBWgFbAVwBZQFoAXIBfAGK
+        AZQBmAGgAagBqwG0AbsBwwHMAdcB5AHuAfgCAgIIAg4CFwIlAjUCOgI8AkUCUwJaAmgCdAKCAowCkwKg
+        AqwCsgK4AsMCyQLSAtcC2QLhAucC7QL4AwEDBwMNAxgDIQMkAyoDMAM2A0EDRwNQA1gDXgNkA2oDdQN+
+        A4QDiQOTA5kDnwOqA7ADuQO+A8ADyAPOA9QD3wPoA+4D9AP/BAgECwQRBBcEHQQoBC4ENwQ9BEMESQRP
+        BFoEYwRpBG4EdwR+BIUEiwSRBJgEnwSlBKsEtQS/BMUEywTRBNcE3QTjBOoE8QT7BQUFDAUTBRkFHwUl
+        BSsFNQU/BVMFZwVrBW8FdgV9BYQFiwWVBZ0FnwWhBbUFyQXPBdUF6QX9BgMGCQYNBhEGFwYdBiMGKQY9
+        BlEGVwZdBmAGYwZqBnEGfgaLBo0GjwaVBpsGrwbDBskGzwbVBtsG4wbrBvEG9wcLBx8HJQcrBy8HMwc6
+        B0EHRgdLB1gHZQdsB3MHfgeJB5QHnweoB64HtAe+B8gHzgfUB9oH7ggCCBYIKlZlcnNpb24gMC4wMDFN
+        eSBGb250IFJlZ3VsYXJNeSBGb250UmVndWxhcnNwYWNlZXhjbGFtcXVvdGVkYmxudW1iZXJzaWduZG9s
+        bGFycGVyY2VudGFtcGVyc2FuZHF1b3Rlc2luZ2xlcGFyZW5sZWZ0cGFyZW5yaWdodGFzdGVyaXNrcGx1
+        c2NvbW1haHlwaGVucGVyaW9kc2xhc2h6ZXJvb25ldHdvdGhyZWVmb3VyZml2ZXNpeHNldmVuZWlnaHRu
+        aW5lY29sb25zZW1pY29sb25sZXNzZXF1YWxncmVhdGVycXVlc3Rpb25hdEFCQ0RFRkdISUpLTE1OT1BR
+        UlNUVVZXWFlaYnJhY2tldGxlZnRiYWNrc2xhc2hicmFja2V0cmlnaHRhc2NpaWNpcmN1bXVuZGVyc2Nv
+        cmVncmF2ZWFiY2RlZmdoaWprbG1ub3BxcnN0dXZ3eHl6YnJhY2VsZWZ0YmFyYnJhY2VyaWdodGFzY2lp
+        dGlsZGVbbmFtZW5vdGZvdW5kXWV4Y2xhbWRvd25jZW50c3RlcmxpbmdjdXJyZW5jeXllbmJyb2tlbmJh
+        cnNlY3Rpb25kaWVyZXNpc2NvcHlyaWdodG9yZGZlbWluaW5lZ3VpbGxlbW90bGVmdGxvZ2ljYWxub3RT
+        b2Z0aHlwaGVucmVnaXN0ZXJlZG1hY3JvbmRlZ3JlZXBsdXNtaW51c1N1cGVyc2NyaXB0dHdvU3VwZXJz
+        Y3JpcHR0aHJlZWFjdXRlbXVwYXJhZ3JhcGhwZXJpb2RjZW50ZXJlZGNlZGlsbGFTdXBlcnNjcmlwdG9u
+        ZW9yZG1hc2N1bGluZWd1aWxsZW1vdHJpZ2h0b25lcXVhcnRlcm9uZWhhbGZ0aHJlZXF1YXJ0ZXJzcXVl
+        c3Rpb25kb3duQWdyYXZlQWFjdXRlQWNpcmN1bWZsZXhBdGlsZGVBZGllcmVzaXNBcmluZ0FFQ2NlZGls
+        bGFFZ3JhdmVFYWN1dGVFY2lyY3VtZmxleEVkaWVyZXNpc0lncmF2ZUlhY3V0ZUljaXJjdW1mbGV4SWRp
+        ZXJlc2lzRXRoTnRpbGRlT2dyYXZlT2FjdXRlT2NpcmN1bWZsZXhPdGlsZGVPZGllcmVzaXNtdWx0aXBs
+        eU9zbGFzaFVncmF2ZVVhY3V0ZVVjaXJjdW1mbGV4VWRpZXJlc2lzWWFjdXRlVGhvcm5nZXJtYW5kYmxz
+        YWdyYXZlYWFjdXRlYWNpcmN1bWZsZXhhdGlsZGVhZGllcmVzaXNhcmluZ2FlY2NlZGlsbGFlZ3JhdmVl
+        YWN1dGVlY2lyY3VtZmxleGVkaWVyZXNpc2lncmF2ZWlhY3V0ZWljaXJjdW1mbGV4aWRpZXJlc2lzZXRo
+        bnRpbGRlb2dyYXZlb2FjdXRlb2NpcmN1bWZsZXhvdGlsZGVvZGllcmVzaXNkaXZpZGVvc2xhc2h1Z3Jh
+        dmV1YWN1dGV1Y2lyY3VtZmxleHVkaWVyZXNpc3lhY3V0ZXRob3JueWRpZXJlc2lzQW1hY3JvbmFtYWNy
+        b25BYnJldmVhYnJldmVBb2dvbmVrYW9nb25la0NhY3V0ZWNhY3V0ZUNkb3RhY2NlbnRjZG90YWNjZW50
+        Q2Nhcm9uY2Nhcm9uRGNhcm9uZGNhcm9uRGNyb2F0ZGNyb2F0RW1hY3JvbmVtYWNyb25FZG90YWNjZW50
+        ZWRvdGFjY2VudEVvZ29uZWtlb2dvbmVrRWNhcm9uZWNhcm9uR2JyZXZlZ2JyZXZlR2RvdGFjY2VudGdk
+        b3RhY2NlbnRDYXBpdGFsTGV0dGVyR3dpdGhjZVNtYWxsTGV0dGVyR3dpdGhjZWRpSGJhcmhiYXJJbWFj
+        cm9uaW1hY3JvbklvZ29uZWtpb2dvbmVrSWRvdGFjY2VudGRvdGxlc3NpSUppakNhcGl0YWxMZXR0ZXJL
+        d2l0aGNlU21hbGxMZXR0ZXJLd2l0aGNlZGlMYWN1dGVsYWN1dGVDYXBpdGFsTGV0dGVyTHdpdGhjZVNt
+        YWxsTGV0dGVyTHdpdGhjZWRpTGNhcm9ubGNhcm9uTGRvdGxkb3RMc2xhc2hsc2xhc2hOYWN1dGVuYWN1
+        dGVDYXBpdGFsTGV0dGVyTndpdGhjZVNtYWxsTGV0dGVyTndpdGhjZWRpTmNhcm9ubmNhcm9uRW5nZW5n
+        T21hY3Jvbm9tYWNyb25PaHVuZ2FydW1sYXV0b2h1bmdhcnVtbGF1dE9Fb2VSYWN1dGVyYWN1dGVDYXBp
+        dGFsTGV0dGVyUndpdGhjZVNtYWxsTGV0dGVyUndpdGhjZWRpUmNhcm9ucmNhcm9uU2FjdXRlc2FjdXRl
+        U2NlZGlsbGFzY2VkaWxsYVNjYXJvbnNjYXJvbkNhcGl0YWxMZXR0ZXJUd2l0aGNlU21hbGxMZXR0ZXJU
+        d2l0aGNlZGlUY2Fyb250Y2Fyb25UYmFydGJhclVtYWNyb251bWFjcm9uVXJpbmd1cmluZ1VodW5nYXJ1
+        bWxhdXR1aHVuZ2FydW1sYXV0VW9nb25la3VvZ29uZWtXY2lyY3VtZmxleHdjaXJjdW1mbGV4WWNpcmN1
+        bWZsZXh5Y2lyY3VtZmxleFlkaWVyZXNpc1phY3V0ZXphY3V0ZVpkb3RhY2NlbnR6ZG90YWNjZW50WmNh
+        cm9uemNhcm9uZmxvcmluQ2FwaXRhbExldHRlclN3aXRoY29TbWFsbExldHRlclN3aXRoY29tbUNhcGl0
+        YWxMZXR0ZXJUd2l0aGNvU21hbGxMZXR0ZXJUd2l0aGNvbW0AAAABiwGMAY0BjgGPAZABkQGSAZMBlAGV
+        AZYBlwGYAZkBmgGbAZwBnQGeAZ8BoAGhAaIBowGkAaUBpgGnAagBqQGqAasBrAGtAa4BrwGwAbEBsgGz
+        AbQBtQG2AbcBuAG5AboBuwG8Ab0BvgG/AcABwQHCAcMBxAHFAcYBxwHIAckBygHLAcwBzQHOAc8B0AHR
+        AdIB0wHUAdUB1gHXAdgB2QHaAdsB3AHdAd4B3wHgAeEB4gHjAeQB5QHmAecB6AHpAeoB6wHsAe0B7gHv
+        AfAB8QHyAfMB9AH1AfYB9wH4AfkB+gH7AfwB/QH+Af8CAAIBAgICAwIEAgUCBgIHAggCCQIKAgsCDAIN
+        Ag4CDwIQAhECEgITAhQCFQIWAhcCGAIZAhoCGwIcAh0CHgIfAiACIQIiAiMCJAIlAiYCJwIoAikCKgIr
+        AiwCLQIuAi8CMAIxAjICMwI0AjUCNgI3AjgCOQI6AjsCPAI9Aj4CPwJAAkECQgJDAkQCRQJGAkcCSAJJ
+        AkoCSwJMAk0CTgJPAlACUQJSAlMCVAJVAlYCVwJYAlkCWgJbAlwCXQJeAl8CYAJhAmICYwJkAmUCZgJn
+        AmgCaQJqAmsCbAJtAm4CbwJwAnECcgJzAnQCdQJ2AncCeAJ5AnoCewJ8An0CfgJ/AoACgQKCAoMChAKF
+        AoYChwKIAokCigKLAowCjQKOAo8CkAKRApICkwKUApUClgKXApgCmQKaApsCnAKdAp4CnwKgAqECogKj
+        AqQCpQKmAqcCqAKpAqoCqwKsAq0CrgKvArACsQKyArMCtAK1ASwCAAEATABPAJYA4gHeAq8DXwQCBCoE
+        YwSbBRMFewWiBcoF7AYWBoUGwwcsB6kIJAiTCRkJWQnvCnQKtwr/C0ALjAvODDcNDg17DgAOXA8OD3UP
+        zRBMELQQ3BE1EaAR1hJkEuoTWhPAFFIU0RU7FYMVzxYqFuEXURekF/sYQRhqGK4Y7xkWGT8ZrBoxGo0b
+        PxumG/4cfRzlHQ0dZh3RHgcelR8bH4sf8SCDIQIhbCG0IgAiWyMSI4Ij1SQsJLQk3CVjJZclmiXiJmAm
+        +Se1KHIovilIKYsqPCqQKwArNytfLC0sVCyYLSUtfy3lLg4uci7MLu8vMy9wL8YwNTEUMc8y1DM9M840
+        YDUJNaQ2UTbxN5s4KTi2OUM55zqOOto7JzuLO/I8mT1QPec+fj8sP8xAfkDwQZVCBkJ4QwFDjkQHRGdE
+        7EV9Rg9GuEdTSABIoElKSdhKZUryS5ZMPUyJTNZNOk2hTkhO/0+WUC1Q21F7Ui1SlVM6U6tUHVSmVTNV
+        rFYMVqBXMVfCWFRY5ll3WghaiVsKW4dcBFydXTZd3l6GXy1f1GBfYOphcWH4YoRjEGOzZFZk+2WgZkBm
+        4GeEaCho6GmoafNqPmqKatZrHmtGa8RsQmzSbWJtwG4ebnhu0m8tb4hv33A2cKxxInHQcn5zKHPSdJZ1
+        WnX5dph3LnfEeIB5PHn6erh7XXwCfKZ9Sn4GfsJ/U3/kgICBHIHCgmiC1YNCg8aESoTOhVKFwYYwhr2H
+        SofhiHiI8Ylqil6LUovijHKNBo2EjgKOe470j4eQGpCckSuRupInkpT4bIv5UBWLi/hEi4uLCIuLi/1Q
+        i4sIi4v8RIuLiwiLi4v5UIuLCL39HhWLi/fgi4uLCIuLi/jsi4sIi4v74IuLiwiLi4v87IuLCA73Sg73
+        t8D3cBWLi/dMi4uLCIuLlfiAi4sIi4v7YIuLiwiLi5X8gIuLCIX7FxWLVLdfwosIw4u4t4vCCIvDXrhT
+        iwhUi19ei1MIDvhi93D5WRWLi/tBi4uLCIuLi/u2i4sIi4v3LIuLiwiLi6D3touLCPdhixWLi/tBi4uL
+        CIuLi/u2i4sIi4v3LYuLiwiLi5/3touLCA75G/iL988Vi4uUrIuLCIuLzouLiwiLi7f3LIuLCIuLSYuL
+        iwiLi7v3NYuLCIuL+zmLi4sIi4tc+zWLiwiLi2GLi4sIi4u69zWLiwiLi/syi4uLCIuLXPs1i4sIi4tB
+        i4uLCIuLXvssi4sIi4vVi4uLCIuLgmqLiwiLi0GLi4sIi4tg+yaLiwiLi9WLi4sIi4tZ+z6LiwiLi/c3
+        i4uLCIuLvPc+i4sIi4u1i4uLCIuLWvs+i4sIi4v3MouLiwiLi733PouLCIuLzouLiwiLi7b3JouLCIuL
+        SYuLiwj7V7kVi4vFi4uLCIuLe1CLiwiLi1CLi4sIi4ucxouLCA74zvd1ShWLi/cVi4uLCIuLi8yLiwjs
+        o9/NlPcACJL3LTG9IKUIi4uL9wSLiwihh59+lngIi4v3DNeLiwhW21mpRZQIi4uLxYuLCIuL+xWLi4sI
+        i4uLUIuLCCd1OEaF+wMIifsh6FLtdAiLi4sqi4sIcY93k3CwCIuL+xQzi4sIvDbRWN2ICIuLi0uLiwhs
+        +MMVi5+ZoKOYCIuLi/sGi4sIcZR+oYynCIuLi4yLiwj3VPupFYt3fXZzfgiLi4v3BouLCKWCmHWKbwiL
+        i4uKi4sIDvl4wpIVi4v3FTiLiwiLi/iA+YmLiwiLi/sV4YuLCIuL/ID9jIuLCPei+KoVi/cFVcsqiwg1
+        i01HiyAIi/sJwU3piwjii8vOi/cCCPsLixWLZH94dosId4t8m4u2CIu0mp2fiwifi5h5i2EI+JH8BhWL
+        9wVVyyqLCDWLTUeLIAiL+wnBTemLCOKLy86L9wII+wuLFYtkf3h2iwh3i3ybi7YIi7SanZ+LCJ+LmHmL
+        YQgO+T74nvfxFYuLS1SLiwiLi1DUi4sIva6vuovcCIv3Ay/RJ44I+0KQIftQ9w77FAhIY2RXizUIi/tw
+        95VA9yX3FAiLi7tSi4sIi4v3ZouLiwiLi/sZ9zqLiwiLi83Bi4sIi4sn9xSLiwj7fPd0FaGLnHeLdAiL
+        cXl5bHYIeKJ5oIudCIuloZ+kiwiw/B8Va2ZSjXKuCHWpkLy3ogiLi+Ili4sIDveV9275WBWLi/s+i4uL
+        CIuLi/u2i4sIi4v3L4uLiwiLi5r3touLCA731vdS+a8V+wD7Dlb7P4v7LwiL+y2/+z/y+yUIi4v3E+CL
+        iwj7NveNhveZ9zj3iQiLi/sK2IuLCA730Jf5VxX3Ovt6f/uh+y77iwiLi/cMOouLCPP3Jb73PYv3LQiL
+        9y9W9zP7APcOCIuL+wY/i4sIDvhx+Cr5HRWLiyNei4sIi4ue9YuLCIuL+ziLi4sIi4uaIIuLCIuLJbuL
+        iwiLi137MouLCIuL9wJ+i4sIi4s6N4uLCIuL9xoqi4sIi4u/8IuLCIuLwSaLiwiLi/cV7ouLCIuLOtmL
+        iwiLi/cEmYuLCIuLXPczi4sIDvjK9174KhWLi/tDi4uLCIuLi/s+i4sIi4v3Q4uLiwiLi4v7P4uLCIuL
+        9z2Li4sIi4uL9z+LiwiLi/c8i4uLCIuLi/c+i4sIi4v7PIuLiwiLi4v3PouLCIuL+z2Li4sIi4uL+z6L
+        iwgO97P3j/UVi4v7UIuLiwiLizb7k4uLCIuL90GLi4sIi4vv95OLiwgO+Cj3+vgLFYuL+8yLi4sIi4uL
+        +z6LiwiLi/fMi4uLCIuLi/c+i4sIDveVqOoVi1O3XsKLCMKLuLiLwwiLwl63VIsIVItfX4tUCA74fvhr
+        +VkVi4v7McKLiwiLi/u7/Z2LiwiLi/cyUouLCIuL97r5n4uLCA746Pe+gRX3DYv3G86L9yoIi4uL97mL
+        iwiL9yv7G877DYsI+wyL+xxIi/srCIuLi/u5i4sIi/sq9xxI9wyLCIv4zxWzi7l0i2AIi4uL+7aLiwiL
+        Yl51YosIYItgoYu0CIuLi/e2i4sIi7W3o7WLCA74CvfXixWLi4v5WIuLCIuL+xuLi4sIi4v7UPtai4sI
+        i4vpOYuLCIuLz7qLiwiLi4v8b4uLCIuL9zWLi4sIDvjC9zn4eBXZ9yP3MSUsIAiLi/u0+9iLiwiLi7gu
+        i4sIi4v4XIuLiwiLi4v3PouLCIuL+zSLi4sIi4s4eouLCIuL9zD3KIuLCMvHo9OLzQiL9wM69vswiwgq
+        iytZUfsDCIuL9xpCi4sIDviwm/cKFcAy6GTmiwj3Fov3E9+L9x4Ii8J01UOwCNO4kfBv0Qhl6TOpNIsI
+        O4s2YFFDCIuL8y+Liwi3veKYq1kIn217Ul2LCIuLIYuLiwiLi4v7I4uLCIuL9wKLi4sIvoula4tnCItl
+        YnRbiwhhi12dcbUIi4v7CCCLiwgO+NL4s/e/FYuLSYuLiwiLi4v4LYuLCIuL+yeLi4sIi4v73vxVi4sI
+        i4vEIouLCIuL942Li4sIi4uL+y6LiwiLi/c/i4uLCIuLi/cui4sIi4vNi4uLCIuLi/cli4sI+/GJFYuL
+        9xP3SYuLCIuLiftJi4sIi4v7EYuLiwgO+LGn9w0VxC7gZduLCPdNi933GIv3FwiL9z/7KvcC+0BMCIuL
+        i9uLiwiLi/epi4uLCIuLi/cxi4sIi4v8OIuLiwiLi4v8MYuLCIuL3YuLiwirtrWbtIsIwYu2aodDCIc4
+        +whwSN0Ii4v7EyeLiwgO+Nz4pPjfFWDkNLUuiwj7F4v7GTqL+yIIi4uL+66LiwiL+yf3Fj/3GIsI9xiL
+        9xLYi/cmCIuLi7WLiwiL90T7aeL7HCoIi4uL1IuLCIu4uKW7iwiwi7J8oWgIi4v3EdOLiwj7HvwQFYs6
+        +0aMi9sIi4uLwIuLCIvV90aMi0AIi4uLVouLCA74paH5WBWLi4v7PouLCIuL96KLi4sIi4v7evyui4sI
+        i4v3VIuLiwiLi/el+PiLiwiLi1vri4sIi4v8XYuLiwgO+Oz3yIEV90OL3+OO9yUIjLxv1UqsCLSnn8eL
+        qgiL9zL7Bsn7CYsIi4t9i4uLCDGL+yFbi/s5CIthmlW6bAhMXGtNi1MIi/sj8Tv3NosIi4uZi4uLCIz4
+        2hXohZP7GvsCiwgqi4r3HueNCIuLmouLiwh7/DMV+wqOm/cs7ogIi4uii4uLCPGUmvs1+wyLCIuLeouL
+        iwgO+OC39xEVuC7tYe2LCPcXi/cX3Yv3JQiLi4v3rouLCIn3J/sU0/sYiwj7GIv7EkKL+yYIi4uLYYuL
+        CIv7RPdpMvcc7giLi4tCi4sIi2Nfb1qLCGKLXptxtgiLi/sTN4uLCPcu+BAVi9b3RoqLQQiLi4tWi4sI
+        i0H7RoqL1giLi4vAi4sIDvepsvgdFYtTuF7CiwjCi7e4i8MIi8JftlSLCFSLXmCLVAiL+7MVi1S4XsKL
+        CMKLt7iLwgiLxV+1VIsIVIteYYtRCA73ubj4EhWLUrRfxosIxIu0t4vECIvCYrZSiwhQi2Jgi1QI92b7
+        kxWLi/tPi4uLCIuLTvuTi4sIi4v3MIuLiwiLi+f3k4uLCA74Ufgb+BMVi4uL91uLiwiLi/wC+3+LiwiL
+        i4v7AYuLCIuL+AL7fIuLCIuLi/dbi4sIWqZQq1anCIuL9zXmi4sIDvik+HX4bhWLi/xGi4uLCIuLi/sv
+        i4sIi4v4RouLiwiLi4v3L4uLCIv7XxWLi/xGi4uLCIuLi/swi4sIi4v4RouLiwiLi4v3MIuLCA74Ufg4
+        9+8Vi4v8A/d/i4sIi4uL+1uLiwiLi/c9MIuLCIuL+z00i4sIi4uL+1uLiwiLi/gD93yLiwiLi4v3AYuL
+        CA74f/cP+IUVtNf3EXmLQwiLQjplNq8Ii4uV+3iLiwiLi/cqi4uLCIuLlfcJi4sI9wucwOiL4giL93j7
+        1un7Dvt8CIuL8TSLiwiF/EQVi1izY76LCL2Ls7OLvgiLwGOwWYsIWItjZotWCA75i/iI+K4Vi4t5douL
+        CGapa5Vniwj7AIs1+wqL+xEIi/sB0jf1iwili6ORoJgIo3qhh6aLCL2Lv6Kqpwjt4Kj3PE/3CQhn0DnI
+        NaQIaJRoj2iLCPtoi/sc+1B++0cIgftn9yn7H/dFiwixi7WSuJkIi4tw64uLCPs+WPsP8Iv3MQiL9xfj
+        9yT3NYsIw4vZda1bCIuLQ52LiwjkYBWLi5R5i4sIsEp9+x48aAiLi7r3lIuLCPtq+48VfIt9j4CXCE3Y
+        3PdC7SMIi4tr+yeLiwiAgHmGe4sIDvkc+Cj5WBWLi/s3i4uLCIuL+4v9WIuLCIuL91SLi4sIi4u39yKL
+        iwiLi/dRi4uLCIuLufsii4sIi4v3VIuLiwiLi/uR+ViLiwj7GvwrFYuLv/dji4sIi4uQi4uLCIuLvPtj
+        i4sIi4shi4uLCA75BPjO+IAVj/cbKNz7G4sIi4v7sIuLiwiLi4v9WIuLCIuL97WLi4sI9zGL2NCd9wYI
+        lMF/5iq8CL6loMSMqwj74k4Vi4uL9xKLiwiLi/OLi4sI5YuI+xI0iwiLiyOLi4sIi/umFYuLi/cli4sI
+        i4vzi4uLCPWLjfsl+wCLCIuLI4uLiwgO+Nr4NfdxFWQp+zSji+AIi4uL94iLiwiL4/cyn7szCIuL9ybG
+        i4sIUvcSIrA0iwj7Iov7IDmL+zQIi4uL+4iLiwiL+zX3IDr3H4sI5Iv2t8b3BwiLi/sw04uLCA75EJH5
+        VBWHiIlHizwIi4uL+yWLiwiLi+E+i4sIumG0aI6LCI2LjcqL1wiLi4v3IIuLCIuLzouLiwjBi5qInH0I
+        i4uge4uLCIuLi/sji4sIiz2IRYmECH9tbIX7MYsIi4v7KouLiwiLi4s4i4sIi4uLN4uLCIuL9zyLi4sI
+        9ymLo422mgjJn764o8IInbSMlIv3OAiL9zaKlnmyCHPBW7hPoghinXaM+yqOCDCNPomIiAgO+OD3gfiw
+        FYuL98yLi4sIi4uL9zyLiwiLi/yBi4uLCIuLi/1Yi4sIi4v4gYuLiwiLi4v3PYuLCIuL+8yLi4sIi4uL
+        9YuLCIuL97OLi4sIi4uL9y+LiwiLi/uzi4uLCIuLi/cCi4sIDvjU94H4rhWLi/fMi4uLCIuLi/c+i4sI
+        i4v8gYuLiwiLi4v9WIuLCIuL90mLi4sIi4uL94iLiwiLi/eli4uLCIuLi/c7i4sIi4v7pYuLiwiLi4v3
+        E4uLCA75BPjJ+MsVWvcFIrEviwj7IIv7IDuL+zQIi4uL+4eLiwiL+zf3IDn3IIsI9yKL9xzdi/c3CIuL
+        i/dEi4sIi4v7sYuLiwiLi4v7KouLCIuL9wWLi4sIi4uLcYuLCIv7Avtjiov3AwiLi4v3h4uLCIvo9zKh
+        siwIi4v3KtCLiwgO+Tj3gPefFYuL92CLi4sIi4uL+5+LiwiLi/dIi4uLCIuLi/lYi4sIi4v7SIuLiwiL
+        i4v7oIuLCIuL+2CLi4sIi4uL96CLiwiLi/tIi4uLCIuLi/1Yi4sIi4v3SIuLiwiLi4v3n4uLCA73t/d/
+        +VgVi4v7R4uLiwiLi4v9WIuLCIuL90eLi4sIi4uL+ViLiwgO+N+O92QVn/sq9w1H9w6LCPcbi/cb4ov3
+        LgiLi4v4cYuLCIuL++aLi4sIi4uL+zaLiwiLi/c1i4uLCIuLi/vPi4sIi2JhcF+LCF+LXKKBxAiLi/s9
+        aIuLCA75FPeA+FIVi4uL95qLiwiLi/tIi4uLCIuLi/1Yi4sIi4v3SIuLiwiLi4v3iYuLCIuLkZOLiwiL
+        i/dJ+5GLiwiLi/d3i4uLCIuL+6v4AouLCIuL96z36ouLCIuL+3OLi4sIi4v7VPuai4sIDvivw4sVi4v4
+        aIuLiwiLi4v3RYuLCIuL+7SLi4sIi4uL+KeLiwiLi/tIi4uLCIuLi/1Yi4sIDvmVw4sVi4v3R4uLiwiL
+        i4v3YIuLCIuLf/cji4sIi4uQjIuLCIuL6vuHi4sIi4v3D4uLiwiLi+j3h4uLCIuLkYqLiwiLi4D7I4uL
+        CIuLivtgi4sIi4v3SIuLiwiLi4v5WIuLCIuL+0eLi4sIi4v7Kvvui4sIi4v7Kffui4sIi4v7R4uLiwiL
+        i4v9WIuLCA75OMOLFYuL90eLi4sIi4uL96+LiwiLi3T3HYuLCIuLkIyLiwiLi8n7IouLCIuL9zT7q4uL
+        CIuL90mLi4sIi4uL+ViLiwiLi/tGi4uLCIuLi/vVi4sIjIud+w6MiwiLi4aKi4sIi4tP9yKLiwiLi/s/
+        98KLiwiLi/s+i4uLCIuLi/1Yi4sIDvktsvd9FYv7NvcnOvcniwj3J4v3JtyL9zYIi4uL94aLiwiL9zb7
+        J9z7J4sI+yeL+yY7i/s3CIuLi/uGi4sI90f3hhWLv8Onw4sIxYvGcotUCIuLi/uGi4sIi1hScVKLCFKL
+        UaSLvwiLi4v3houLCA74/sOLFYuL90eLi4sIi4uL92OLiwiLi/SLi4sI9z+L4vcRi/cSCIv3ETX3EftB
+        iwiLi/uvi4uLCIuLi/1Yi4sI90f4AhWLi4v3Q4uLCIuL84uLiwj3AIyL+0X7AIwIi4sji4uLCA75LbL3
+        fRWL+zb3Jzr3J4sIwYvBlrqhCIuLxU+LiwiLi+7ki4sIi4tUw4uLCKGtmbWLvAiLi4v3houLCIv3Nvsn
+        3Psniwj7J4v7JjuL+zcIi4uL+4aLiwj3R/eGFYv193mOi/sBCIuLi/tyi4sIi4tavYuLCIuLKDWLiwiL
+        i8VPi4sIUXI6r4vMCIuLi/eGi4sIDvka+EWLFYuL93OLi4sIi4v7VfeHi4sI4abA1Yv3FwiH9zr7Bc77
+        JosIi4v7r4uLiwiLi4v9WIuLCIuL90mLi4sIi4uL93WLiwiLi6uLi4sIi4v3OPt1i4sI+1j4DxWLi4v3
+        NouLCIuL9IuLiwj3BYuL+zb7BYsIi4sii4uLCA74yKH3ChXNNuVg4IsI9xaL9yTWkfcdCJP3QvsSt/sS
+        oghUl2afia0Ijt33E47VPAiLi/cJ5YuLCELkOKM1iwj7Fov7EkKL+x8Ii/sb80P3BnkIxYPMdIljCIY/
+        +zCPROEIi4v7BSGLiwgO+N34z/ivFYuLi/c+i4sIi4v8wYuLiwiLi4v7PouLCIuL91CLi4sIi4uL/K+L
+        iwiLi/dJi4uLCIuLi/ivi4sIi4v3UIuLiwgO+S/3fflYFYuL+0mLi4sIi4uL/GuLiwiK++D4yYuM9+AI
+        i4uL+GuLiwiLi/tJi4uLCIuLi/xri4sIivsG+16Li/cGCIuLi/hri4sIDvkk9/33/hWLi2v7O4uLCIuL
+        iIuLiwiLi2v3PIuLCIuL+wP37ouLCIuL+1SLi4sIi4v3k/1Yi4sIi4v3OIuLiwiLi/eT+ViLiwiLi/tU
+        i4uLCIuL+wT774uLCA76J/kY+AMVi4t3+yiLiwiLi4iLi4sIi4t09yiLiwiLi0L3jYuLCIuL+xyLi4sI
+        i4s8+4yLiwiLi3r7KYuLCIuLhouLiwiLi3n3KouLCIuLN/fni4sIi4v7TouLiwiLi/dh/ViLiwiLi/c6
+        i4uLCIuLw/dZi4sIi4um9zWLiwiLi46Li4sIi4uk+zaLiwiLi8r7WIuLCIuL9zqLi4sIi4v3YPlYi4sI
+        i4v7TYuLiwiLizX76YuLCA75JPfb+GYVi4v7DfeGi4sIi4v7ZYuLiwiLi/db+/eLiwiLi/tb+/WLiwiL
+        i/dli4uLCIuL9w33hYuLCIuL9xD7hYuLCIuL92SLi4sIi4v7Wvf1i4sIi4v3Wvf3i4sIi4v7ZIuLiwiL
+        i/sQ+4aLiwgO+SP4NYsVi4uL96uLiwiLi/eM+EGLiwiLi/tmi4uLCIuL+xT7mIuLCIuL+xT3mIuLCIuL
+        +2SLi4sIi4v3i/xBi4sIi4uL+6uLiwiLi/dHi4uLCA748a/5WBWLi4v7OouLCIuL97CLi4sIi4v7xvxw
+        i4sIi4usSYuLCIuL+KGLi4sIi4uL9zmLiwiLi/u0iYuLCIuL98X4eYuLCIuLZceLiwiLi/yXi4uLCA73
+        3Pdx+LQVi4vQi4uLCIuLi/c6i4sIi4v7hIuLiwiLi4v9vouLCIuL94SLi4sIi4uL9zmLiwiLi0aLi4sI
+        i4uL+HOLiwgO+Iv32VEVi4v3M8GLiwiLi/vE+ZeLiwiLi/s1U4uLCIuL98b9lYuLCA733PTKFYuLSIuL
+        iwiLi4v7N4uLCIuL94SLi4sIi4uL+b6LiwiLi/uEi4uLCIuLi/s3i4sIi4vOi4uLCIuLi/x4i4sIDvkg
+        +Af5VxWLiymLi4sIi4v7i/vDi4sIi4v3XIuLiwiLi+r3B4uLCIuL7PsHi4sIi4v3Y4uLiwiLi/uS98OL
+        iwgO+OX4uK0Vi4v8jIuLiwiLi4v7PYuLCIuL+IyLi4sIi4uL9z2LiwgO+Cr3xvmIFYuLJ/c6i4sIi4v7
+        TouLiwiLi/cX+zqLiwiLi/cvi4uLCA75HPgo+VgVi4v7N4uLiwiLi/uL/ViLiwiLi/dUi4uLCIuLt/ci
+        i4sIi4v3UYuLiwiLi7n7IouLCIuL91SLi4sIi4v7kflYi4sI+xr8KxWLi7/3Y4uLCIuLkIuLiwiLi7z7
+        Y4uLCIuLIYuLiwgO+QT4zviAFY/3Gyjc+xuLCIuL+7CLi4sIi4uL/ViLiwiLi/e1i4uLCPcxi9jQnfcG
+        CJTBf+YqvAi+paDEjKsI++JOFYuLi/cSi4sIi4vzi4uLCOWLiPsSNIsIi4sji4uLCIv7phWLi4v3JYuL
+        CIuL84uLiwj1i437JfsAiwiLiyOLi4sIDvja+DX3cRVkKfs0o4vgCIuLi/eIi4sIi+P3Mp+7MwiLi/cm
+        xouLCFL3EiKwNIsI+yKL+yA5i/s0CIuLi/uIi4sIi/s19yA69x+LCOSL9rfG9wcIi4v7MNOLiwgO+RCQ
+        +VQViIiJR4s8CIuLi/sli4sIi4vbPouLCLdhsmiNiwiNi43Ki9cIi4uL9yCLiwiLi8mLi4sIvouZiJt9
+        CIuLnnuLiwiLi4v7I4uLCIs9iUWJhAiAbW2F+yaLCIuL+yCLi4sIi4uLOIuLCIuLizeLiwiLi/cxi4uL
+        CPcfi6KNspoIxZ+7uKHCCJy0jJSL9zgIi/c2ipZ6sgh1wV64U6IIZJ14jPsfjgg1jUSJh4gIDvjg94H4
+        sBWLi/fMi4uLCIuLi/c8i4sIi4v8gYuLiwiLi4v9WIuLCIuL+IGLi4sIi4uL9z2LiwiLi/vMi4uLCIuL
+        i/WLiwiLi/ezi4uLCIuLi/cvi4sIi4v7s4uLiwiLi4v3AouLCA741PeB+K4Vi4v3zIuLiwiLi4v3PouL
+        CIuL/IGLi4sIi4uL/ViLiwiLi/dJi4uLCIuLi/eIi4sIi4v3pYuLiwiLi4v3O4uLCIuL+6WLi4sIi4uL
+        9xOLiwgO+QT4yfjLFVr3BSKxL4sI+yCL+yA7i/s0CIuLi/uHi4sIi/s39yA59yCLCPcii/cc3Yv3NwiL
+        i4v3RIuLCIuL+7GLi4sIi4uL+yqLiwiLi/cFi4uLCIuLi3GLiwiL+wL7Y4qL9wMIi4uL94eLiwiL6Pcy
+        obIsCIuL9yrQi4sIDvk494D3nxWLi/dgi4uLCIuLi/ufi4sIi4v3SIuLiwiLi4v5WIuLCIuL+0iLi4sI
+        i4uL+6CLiwiLi/tgi4uLCIuLi/egi4sIi4v7SIuLiwiLi4v9WIuLCIuL90iLi4sIi4uL95+LiwgO97f3
+        f/lYFYuL+0eLi4sIi4uL/ViLiwiLi/dHi4uLCIuLi/lYi4sIDvjfjvdkFZ/7KvcNR/cOiwj3G4v3G+KL
+        9y4Ii4uL+HGLiwiLi/vmi4uLCIuLi/s2i4sIi4v3NYuLiwiLi4v7z4uLCItiYXBfiwhfi1yigcQIi4v7
+        PWiLiwgO+RT3gPhSFYuLi/eai4sIi4v7SIuLiwiLi4v9WIuLCIuL90iLi4sIi4uL94mLiwiLi5GTi4sI
+        i4v3SfuRi4sIi4v3d4uLiwiLi/ur+AKLiwiLi/es9+qLiwiLi/tzi4uLCIuL+1T7mouLCA74r8OLFYuL
+        +GiLi4sIi4uL90WLiwiLi/u0i4uLCIuLi/ini4sIi4v7SIuLiwiLi4v9WIuLCA75lcOLFYuL90eLi4sI
+        i4uL92CLiwiLi3/3I4uLCIuLkIyLiwiLi+r7h4uLCIuL9w+Li4sIi4vo94eLiwiLi5GKi4sIi4uA+yOL
+        iwiLi4r7YIuLCIuL90iLi4sIi4uL+ViLiwiLi/tHi4uLCIuL+yr77ouLCIuL+yn37ouLCIuL+0eLi4sI
+        i4uL/ViLiwgO+TjDixWLi/dHi4uLCIuLi/evi4sIi4t09x2LiwiLi5CMi4sIi4vJ+yKLiwiLi/c0+6uL
+        iwiLi/dJi4uLCIuLi/lYi4sIi4v7RouLiwiLi4v71YuLCIyLnfsOjIsIi4uGiouLCIuLT/cii4sIi4v7
+        P/fCi4sIi4v7PouLiwiLi4v9WIuLCA75LbL3fRWL+zb3Jzr3J4sI9yeL9ybci/c2CIuLi/eGi4sIi/c2
+        +yfc+yeLCPsni/smO4v7NwiLi4v7houLCPdH94YVi7/Dp8OLCMWLxnKLVAiLi4v7houLCItYUnFSiwhS
+        i1Gki78Ii4uL94aLiwgO+P7DixWLi/dHi4uLCIuLi/dji4sIi4v0i4uLCPc/i+L3EYv3EgiL9xE19xH7
+        QYsIi4v7r4uLiwiLi4v9WIuLCPdH+AIVi4uL90OLiwiLi/OLi4sI9wCMi/tF+wCMCIuLI4uLiwgO+S2y
+        930Vi/s29yc69yeLCMGLwZa6oQiLi8VPi4sIi4vu5IuLCIuLVMOLiwihrZm1i7wIi4uL94aLiwiL9zb7
+        J9z7J4sI+yeL+yY7i/s3CIuLi/uGi4sI90f3hhWL9fd5jov7AQiLi4v7couLCIuLWr2LiwiLiyg1i4sI
+        i4vFT4uLCFFyOq+LzAiLi4v3houLCA75GvhFixWLi/dzi4uLCIuL+1X3h4uLCOGmwNWL9xcIh/c6+wXO
+        +yaLCIuL+6+Li4sIi4uL/ViLiwiLi/dJi4uLCIuLi/d1i4sIi4uri4uLCIuL9zj7dYuLCPtY+A8Vi4uL
+        9zaLiwiLi/SLi4sI9wWLi/s2+wWLCIuLIouLiwgO+Mih9woVzTblYOCLCPcWi/ck1pH3HQiT90L7Erf7
+        EqIIVJdmn4mtCI7d9xOO1TwIi4v3CeWLiwhC5DijNYsI+xaL+xJCi/sfCIv7G/ND9wZ5CMWDzHSJYwiG
+        P/swj0ThCIuL+wUhi4sIDvjd+M/4rxWLi4v3PouLCIuL/MGLi4sIi4uL+z6LiwiLi/dQi4uLCIuLi/yv
+        i4sIi4v3SYuLiwiLi4v4r4uLCIuL91CLi4sIDvkv9335WBWLi/tJi4uLCIuLi/xri4sIivvg+MmLjPfg
+        CIuLi/hri4sIi4v7SYuLiwiLi4v8a4uLCIr7Bvtei4v3BgiLi4v4a4uLCA75JPf99/4Vi4tr+zuLiwiL
+        i4iLi4sIi4tr9zyLiwiLi/sD9+6LiwiLi/tUi4uLCIuL95P9WIuLCIuL9ziLi4sIi4v3k/lYi4sIi4v7
+        VIuLiwiLi/sE+++LiwgO+if5GPgDFYuLd/soi4sIi4uIi4uLCIuLdPcoi4sIi4tC942LiwiLi/sci4uL
+        CIuLPPuMi4sIi4t6+ymLiwiLi4aLi4sIi4t59yqLiwiLizf354uLCIuL+06Li4sIi4v3Yf1Yi4sIi4v3
+        OouLiwiLi8P3WYuLCIuLpvc1i4sIi4uOi4uLCIuLpPs2i4sIi4vK+1iLiwiLi/c6i4uLCIuL92D5WIuL
+        CIuL+02Li4sIi4s1++mLiwgO+ST32/hmFYuL+w33houLCIuL+2WLi4sIi4v3W/v3i4sIi4v7W/v1i4sI
+        i4v3ZYuLiwiLi/cN94WLiwiLi/cQ+4WLiwiLi/dki4uLCIuL+1r39YuLCIuL91r394uLCIuL+2SLi4sI
+        i4v7EPuGi4sIDvkj+DWLFYuLi/eri4sIi4v3jPhBi4sIi4v7ZouLiwiLi/sU+5iLiwiLi/sU95iLiwiL
+        i/tki4uLCIuL94v8QYuLCIuLi/uri4sIi4v3R4uLiwgO+PGv+VgVi4uL+zqLiwiLi/ewi4uLCIuL+8b8
+        cIuLCIuLrEmLiwiLi/ihi4uLCIuLi/c5i4sIi4v7tImLiwiLi/fF+HmLiwiLi2XHi4sIi4v8l4uLiwgO
+        9/P3kvi3FYuLxouLiwiLi4v3N4uLCIuLOYuLiwj7BYtoTostCIuLi/sOi4sIi3B/cmGLCIuLi/s3i4sI
+        tYuXcotvCIuLi/sDi4sIiyyoUPcDiwiLi+WLi4sIi4uL9zeLiwiLi1CLi4sIi4uL9wqLiwiLvHLAXJwI
+        t5ynxou1CIuLi/cVi4sIDveh92/7GxWLi4v574uLCIuL+z2Li4sIi4uL/e+LiwiLi/c9i4uLCA737LL5
+        WBWLi4v7N4uLCIuLvouLiwiLi4v7E4uLCIdatlmxeQhifGRVjlgIi4uL+xKLiwiLi1iLi4sIi4uL+zeL
+        iwiLi86Li4sI9xOLpsaL6giLi4v3C4uLCIunlqS3iwiLi4v3N4uLCF+LgKSLpgiLi4v3DIuLCIvpfMj7
+        HYsIi4tGi4uLCA74fff++BsVUCBo9wo0iwhKi1lVYk8Ii4v3Ay6LiwjA5LAm2IsI0Yu/w7LOCIuLJeCL
+        iwgO90oO96D3ffg0FYvCYLZSiwhRi2Ngi1QIi1GzYcWLCMSLtrWLxQh9+xEVi4v7P4uLiwiLi4v8b4uL
+        CIuL9z+Li4sIi4uL+G+LiwgO+HL30vjfFYuL+xSLi4sIi4uLRIuLCDl3R0+LJQiLi4v7K4uLCIslz0/d
+        dwiLi4tFi4sIi4v3FIuLiwiLi4vUi4sIwp3CtaXdCIuL+yasi4sIeE43kovCCIuLi/cyi4sIi8Lfk5hM
+        CIuL9yK3i4sIddlYsVabCIuLi9SLiwgO+Kb4ifkHFVjHRqJYiwj7OYtZ+wmLLAiLi4tAi4sIi4s9i4uL
+        CIuLi/sti4sIi4vZi4uLCIuLi/sEi4sIi4s9i4uLCIuLi/syi4sIi4v4W4uLiwiLi4v3MouLCIuL+2KL
+        i4sIi4uL9wSLiwiLi/c8i4uLCIuLi/cti4sIi4v7PIuLiwiLi4vRi4sIi8rWoLReCIuL7uqLiwgO+Pyt
+        9z8Vi4v3A/sKi4sIi4uxrpubCK17sYSviwi2i6uRrp0Ii4vAVouLCIuL9wX3DYuLCIuLW7mLiwibrpOv
+        i7QIi7KCsXusCIuLvLuLiwiLi/sF9w2LiwiLi1VVi4sIappllWWLCGOLaINqfAiLi1bAi4sIi4v7BvsO
+        i4sIi4u7XIuLCH1qgWSLZAiLY5Nlm2oIi4tdWouLCPdC9zMVi8S4t8GLCMCLuF+LUgiLVF5fVosIVYte
+        t4vCCA75XPjH9/0Vi4tEi4uLCIuL913374uLCIuL+2aLi4sIi4v7FPuii4sIi4v7FPeii4sIi4v7ZIuL
+        iwiLi/dc+++LiwiLi2OLi4sIi4t1+wCLiwiLi/cBi4uLCIuLi2yLiwiLizSLi4sIi4t1+wCLiwiLi/cB
+        i4uLCIuLi/sGi4sIi4v3R4uLiwiLi4v3BouLCIuL6ouLiwiLi6L3AIuLCIuL+wqLi4sIi4uLqouLCIuL
+        6ouLiwiLi6L3AIuLCA73pvdy980Vi4uL9++LiwiLi/s+i4uLCIuLi/vvi4sIi4v3PouLiwiL/DsVi4uL
+        +A2LiwiLi/s+i4uLCIuLi/wNi4sIi4v3PouLiwgO+G+vsBW8PNhj0osI9wKL5t+L7AiLroGvb64IqqSc
+        sIuxCIv3NftzgYvPCIuuvZ6nXQiLi/cK0ouLCFfZVKdNiwgniylHi/sJCItvlmmgcghpc3tmi14Ii/sl
+        9392i08Ii2Q/hWXCCIuL+wk9i4sI90H3oBVomX2rrp4I5mavbGpoCIuLO7GLiwgO+JK9+dYVi12wZrqL
+        CLqLsLCLuQiLu2awXIsIXItmZotbCPeFixWLXa5mvIsIu4uwsIu5CIu7ZrBbiwhai2hmi1sIDvmeqffz
+        FYv7Wvc2+zX3WosI91mL9zX3NYv3WgiL91n7Nfc2+1mLCPtai/s2+zaL+1kI8osVi/cj9wb3Bfcjiwj3
+        IYv3BvsFi/sjCIv7IvsG+wf7IYsI+yOL+wb3B4v3IgjMwBWL9wXswOqLCNeL4mmlLgiLiy1ni4sIceb7
+        J32BPAiLi4v7BYuLCJU89yd9peYIi4vrZ4uLCHEuMmk/iwgsiyrAi/cFCIuLi/cDi4sIDvgJ6fjSFbSw
+        342OVQhGofsOeov7CgiL+y/3PpP3Fa4Ii4uL932LiwiL9y/7aaQ8+w0Ii4vDV4uLCPcN+z0VboNcj4u1
+        CI2suZKnfwiLi4tJi4sIDvj590f4oBWLi/s0+4GLiwiLi/cz+4OLiwiLi/cn4YuLCIuLI/cti4sIi4vy
+        9yuLiwiLi/sl4YuLCPeWixWLi/s0+4GLiwiLi/c0+4OLiwiLi/cn4ouLCIuLIfcqi4sIi4vz9y2LiwiL
+        i/sl4YuLCA741bP3mBWLi/fTi4uLCIuLi/sYi4sIi4v3PIuLiwiLi4v3wYuLCIuL/HuLi4sIi4uL+z2L
+        iwgO+Cv3/PfgFYuL+82Li4sIi4uL+z+LiwiLi/fNi4uLCIuLi/c/i4sIDvmeqffzFYv7Wvc2+zX3WosI
+        91mL9zX3NYv3WgiL91n7Nfc2+1mLCPtai/s2+zaL+1kI9osVi/ch9wb3Bfchiwj3H4v3BvsFi/shCIv7
+        IPsG+wf7H4sI+yGL+wb3B4v3IAj2+0oVi4vti4uLCIuLi/cJi4sIi4ugi4uLCIuL2fsJi4sIi4v3CIuL
+        iwiLizX3EIuLCPcFuHr3Ufs1iwiLi/s2i4uLCIuLi/v6i4sI7fdZFYuLi9eLiwiLi8eLi4sIv4uNP1aL
+        CIuLTouLiwgO+CG9+YoVi4v3vYuLiwiLi4v3GouLCIuL+72Li4sIi4uL+xqLiwgO+A33UfgcFeSL1taL
+        5QiL50HTMYsIMItBQ4svCIsw1UHmiwiL9wcVbot2oIumCIumoKSoiwioi6Byi3AIi3B2dm6LCA74r/dL
+        +JwVi4v7HouLiwiLi4v7PouLCIuL9x6Li4sIi4uL+xeLiwiLi/c+i4uLCIuLi/cXi4sIi4v3IYuLiwiL
+        i4v3PouLCIuL+yGLi4sIi4uL9xiLiwiLi/s+i4uLCIuLi/sYi4sI98z75xWLi/xXi4uLCIuLi/s8i4sI
+        i4v4V4uLiwiLi4v3PIuLCA74IvcS+KgVss/aaU9HCIuL+y/7RIuLCIuLpz+LiwiLi/fBi4uLCIuLi/cX
+        i4sIi4v7C4uLiwiLi8bDi4sIs62XsYu0CIvcTNIoiwhOi1ZzY0wIi4vnPIuLCA74CfcX+KgVi4uLJ4uL
+        CIuLvouLiwibjZV7i4AIi2FAhHS2CIuLMFKLiwi/IPcwetniCLzCkeY4sQjr5i73DfsGhQhWiGxzY2AI
+        i4vXS4uLCJWYn5agjAi3jYlRbYsIi4tZi4uLCA74FvgW+i4Vi4v7TouLiwiLiyf7OouLCIuL9y+Li4sI
+        i4v3F/c6i4sIDvik9+SKFYuL9yaKi4sIi4uJ+JqLiwiLi/tAi4uLCIuLi/vLi4sIi0gxjYvNCIuLi/fK
+        i4sIi4v7P4uLiwiLi4v9RIuLCIuL9z+Li4sIi4uL92KLiwimX76FrcAIi4uRZYuLCA75Kfd4OBWLi/c8
+        i4uLCIuLi/j6i4sIi4uzi4uLCIuLi/z6i4sIi4v3PIuLiwiLi4v5nIuLCIuL++SLi4sI+ziLOvsLi/sM
+        CIv7AdH7AfcbeQiLi4v7wYuLCA73nKz3wxWLVLRgxosIxIu0tovCCIvDYrhSiwhQi2Jei1MIDvgV97mz
+        FYuL+xGLi4sIi4tY+waLiwi/h6pyhHQIgWZSm1+pCIuLazWLiwi9Yr+Bt4sI9yWLwfdQ+xquCIuLq9KL
+        iwgO97bE+IgVi4u8p4uLCIuLi/uai4sIi4v3GouLiwiLi4v4TYuLCIuLIIuLiwiLi/sS+x2LiwiLi71F
+        i4sIDvgu92H3vhXfi+O9i+4Ii4uL9wyLiwiL7zO8N4sIN4szWosnCIuLi/sMi4sIiyjjWd+LCGb3oRWL
+        udSLjFwIi4uL+wuLiwiKXEOOircIi4uL9wyLiwgO+O/3RbwVi4v3M/eCi4sIi4v7NfeCi4sIi4v7JDSL
+        iwiLi/L7K4uLCIuLIvsti4sIi4v3KDaLiwj3jIoVi4v3NPeDi4sIi4v7M/eBi4sIi4v7JzaLiwiLi/P7
+        LIuLCIuLJPssi4sIi4v3JTSLiwgO+dL5J/kdFYuL+wnRi4sIi4v8Ov1Ki4sIi4v3CUWLiwiLi/g6+UqL
+        iwj8KfwNFYuL+xqLi4sIi4uL95qLiwiLi1pvi4sIi4tZ0YuLCIuL9xL3HYuLCIuL9ouLiwiLi4v8TYuL
+        CPiP91gVi4uL+5yLiwiLi6+Li4sIi4uL+wmLiwiLi2eLi4sIi4uLNIuLCIuL+xqLi4sIi4uL4ouLCIuL
+        +zWLi4sIi4tR5YuLCIuL94T3t4uLCIuL9wWLi4sI+w77oBWLi43oi4sIi4uHjIuLCIuLOS2LiwiLi9+L
+        i4sIDvnt+S75HRWLi/sI0YuLCIuL/Dr9SYuLCIuL9wdEi4sIi4v4O/lKi4sI/DD8DRWLi/sai4uLCIuL
+        i/eai4sIi4tab4uLCIuLWdGLiwiLi/cS9x2LiwiLi/aLi4sIi4uL/E2Liwj3kd8VssjAoseLCO2LyUaL
+        PQiLY39nZGoIi4tQVYuLCIuL9wSLi4sIi4uL+xOLiwiLi/u3i4uLCIuLb9WLiwiLi/ct9z6LiwjGzD2s
+        ZUoIi4sw14uLCA758Plh+R0Vi4v7BdGLiwiLi/w6/UmLiwiLi/cFRIuLCIuL+Dr5SouLCPzV+2cVi4uL
+        8ouLCIuLwIuLiwiqi43HXYkIdYp2f4F+CIuLO82Liwi1t6ykwo4I9wyR7PsRJi4I4mSFLVhTCDkx+zic
+        VfcDCIuL6sWLiwijX9qSi7YIi5eBm3qJCIuLVYuLiwj4upkVi4v0i4uLCIuLi/uTi4sIi4uui4uLCIuL
+        i/sFi4sIi4toi4uLCIuLizeLiwiLi/sKi4uLCIuLi9+LiwiLi/s3i4uLCIuLU+KLiwiLi/d8962Liwgx
+        +5cVi4vci4uLCIuLjeWLiwiLi4eMi4sIi4s8MIuLCA74e/gI+EcVi75js1iLCFmLY2OLWAiLVrNmvYsI
+        vouzsIvACOv8mxX7Dvt8+9bpi/d4CIviwOj3C5wIi4uV9wWLiwiLi/cqi4uLCIuLlft0i4sINq86ZYtC
+        CItD9xF5tNcIi4vxNIuLCA75HPg++YgVi4sn9zqLiwiLi/tOi4uLCIuL9xf7OouLCIuL9y+Li4sIdVsV
+        i4v7N4uLiwiLi/uL/ViLiwiLi/dUi4uLCIuLt/cii4sIi4v3UYuLiwiLi7n7IouLCIuL91SLi4sIi4v7
+        kflYi4sI+xr8KxWLi7/3Y4uLCIuLkIuLiwiLi7z7Y4uLCIuLIYuLiwgO+Rz4j/ouFYuL+06Li4sIi4sn
+        +zqLiwiLi/cvi4uLCIuL9xf3OouLCCT7ahWLi/s3i4uLCIuL+4v9WIuLCIuL91SLi4sIi4u39yKLiwiL
+        i/dRi4uLCIuLufsii4sIi4v3VIuLiwiLi/uR+ViLiwj7GvwrFYuLv/dji4sIi4uQi4uLCIuLvPtji4sI
+        i4shi4uLCA75HPgS+jAVi4v7CYuLiwiLi/su+zyLiwiLi/c9i4uLCIuLt7+LiwiLi7lXi4sIi4v3NouL
+        iwiLi/sq9zyLiwih+2wVi4v7N4uLiwiLi/uL/ViLiwiLi/dUi4uLCIuLt/cii4sIi4v3UYuLiwiLi7n7
+        IouLCIuL91SLi4sIi4v7kflYi4sI+xr8KxWLi7/3Y4uLCIuLkIuLiwiLi7z7Y4uLCIuLIYuLiwgO+Rz3
+        b/mBFbPZwTvbiwi8iq+zntUIi4swv4uLCGtAU9lQjAhHjV9jfDsIi4viWouLCPdNYhWLi/s3i4uLCIuL
+        +4v9WIuLCIuL91SLi4sIi4u39yKLiwiLi/dRi4uLCIuLufsii4sIi4v3VIuLiwiLi/uR+ViLiwj7Gvwr
+        FYuLv/dji4sIi4uQi4uLCIuLvPtji4sIi4shi4uLCA75HPcL+dYVi12wZrqLCLqLsLCLuQiLu2awXIsI
+        XItmZotbCPeFixWLXa5mvIsIu4uwsIu5CIu7ZrBbiwhai2hmi1sIt/sSFYuL+zeLi4sIi4v7i/1Yi4sI
+        i4v3VIuLiwiLi7f3IouLCIuL91GLi4sIi4u5+yKLiwiLi/dUi4uLCIuL+5H5WIuLCPsa/CsVi4u/92OL
+        iwiLi5CLi4sIi4u8+2OLiwiLiyGLi4sIDvkc+GWLFYuL91SLi4sIi4v7iflDi4sIpKKbrYuvCIvNVMxC
+        iwhCi1FQi0QIi2aaaqR0CIuL+4T9RIuLCIuL91SLi4sIi4u39yKLiwiLi/dRi4uLCIuLufsii4sI+yD5
+        xxWfi5t4i3YIi3V7fneLCHOLfZ+LmgiLoJmeo4sIjfvLFYuLvPtji4sIi4shi4uLCIuLv/dji4sIi4uQ
+        i4uLCA751vmu+KgVi4uL90SLiwiLi/yNi4uLCIuL+8L9WIuLCIuL92uLi4sIi4vQ91SLiwiLi/cAi4uL
+        CIuLi/tUi4sIi4v4M4uLiwiLi4v3P4uLCIuL+4mLi4sIi4uL6ouLCIuL93CLi4sIi4uL90GLiwiLi/tw
+        i4uLCIuLi+iLiwiLi/eJi4uLCPxy+08Vi4vP90iLiwiLi5OLi4sIi4uH+0iLiwiLi0OLi4sIDvja+DX3
+        cRVkKfs0o4vgCIuLi/eIi4sIi+P3Mp+7MwiLi/cmxouLCFL3EiKwNIsI+yKL+yA5i/s0CIuLi/uIi4sI
+        i/se8jv3CngIi4tsRouLCL+HqnKEdAiBZlKbX6kIi4trNYuLCL1iv4G3iwj3JYvB91D7Gq4Ii4uYqIuL
+        CNKd07m34giLi/sw04uLCA744Pgv+YgVi4sn9zqLiwiLi/tOi4uLCIuL9xf7OouLCIuL9y+Li4sI+0L7
+        bBWLi/fMi4uLCIuLi/c8i4sIi4v8gYuLiwiLi4v9WIuLCIuL+IGLi4sIi4uL9z2LiwiLi/vMi4uLCIuL
+        i/WLiwiLi/ezi4uLCIuLi/cvi4sIi4v7s4uLiwiLi4v3AouLCA744PiA+i4Vi4v7TouLiwiLiyf7OouL
+        CIuL9y+Li4sIi4v3F/c6i4sI+5P8EhWLi/fMi4uLCIuLi/c8i4sIi4v8gYuLiwiLi4v9WIuLCIuL+IGL
+        i4sIi4uL9z2LiwiLi/vMi4uLCIuLi/WLiwiLi/ezi4uLCIuLi/cvi4sIi4v7s4uLiwiLi4v3AouLCA74
+        4PgD+jAVi4v7CYuLiwiLi/su+zyLiwiLi/c9i4uLCIuLt7+LiwiLi7lXi4sIi4v3NouLiwiLi/sq9zyL
+        iwj7FvwUFYuL98yLi4sIi4uL9zyLiwiLi/yBi4uLCIuLi/1Yi4sIi4v4gYuLiwiLi4v3PYuLCIuL+8yL
+        i4sIi4uL9YuLCIuL97OLi4sIi4uL9y+LiwiLi/uzi4uLCIuLi/cCi4sIDvjg8/nWFYtdsGa6iwi6i7Cw
+        i7kIi7tmsFyLCFyLZmaLWwj3hYsVi12uZryLCLuLsLCLuQiLu2awW4sIWotoZotbCPsA+7oVi4v3zIuL
+        iwiLi4v3PIuLCIuL/IGLi4sIi4uL/ViLiwiLi/iBi4uLCIuLi/c9i4sIi4v7zIuLiwiLi4v1i4sIi4v3
+        s4uLiwiLi4v3L4uLCIuL+7OLi4sIi4uL9wKLiwgO97f3jPmIFYuLJ/c6i4sIi4v7TouLiwiLi/cX+zqL
+        iwiLi/cvi4uLCH5bFYuL+0eLi4sIi4uL/ViLiwiLi/dHi4uLCIuLi/lYi4sIDve39936LhWLi/tOi4uL
+        CIuLJ/s6i4sIi4v3L4uLiwiLi/cX9zqLiwgt+2oVi4v7R4uLiwiLi4v9WIuLCIuL90eLi4sIi4uL+ViL
+        iwgO97f3YPowFYuL+wmLi4sIi4v7JPs8i4sIi4v3PYuLiwiLi629i4sIi4uvWYuLCIuL9zaLi4sIi4v7
+        IPc8i4sIqvtsFYuL+0eLi4sIi4uL/ViLiwiLi/dHi4uLCIuLi/lYi4sIDve3YPnWFYtdsGa6iwi6i7Cw
+        i7kIi7tmsFyLCFyLZmaLWwj3Z4sVi12uZryLCLuLsLCLuQiLu2awW4sIWotoZotbCM77EhWLi/tHi4uL
+        CIuLi/1Yi4sIi4v3R4uLiwiLi4v5WIuLCA75Fsn4QBWLi1uLi4sIi4uL+yOLiwiLi7uLi4sIi4uL+7GL
+        iwiLi/eyi4uLCPcji/cD0Yv3NwiLi4v3hYuLCIv3OfsD0PsjiwiLi/uyi4uLCIuLi/usi4sI90n7kBWL
+        i4v3AYuLCIuL3ouLiwiLi4v3I4uLCIuLOIuLiwiLi4vzi4sIi4v0i4uLCLqLpniLZAiLi4v7hYuLCItl
+        cHhciwiLiyKLi4sIDvk494L5fRWz2cE724sIvIqvs57VCIuLML+LiwhrQFPZUIwIR41fY3w7CIuL4lqL
+        iwj7Sv19FYuL90eLi4sIi4uL96+LiwiLi3T3HYuLCIuLkIyLiwiLi8n7IouLCIuL9zT7q4uLCIuL90mL
+        i4sIi4uL+ViLiwiLi/tGi4uLCIuLi/vVi4sIjIud+w6MiwiLi4aKi4sIi4tP9yKLiwiLi/s/98KLiwiL
+        i/s+i4uLCIuLi/1Yi4sIDvkt+Eb5ihWLiyf3OouLCIuL+06Li4sIi4v3F/s6i4sIi4v3L4uLiwj8H/yh
+        FYv7NvcnOvcniwj3J4v3JtyL9zYIi4uL94aLiwiL9zb7J9z7J4sI+yeL+yY7i/s3CIuLi/uGi4sI90f3
+        hhWLv8Onw4sIxYvGcotUCIuLi/uGi4sIi1hScVKLCFKLUaSLvwiLi4v3houLCA75LfiX+jAVi4v7TouL
+        iwiLiyf7OouLCIuL9y+Li4sIi4v3F/c6i4sI/HD9RxWL+zb3Jzr3J4sI9yeL9ybci/c2CIuLi/eGi4sI
+        i/c2+yfc+yeLCPsni/smO4v7NwiLi4v7houLCPdH94YVi7/Dp8OLCMWLxnKLVAiLi4v7houLCItYUnFS
+        iwhSi1Gki78Ii4uL94aLiwgO+S34GvoyFYuL+wmLi4sIi4v7Lvs8i4sIi4v3PYuLiwiLi7e/i4sIi4u5
+        V4uLCIuL9zaLi4sIi4v7Kvc8i4sI+/P9SRWL+zb3Jzr3J4sI9yeL9ybci/c2CIuLi/eGi4sIi/c2+yfc
+        +yeLCPsni/smO4v7NwiLi4v7houLCPdH94YVi7/Dp8OLCMWLxnKLVAiLi4v7houLCItYUnFSiwhSi1Gk
+        i78Ii4uL94aLiwgO+S33evl/FbPZwTvbiwi8iq+zntUIi4swv4uLCGtAU9lQjAhHjV9jfDsIi4viWouL
+        CPtT/JYVi/s29yc69yeLCPcni/cm3Iv3NgiLi4v3houLCIv3Nvsn3Psniwj7J4v7JjuL+zcIi4uL+4aL
+        iwj3R/eGFYu/w6fDiwjFi8Zyi1QIi4uL+4aLiwiLWFJxUosIUotRpIu/CIuLi/eGi4sIDvkt9xP52BWL
+        XbBmuosIuouwsIu5CIu7ZrBciwhci2Zmi1sI94WLFYtdrma8iwi7i7Cwi7kIi7tmsFuLCFqLaGaLWwj7
+        3fzvFYv7NvcnOvcniwj3J4v3JtyL9zYIi4uL94aLiwiL9zb7J9z7J4sI+yeL+yY7i/s3CIuLi/uGi4sI
+        90f3hhWLv8Onw4sIxYvGcotUCIuLi/uGi4sIi1hScVKLCFKLUaSLvwiLi4v3houLCA74rPeg+DAVi4v7
+        D/cPi4sIi4v7DPsLi4sIi4v3EPsRi4sIi4v7DPsMi4sIi4v3CfsNi4sIsLG6uLKzCIuL9wz7DIuLCIuL
+        9wz3DIuLCIuL+wv3DIuLCIuL9wv3C4uLCIuL+wv3DouLCIuL+w77DouLCA75LfjS+YgVi4v7Mb+LiwiL
+        i2cui4sIe416jHuLCPsni/smO4v7NwiLi4v7houLCIs6sE7CYwiLi2Epi4sIi4v3MlOLiwiLi7Lri4sI
+        mombipuLCPcni/cm3Iv3NgiLi4v3houLCIvcZ8dUtAiLi7Lui4sI+xP8nxWLWFJxUosIUotRpIu/CIuL
+        i/eGi4sIi7/Dp8OLCMWLxnKLVAiLi4v7houLCA75L/hJ+YgVi4sn9zqLiwiLi/tOi4uLCIuL9xf7OouL
+        CIuL9y+Li4sI+2BbFYuL+0mLi4sIi4uL/GuLiwiK++D4yYuM9+AIi4uL+GuLiwiLi/tJi4uLCIuLi/xr
+        i4sIivsG+16Li/cGCIuLi/hri4sIDvkv+Jr6LhWLi/tOi4uLCIuLJ/s6i4sIi4v3L4uLiwiLi/cX9zqL
+        iwj7sftqFYuL+0mLi4sIi4uL/GuLiwiK++D4yYuM9+AIi4uL+GuLiwiLi/tJi4uLCIuLi/xri4sIivsG
+        +16Li/cGCIuLi/hri4sIDvkv+B36MBWLi/sJi4uLCIuL+y77PIuLCIuL9z2Li4sIi4u3v4uLCIuLuVeL
+        iwiLi/c2i4uLCIuL+yr3PIuLCPs0+2wVi4v7SYuLiwiLi4v8a4uLCIr74PjJi4z34AiLi4v4a4uLCIuL
+        +0mLi4sIi4uL/GuLiwiK+wb7XouL9wYIi4uL+GuLiwgO+S/3FvnWFYtdsGa6iwi6i7Cwi7kIi7tmsFyL
+        CFyLZmaLWwj3hYsVi12uZryLCLuLsLCLuQiLu2awW4sIWotoZotbCPse+xIVi4v7SYuLiwiLi4v8a4uL
+        CIr74PjJi4z34AiLi4v4a4uLCIuL+0mLi4sIi4uL/GuLiwiK+wb7XouL9wYIi4uL+GuLiwgO+SP4j/ou
+        FYuL+06Li4sIi4sn+zqLiwiLi/cvi4uLCIuL9xf3OouLCDH+LhWLi4v3q4uLCIuL94z4QYuLCIuL+2aL
+        i4sIi4v7FPuYi4sIi4v7FPeYi4sIi4v7ZIuLiwiLi/eL/EGLiwiLi4v7q4uLCIuL90eLi4sIDvjA94H4
+        7hWLi4v3BYuLCIuL+0mLi4sIi4uL/V6LiwiLi/dJi4uLCIuLi/cSi4sI9yqL9yy+i/dMCIv3MyXc+1KL
+        CIuLgYuLiwiL+zcV9z6ei/tV+z6fCIuLi/cui4sIDvjUu4sVi4v3PYuLiwiLi4v4iIuLCIuzq5+siwjj
+        i4b7KvsIowiLi4v7LIuLCIuLuIuLiwizi6t1i2UIi1hSX0+pCIuLi/syi4sIpIWiiKOLCNmL26uyywjD
+        4333JfsNtwjJtJfPi7MIi/cf+wbO+weLCPsKi/sMRI37IAiLi4v8j4uLCA75HPg++YgVi4sn9zqLiwiL
+        i/tOi4uLCIuL9xf7OouLCIuL9y+Li4sIdVsVi4v7N4uLiwiLi/uL/ViLiwiLi/dUi4uLCIuLt/cii4sI
+        i4v3UYuLiwiLi7n7IouLCIuL91SLi4sIi4v7kflYi4sI+xr8KxWLi7/3Y4uLCIuLkIuLiwiLi7z7Y4uL
+        CIuLIYuLiwgO+Rz4j/ouFYuL+06Li4sIi4sn+zqLiwiLi/cvi4uLCIuL9xf3OouLCCT7ahWLi/s3i4uL
+        CIuL+4v9WIuLCIuL91SLi4sIi4u39yKLiwiLi/dRi4uLCIuLufsii4sIi4v3VIuLiwiLi/uR+ViLiwj7
+        GvwrFYuLv/dji4sIi4uQi4uLCIuLvPtji4sIi4shi4uLCA75HPgS+jAVi4v7CYuLiwiLi/su+zyLiwiL
+        i/c9i4uLCIuLt7+LiwiLi7lXi4sIi4v3NouLiwiLi/sq9zyLiwih+2wVi4v7N4uLiwiLi/uL/ViLiwiL
+        i/dUi4uLCIuLt/cii4sIi4v3UYuLiwiLi7n7IouLCIuL91SLi4sIi4v7kflYi4sI+xr8KxWLi7/3Y4uL
+        CIuLkIuLiwiLi7z7Y4uLCIuLIYuLiwgO+Rz3b/mBFbPZwTvbiwi8iq+zntUIi4swv4uLCGtAU9lQjAhH
+        jV9jfDsIi4viWouLCPdNYhWLi/s3i4uLCIuL+4v9WIuLCIuL91SLi4sIi4u39yKLiwiLi/dRi4uLCIuL
+        ufsii4sIi4v3VIuLiwiLi/uR+ViLiwj7GvwrFYuLv/dji4sIi4uQi4uLCIuLvPtji4sIi4shi4uLCA75
+        HPcL+dYVi12wZrqLCLqLsLCLuQiLu2awXIsIXItmZotbCPeFixWLXa5mvIsIu4uwsIu5CIu7ZrBbiwha
+        i2hmi1sIt/sSFYuL+zeLi4sIi4v7i/1Yi4sIi4v3VIuLiwiLi7f3IouLCIuL91GLi4sIi4u5+yKLiwiL
+        i/dUi4uLCIuL+5H5WIuLCPsa/CsVi4u/92OLiwiLi5CLi4sIi4u8+2OLiwiLiyGLi4sIDvkc+GWLFYuL
+        91SLi4sIi4v7iflDi4sIpKKbrYuvCIvNVMxCiwhCi1FQi0QIi2aaaqR0CIuL+4T9RIuLCIuL91SLi4sI
+        i4u39yKLiwiLi/dRi4uLCIuLufsii4sI+yD5xxWfi5t4i3YIi3V7fneLCHOLfZ+LmgiLoJmeo4sIjfvL
+        FYuLvPtji4sIi4shi4uLCIuLv/dji4sIi4uQi4uLCA751vmu+KgVi4uL90SLiwiLi/yNi4uLCIuL+8L9
+        WIuLCIuL92uLi4sIi4vQ91SLiwiLi/cAi4uLCIuLi/tUi4sIi4v4M4uLiwiLi4v3P4uLCIuL+4mLi4sI
+        i4uL6ouLCIuL93CLi4sIi4uL90GLiwiLi/twi4uLCIuLi+iLiwiLi/eJi4uLCPxy+08Vi4vP90iLiwiL
+        i5OLi4sIi4uH+0iLiwiLi0OLi4sIDvja+DX3cRVkKfs0o4vgCIuLi/eIi4sIi+P3Mp+7MwiLi/cmxouL
+        CFL3EiKwNIsI+yKL+yA5i/s0CIuLi/uIi4sIi/se8jv3CngIi4tsRouLCL+HqnKEdAiBZlKbX6kIi4tr
+        NYuLCL1iv4G3iwj3JYvB91D7Gq4Ii4uYqIuLCNKd07m34giLi/sw04uLCA744Pgv+YgVi4sn9zqLiwiL
+        i/tOi4uLCIuL9xf7OouLCIuL9y+Li4sI+0L7bBWLi/fMi4uLCIuLi/c8i4sIi4v8gYuLiwiLi4v9WIuL
+        CIuL+IGLi4sIi4uL9z2LiwiLi/vMi4uLCIuLi/WLiwiLi/ezi4uLCIuLi/cvi4sIi4v7s4uLiwiLi4v3
+        AouLCA744PiA+i4Vi4v7TouLiwiLiyf7OouLCIuL9y+Li4sIi4v3F/c6i4sI+5P8EhWLi/fMi4uLCIuL
+        i/c8i4sIi4v8gYuLiwiLi4v9WIuLCIuL+IGLi4sIi4uL9z2LiwiLi/vMi4uLCIuLi/WLiwiLi/ezi4uL
+        CIuLi/cvi4sIi4v7s4uLiwiLi4v3AouLCA744PgD+jAVi4v7CYuLiwiLi/su+zyLiwiLi/c9i4uLCIuL
+        t7+LiwiLi7lXi4sIi4v3NouLiwiLi/sq9zyLiwj7FvwUFYuL98yLi4sIi4uL9zyLiwiLi/yBi4uLCIuL
+        i/1Yi4sIi4v4gYuLiwiLi4v3PYuLCIuL+8yLi4sIi4uL9YuLCIuL97OLi4sIi4uL9y+LiwiLi/uzi4uL
+        CIuLi/cCi4sIDvjg8/nWFYtdsGa6iwi6i7Cwi7kIi7tmsFyLCFyLZmaLWwj3hYsVi12uZryLCLuLsLCL
+        uQiLu2awW4sIWotoZotbCPsA+7oVi4v3zIuLiwiLi4v3PIuLCIuL/IGLi4sIi4uL/ViLiwiLi/iBi4uL
+        CIuLi/c9i4sIi4v7zIuLiwiLi4v1i4sIi4v3s4uLiwiLi4v3L4uLCIuL+7OLi4sIi4uL9wKLiwgO97f3
+        jPmIFYuLJ/c6i4sIi4v7TouLiwiLi/cX+zqLiwiLi/cvi4uLCH5bFYuL+0eLi4sIi4uL/ViLiwiLi/dH
+        i4uLCIuLi/lYi4sIDve39936LhWLi/tOi4uLCIuLJ/s6i4sIi4v3L4uLiwiLi/cX9zqLiwgt+2oVi4v7
+        R4uLiwiLi4v9WIuLCIuL90eLi4sIi4uL+ViLiwgO97f3YPowFYuL+wmLi4sIi4v7JPs8i4sIi4v3PYuL
+        iwiLi629i4sIi4uvWYuLCIuL9zaLi4sIi4v7IPc8i4sIqvtsFYuL+0eLi4sIi4uL/ViLiwiLi/dHi4uL
+        CIuLi/lYi4sIDve3YPnWFYtdsGa6iwi6i7Cwi7kIi7tmsFyLCFyLZmaLWwj3Z4sVi12uZryLCLuLsLCL
+        uQiLu2awW4sIWotoZotbCM77EhWLi/tHi4uLCIuLi/1Yi4sIi4v3R4uLiwiLi4v5WIuLCA75Fsn4QBWL
+        i1uLi4sIi4uL+yOLiwiLi7uLi4sIi4uL+7GLiwiLi/eyi4uLCPcji/cD0Yv3NwiLi4v3hYuLCIv3OfsD
+        0PsjiwiLi/uyi4uLCIuLi/usi4sI90n7kBWLi4v3AYuLCIuL3ouLiwiLi4v3I4uLCIuLOIuLiwiLi4vz
+        i4sIi4v0i4uLCLqLpniLZAiLi4v7hYuLCItlcHhciwiLiyKLi4sIDvk494L5fRWz2cE724sIvIqvs57V
+        CIuLML+LiwhrQFPZUIwIR41fY3w7CIuL4lqLiwj7Sv19FYuL90eLi4sIi4uL96+LiwiLi3T3HYuLCIuL
+        kIyLiwiLi8n7IouLCIuL9zT7q4uLCIuL90mLi4sIi4uL+ViLiwiLi/tGi4uLCIuLi/vVi4sIjIud+w6M
+        iwiLi4aKi4sIi4tP9yKLiwiLi/s/98KLiwiLi/s+i4uLCIuLi/1Yi4sIDvkt+Eb5ihWLiyf3OouLCIuL
+        +06Li4sIi4v3F/s6i4sIi4v3L4uLiwj8H/yhFYv7NvcnOvcniwj3J4v3JtyL9zYIi4uL94aLiwiL9zb7
+        J9z7J4sI+yeL+yY7i/s3CIuLi/uGi4sI90f3hhWLv8Onw4sIxYvGcotUCIuLi/uGi4sIi1hScVKLCFKL
+        UaSLvwiLi4v3houLCA75LfiX+jAVi4v7TouLiwiLiyf7OouLCIuL9y+Li4sIi4v3F/c6i4sI/HD9RxWL
+        +zb3Jzr3J4sI9yeL9ybci/c2CIuLi/eGi4sIi/c2+yfc+yeLCPsni/smO4v7NwiLi4v7houLCPdH94YV
+        i7/Dp8OLCMWLxnKLVAiLi4v7houLCItYUnFSiwhSi1Gki78Ii4uL94aLiwgO+S34GvoyFYuL+wmLi4sI
+        i4v7Lvs8i4sIi4v3PYuLiwiLi7e/i4sIi4u5V4uLCIuL9zaLi4sIi4v7Kvc8i4sI+/P9SRWL+zb3Jzr3
+        J4sI9yeL9ybci/c2CIuLi/eGi4sIi/c2+yfc+yeLCPsni/smO4v7NwiLi4v7houLCPdH94YVi7/Dp8OL
+        CMWLxnKLVAiLi4v7houLCItYUnFSiwhSi1Gki78Ii4uL94aLiwgO+S33evl/FbPZwTvbiwi8iq+zntUI
+        i4swv4uLCGtAU9lQjAhHjV9jfDsIi4viWouLCPtT/JYVi/s29yc69yeLCPcni/cm3Iv3NgiLi4v3houL
+        CIv3Nvsn3Psniwj7J4v7JjuL+zcIi4uL+4aLiwj3R/eGFYu/w6fDiwjFi8Zyi1QIi4uL+4aLiwiLWFJx
+        UosIUotRpIu/CIuLi/eGi4sIDvkt9xP52BWLXbBmuosIuouwsIu5CIu7ZrBciwhci2Zmi1sI94WLFYtd
+        rma8iwi7i7Cwi7kIi7tmsFuLCFqLaGaLWwj73fzvFYv7NvcnOvcniwj3J4v3JtyL9zYIi4uL94aLiwiL
+        9zb7J9z7J4sI+yeL+yY7i/s3CIuLi/uGi4sI90f3hhWLv8Onw4sIxYvGcotUCIuLi/uGi4sIi1hScVKL
+        CFKLUaSLvwiLi4v3houLCA74kaf4ChWLi4v7LIuLCIuL+FqLi4sIi4uL9yyLiwiLi/xai4uLCPcb+6gV
+        i1a0ZcCLCMCLtbGLwAiLwGGwVosIVotiZotWCIv4JRWLVrRlwIsIwIu1sYvACIvAYbBWiwhWi2Jmi1YI
+        Dvkt+NL5iBWLi/sxv4uLCIuLZy6Liwh7jXqMe4sI+yeL+yY7i/s3CIuLi/uGi4sIizqwTsJjCIuLYSmL
+        iwiLi/cyU4uLCIuLsuuLiwiaiZuKm4sI9yeL9ybci/c2CIuLi/eGi4sIi9xnx1S0CIuLsu6Liwj7E/yf
+        FYtYUnFSiwhSi1Gki78Ii4uL94aLiwiLv8Onw4sIxYvGcotUCIuLi/uGi4sIDvkv+En5iBWLiyf3OouL
+        CIuL+06Li4sIi4v3F/s6i4sIi4v3L4uLiwj7YFsVi4v7SYuLiwiLi4v8a4uLCIr74PjJi4z34AiLi4v4
+        a4uLCIuL+0mLi4sIi4uL/GuLiwiK+wb7XouL9wYIi4uL+GuLiwgO+S/4mvouFYuL+06Li4sIi4sn+zqL
+        iwiLi/cvi4uLCIuL9xf3OouLCPux+2oVi4v7SYuLiwiLi4v8a4uLCIr74PjJi4z34AiLi4v4a4uLCIuL
+        +0mLi4sIi4uL/GuLiwiK+wb7XouL9wYIi4uL+GuLiwgO+S/4HfowFYuL+wmLi4sIi4v7Lvs8i4sIi4v3
+        PYuLiwiLi7e/i4sIi4u5V4uLCIuL9zaLi4sIi4v7Kvc8i4sI+zT7bBWLi/tJi4uLCIuLi/xri4sIivvg
+        +MmLjPfgCIuLi/hri4sIi4v7SYuLiwiLi4v8a4uLCIr7Bvtei4v3BgiLi4v4a4uLCA75L/cW+dYVi12w
+        ZrqLCLqLsLCLuQiLu2awXIsIXItmZotbCPeFixWLXa5mvIsIu4uwsIu5CIu7ZrBbiwhai2hmi1sI+x77
+        EhWLi/tJi4uLCIuLi/xri4sIivvg+MmLjPfgCIuLi/hri4sIi4v7SYuLiwiLi4v8a4uLCIr7Bvtei4v3
+        BgiLi4v4a4uLCA75I/iP+i4Vi4v7TouLiwiLiyf7OouLCIuL9y+Li4sIi4v3F/c6i4sIMf4uFYuLi/er
+        i4sIi4v3jPhBi4sIi4v7ZouLiwiLi/sU+5iLiwiLi/sU95iLiwiLi/tki4uLCIuL94v8QYuLCIuLi/ur
+        i4sIi4v3R4uLiwgO+MD3gfjuFYuLi/cFi4sIi4v7SYuLiwiLi4v9XouLCIuL90mLi4sIi4uL9xKLiwj3
+        Kov3LL6L90wIi/czJdz7UosIi4uBi4uLCIv7NxX3Pp6L+1X7Pp8Ii4uL9y6LiwgO+SP3C/nWFYtdsGa6
+        iwi6i7Cwi7kIi7tmsFyLCFyLZmaLWwj3hYsVi12uZryLCLuLsLCLuQiLu2awW4sIWotoZotbCMT91hWL
+        i4v3q4uLCIuL94z4QYuLCIuL+2aLi4sIi4v7FPuYi4sIi4v7FPeYi4sIi4v7ZIuLiwiLi/eL/EGLiwiL
+        i4v7q4uLCIuL90eLi4sIDvkc90L5ihWLi/e9i4uLCIuLi/cai4sIi4v7vYuLiwiLi4v7GouLCPd6WRWL
+        i/s3i4uLCIuL+4v9WIuLCIuL91SLi4sIi4u39yKLiwiLi/dRi4uLCIuLufsii4sIi4v3VIuLiwiLi/uR
+        +ViLiwj7GvwrFYuLv/dji4sIi4uQi4uLCIuLvPtji4sIi4shi4uLCA75HPdC+YoVi4v3vYuLiwiLi4v3
+        GouLCIuL+72Li4sIi4uL+xqLiwj3elkVi4v7N4uLiwiLi/uL/ViLiwiLi/dUi4uLCIuLt/cii4sIi4v3
+        UYuLiwiLi7n7IouLCIuL91SLi4sIi4v7kflYi4sI+xr8KxWLi7/3Y4uLCIuLkIuLiwiLi7z7Y4uLCIuL
+        IYuLiwgO+Rz3/vouFYtYPYuLvgiLi/sdi4uLCIv7fPfyi4v3fAiLi/sbi4uLCLX7ahWLi/s3i4uLCIuL
+        +4v9WIuLCIuL91SLi4sIi4u39yKLiwiLi/dRi4uLCIuLufsii4sIi4v3VIuLiwiLi/uR+ViLiwj7Gvwr
+        FYuLv/dji4sIi4uQi4uLCIuLvPtji4sIi4shi4uLCA75HPf++i4Vi1g9i4u+CIuL+x2Li4sIi/t89/KL
+        i/d8CIuL+xuLi4sItftqFYuL+zeLi4sIi4v7i/1Yi4sIi4v3VIuLiwiLi7f3IouLCIuL91GLi4sIi4u5
+        +yKLiwiLi/dUi4uLCIuL+5H5WIuLCPsa/CsVi4u/92OLiwiLi5CLi4sIi4u8+2OLiwiLiyGLi4sIDvkc
+        +TcqFXuBfoeAiwhiionAzMYIi4v7kflYi4sIi4v7N4uLiwiLi/uL/ViLiwiLi/dUi4uLCIuLt/cii4sI
+        i4v3UYuLiwiLi7n7IouLCIuLwYuLiwgh+xSy+wj3HIsIrou5l62nCIuLb/aLiwj8KfgiFYuLv/dji4sI
+        i4uQi4uLCIuLvPtji4sIi4shi4uLCA75HPk3KhV7gX6HgIsIYoqJwMzGCIuL+5H5WIuLCIuL+zeLi4sI
+        i4v7i/1Yi4sIi4v3VIuLiwiLi7f3IouLCIuL91GLi4sIi4u5+yKLiwiLi8GLi4sIIfsUsvsI9xyLCK6L
+        uZetpwiLi2/2i4sI/Cn4IhWLi7/3Y4uLCIuLkIuLiwiLi7z7Y4uLCIuLIYuLiwgO+Nr4jPouFYuL+06L
+        i4sIi4sn+zqLiwiLi/cvi4uLCIuL9xf3OouLCDT9URVkKfs0o4vgCIuLi/eIi4sIi+P3Mp+7MwiLi/cm
+        xouLCFL3EiKwNIsI+yKL+yA5i/s0CIuLi/uIi4sIi/s19yA69x+LCOSL9rfG9wcIi4v7MNOLiwgO+Nr4
+        jPouFYuL+06Li4sIi4sn+zqLiwiLi/cvi4uLCIuL9xf3OouLCDT9URVkKfs0o4vgCIuLi/eIi4sIi+P3
+        Mp+7MwiLi/cmxouLCFL3EiKwNIsI+yKL+yA5i/s0CIuLi/uIi4sIi/s19yA69x+LCOSL9rfG9wcIi4v7
+        MNOLiwgO+Nr3cvnnFYtUtmDDiwjDi7S2i8IIi8FitlOLCFOLYGCLVQj3V/0KFWQp+zSji+AIi4uL94iL
+        iwiL4/cyn7szCIuL9ybGi4sIUvcSIrA0iwj7Iov7IDmL+zQIi4uL+4iLiwiL+zX3IDr3H4sI5Iv2t8b3
+        BwiLi/sw04uLCA742vdy+ecVi1S2YMOLCMOLtLaLwgiLwWK2U4sIU4tgYItVCPdX/QoVZCn7NKOL4AiL
+        i4v3iIuLCIvj9zKfuzMIi4v3JsaLiwhS9xIisDSLCPsii/sgOYv7NAiLi4v7iIuLCIv7NfcgOvcfiwjk
+        i/a3xvcHCIuL+zDTi4sIDvja9wT6MBWLi/cq+zyLiwiLi/cOi4uLCIuL9yr3PIuLCIuL+zuLi4sIi4td
+        V4uLCIuLYr+LiwiLi/s8i4uLCPfF/VMVZCn7NKOL4AiLi4v3iIuLCIvj9zKfuzMIi4v3JsaLiwhS9xIi
+        sDSLCPsii/sgOYv7NAiLi4v7iIuLCIv7NfcgOvcfiwjki/a3xvcHCIuL+zDTi4sIDvja9wT6MBWLi/cq
+        +zyLiwiLi/cOi4uLCIuL9yr3PIuLCIuL+zuLi4sIi4tdV4uLCIuLYr+LiwiLi/s8i4uLCPfF/VMVZCn7
+        NKOL4AiLi4v3iIuLCIvj9zKfuzMIi4v3JsaLiwhS9xIisDSLCPsii/sgOYv7NAiLi4v7iIuLCIv7Nfcg
+        Ovcfiwjki/a3xvcHCIuL+zDTi4sIDvkQ2/owFYuL9yr7PIuLCIuL9w6Li4sIi4v3Kvc8i4sIi4v7O4uL
+        iwiLi11Xi4sIi4tiv4uLCIuL+zyLi4sIc/tsFYuLi/1Yi4sIi4v3nYuLiwj3Ior3GdKL9zcIi4uL94KL
+        iwiL9zn7GdP7IosIi4v7nYuLiwj3SPywFYuLi/gJi4sIi4vmi4uLCMeLqG6LXQiLi4v7cYuLCItdb2xO
+        iwiLizCLi4sIDvkQ2/owFYuL9yr7PIuLCIuL9w6Li4sIi4v3Kvc8i4sIi4v7O4uLiwiLi11Xi4sIi4ti
+        v4uLCIuL+zyLi4sIc/tsFYuLi/1Yi4sIi4v3nYuLiwj3Ior3GdKL9zcIi4uL94KLiwiL9zn7GdP7IosI
+        i4v7nYuLiwj3SPywFYuLi/gJi4sIi4vmi4uLCMeLqG6LXQiLi4v7cYuLCItdb2xOiwiLizCLi4sIDvkW
+        yfhAFYuLW4uLiwiLi4v7I4uLCIuLu4uLiwiLi4v7sYuLCIuL97KLi4sI9yOL9wPRi/c3CIuLi/eFi4sI
+        i/c5+wPQ+yOLCIuL+7KLi4sIi4uL+6yLiwj3SfuQFYuLi/cBi4sIi4vei4uLCIuLi/cji4sIi4s4i4uL
+        CIuLi/OLiwiLi/SLi4sIuoumeItkCIuLi/uFi4sIi2VweFyLCIuLIouLiwgO+RbJ+EAVi4tbi4uLCIuL
+        i/sji4sIi4u7i4uLCIuLi/uxi4sIi4v3souLiwj3I4v3A9GL9zcIi4uL94WLiwiL9zn7A9D7I4sIi4v7
+        souLiwiLi4v7rIuLCPdJ+5AVi4uL9wGLiwiLi96Li4sIi4uL9yOLiwiLiziLi4sIi4uL84uLCIuL9IuL
+        iwi6i6Z4i2QIi4uL+4WLiwiLZXB4XIsIi4sii4uLCA744Pcz+YoVi4v3vYuLiwiLi4v3GouLCIuL+72L
+        i4sIi4uL+xqLiwjZ+24Vi4v3zIuLiwiLi4v3PIuLCIuL/IGLi4sIi4uL/ViLiwiLi/iBi4uLCIuLi/c9
+        i4sIi4v7zIuLiwiLi4v1i4sIi4v3s4uLiwiLi4v3L4uLCIuL+7OLi4sIi4uL9wKLiwgO+OD3M/mKFYuL
+        972Li4sIi4uL9xqLiwiLi/u9i4uLCIuLi/sai4sI2ftuFYuL98yLi4sIi4uL9zyLiwiLi/yBi4uLCIuL
+        i/1Yi4sIi4v4gYuLiwiLi4v3PYuLCIuL+8yLi4sIi4uL9YuLCIuL97OLi4sIi4uL9y+LiwiLi/uzi4uL
+        CIuLi/cCi4sIDvjg92b55xWLVLZgw4sIw4u0tovCCIvBYrZTiwhTi2Bgi1UIpvvLFYuL98yLi4sIi4uL
+        9zyLiwiLi/yBi4uLCIuLi/1Yi4sIi4v4gYuLiwiLi4v3PYuLCIuL+8yLi4sIi4uL9YuLCIuL97OLi4sI
+        i4uL9y+LiwiLi/uzi4uLCIuLi/cCi4sIDvjg92b55xWLVLZgw4sIw4u0tovCCIvBYrZTiwhTi2Bgi1UI
+        pvvLFYuL98yLi4sIi4uL9zyLiwiLi/yBi4uLCIuLi/1Yi4sIi4v4gYuLiwiLi4v3PYuLCIuL+8yLi4sI
+        i4uL9YuLCIuL97OLi4sIi4uL9y+LiwiLi/uzi4uLCIuLi/cCi4sIDvjg+MwqFXuBfoeAiwhiiom+y8gI
+        i4uL9z2LiwiLi/vMi4uLCIuLi/WLiwiLi/ezi4uLCIuLi/cvi4sIi4v7s4uLiwiLi4v3AouLCIuL98yL
+        i4sIi4uL9zyLiwiLi/yBi4uLCIuLi/1Yi4sIi4v3+IuLiwgh+xSy+wj3HIsIrou5l62nCIuLb/aLiwgO
+        +OD4zCoVe4F+h4CLCGKKib7LyAiLi4v3PYuLCIuL+8yLi4sIi4uL9YuLCIuL97OLi4sIi4uL9y+LiwiL
+        i/uzi4uLCIuLi/cCi4sIi4v3zIuLiwiLi4v3PIuLCIuL/IGLi4sIi4uL/ViLiwiLi/f4i4uLCCH7FLL7
+        CPcciwiui7mXracIi4tv9ouLCA744O/6MBWLi/cq+zyLiwiLi/cOi4uLCIuL9yr3PIuLCIuL+zuLi4sI
+        i4tdV4uLCIuLYr+LiwiLi/s8i4uLCPcd/BQVi4v3zIuLiwiLi4v3PIuLCIuL/IGLi4sIi4uL/ViLiwiL
+        i/iBi4uLCIuLi/c9i4sIi4v7zIuLiwiLi4v1i4sIi4v3s4uLiwiLi4v3L4uLCIuL+7OLi4sIi4uL9wKL
+        iwgO+ODv+jAVi4v3Kvs8i4sIi4v3DouLiwiLi/cq9zyLiwiLi/s7i4uLCIuLXVeLiwiLi2K/i4sIi4v7
+        PIuLiwj3HfwUFYuL98yLi4sIi4uL9zyLiwiLi/yBi4uLCIuLi/1Yi4sIi4v4gYuLiwiLi4v3PYuLCIuL
+        +8yLi4sIi4uL9YuLCIuL97OLi4sIi4uL9y+LiwiLi/uzi4uLCIuLi/cCi4sIDvkE9/n6LhWLWD2Li74I
+        i4v7HYuLiwiL+3z38ouL93wIi4v7G4uLiwj3ZPv3FVr3BSKxL4sI+yCL+yA7i/s0CIuLi/uHi4sIi/s3
+        9yA59yCLCPcii/cc3Yv3NwiLi4v3RIuLCIuL+7GLi4sIi4uL+yqLiwiLi/cFi4uLCIuLi3GLiwiL+wL7
+        Y4qL9wMIi4uL94eLiwiL6PcyobIsCIuL9yrQi4sIDvkE9/n6LhWLWD2Li74Ii4v7HYuLiwiL+3z38ouL
+        93wIi4v7G4uLiwj3ZPv3FVr3BSKxL4sI+yCL+yA7i/s0CIuLi/uHi4sIi/s39yA59yCLCPcii/cc3Yv3
+        NwiLi4v3RIuLCIuL+7GLi4sIi4uL+yqLiwiLi/cFi4uLCIuLi3GLiwiL+wL7Y4qL9wMIi4uL94eLiwiL
+        6PcyobIsCIuL9yrQi4sIDvkE93D55xWLVLZgw4sIw4u0tovCCIvBYrZTiwhTi2Bgi1UI9+37sBVa9wUi
+        sS+LCPsgi/sgO4v7NAiLi4v7h4uLCIv7N/cgOfcgiwj3Iov3HN2L9zcIi4uL90SLiwiLi/uxi4uLCIuL
+        i/sqi4sIi4v3BYuLiwiLi4txi4sIi/sC+2OKi/cDCIuLi/eHi4sIi+j3MqGyLAiLi/cq0IuLCA75BPdw
+        +ecVi1S2YMOLCMOLtLaLwgiLwWK2U4sIU4tgYItVCPft+7AVWvcFIrEviwj7IIv7IDuL+zQIi4uL+4eL
+        iwiL+zf3IDn3IIsI9yKL9xzdi/c3CIuLi/dEi4sIi4v7sYuLiwiLi4v7KouLCIuL9wWLi4sIi4uLcYuL
+        CIv7Avtjiov3AwiLi4v3h4uLCIvo9zKhsiwIi4v3KtCLiwgO+QT4yfjLFVr3BSKxL4sI+yCL+yA7i/s0
+        CIuLi/uHi4sIi/s39yA59yCLCPcii/cc3Yv3NwiLi4v3RIuLCIuL+7GLi4sIi4uL+yqLiwiLi/cFi4uL
+        CIuLi3GLiwiL+wL7Y4qL9wMIi4uL94eLiwiL6PcyobIsCIuL9yrQi4sI+x38+RWLi/tFi4uLCIuLTvtg
+        i4sIi4v3N4uLiwiLi9b3YIuLCA75BPjJ+MsVWvcFIrEviwj7IIv7IDuL+zQIi4uL+4eLiwiL+zf3IDn3
+        IIsI9yKL9xzdi/c3CIuLi/dEi4sIi4v7sYuLiwiLi4v7KouLCIuL9wWLi4sIi4uLcYuLCIv7Avtjiov3
+        AwiLi4v3h4uLCIvo9zKhsiwIi4v3KtCLiwj7Hfz5FYuL+0WLi4sIi4tO+2CLiwiLi/c3i4uLCIuL1vdg
+        i4sIDvlN+Qv4mhWLi8WLi4sIi4uL84uLCIuLUYuLiwiLi4vhi4sIi4v7SIuLiwiLi4s1i4sIi4v7YIuL
+        iwiLi4vhi4sIi4v7SIuLiwiLi4s1i4sIi4tQi4uLCIuLiyOLiwiLi8aLi4sIi4uL/JqLiwiLi/dIi4uL
+        CIuLi/efi4sIi4v3YIuLiwiLi4v7n4uLCIuL90iLi4sIi4uL+JqLiwj8FIsVi4v3YIuLiwiLi4s9i4sI
+        i4v7YIuLiwiLi4vZi4sIDvlN+Qv4mhWLi8WLi4sIi4uL84uLCIuLUYuLiwiLi4vhi4sIi4v7SIuLiwiL
+        i4s1i4sIi4v7YIuLiwiLi4vhi4sIi4v7SIuLiwiLi4s1i4sIi4tQi4uLCIuLiyOLiwiLi8aLi4sIi4uL
+        /JqLiwiLi/dIi4uLCIuLi/efi4sIi4v3YIuLiwiLi4v7n4uLCIuL90iLi4sIi4uL+JqLiwj8FIsVi4v3
+        YIuLiwiLi4s9i4sIi4v7YIuLiwiLi4vZi4sIDve3h/mKFYuL972Li4sIi4uL9xqLiwiLi/u9i4uLCIuL
+        i/sai4sI94NZFYuL+0eLi4sIi4uL/ViLiwiLi/dHi4uLCIuLi/lYi4sIDve3h/mKFYuL972Li4sIi4uL
+        9xqLiwiLi/u9i4uLCIuLi/sai4sI94NZFYuL+0eLi4sIi4uL/ViLiwiLi/dHi4uLCIuLi/lYi4sIDve3
+        95AqFXuBfoeAiwhgipLIxr4Ii4uL+ViLiwiLi/tHi4uLCIuLi/1Yi4sIi4uzi4uLCCH7FLL7CPcciwiu
+        i7mXracIi4tv9ouLCA73t/eQKhV7gX6HgIsIYIqSyMa+CIuLi/lYi4sIi4v7R4uLiwiLi4v9WIuLCIuL
+        s4uLiwgh+xSy+wj3HIsIrou5l62nCIuLb/aLiwgO97e6+ecVi1S2YMOLCMOLtLaLwgiLwWK2U4sIU4tg
+        YItVCPdQ+yMVi4v7R4uLiwiLi4v9WIuLCIuL90eLi4sIi4uL+ViLiwgO97f3f/lYFYuL+0eLi4sIi4uL
+        /ViLiwiLi/dHi4uLCIuLi/lYi4sIDvoC93/5WBWLi/tHi4uLCIuLi/1Yi4sIi4v3R4uLiwiLi4v5WIuL
+        CMb8iBWf+yr3DUf3DosI9xuL9xvii/cuCIuLi/hxi4sIi4v75ouLiwiLi4v7NouLCIuL9zWLi4sIi4uL
+        +8+LiwiLYmFwX4sIX4tcooHECIuL+z1oi4sIDvoC93/5WBWLi/tHi4uLCIuLi/1Yi4sIi4v3R4uLiwiL
+        i4v5WIuLCMb8iBWf+yr3DUf3DosI9xuL9xvii/cuCIuLi/hxi4sIi4v75ouLiwiLi4v7NouLCIuL9zWL
+        i4sIi4uL+8+LiwiLYmFwX4sIX4tcooHECIuL+z1oi4sIDvkU94D4UhWLi4v3mouLCIuL+0iLi4sIi4uL
+        /ViLiwiLi/dIi4uLCIuLi/eJi4sIi4uRk4uLCIuL90n7kYuLCIuL93eLi4sIi4v7q/gCi4sIi4v3rPfq
+        i4sIi4v7c4uLiwiLi/tU+5qLiwj3XfyEFYuL+0WLi4sIi4tO+2CLiwiLi/c3i4uLCIuL1vdgi4sIDvkU
+        94D4UhWLi4v3mouLCIuL+0iLi4sIi4uL/ViLiwiLi/dIi4uLCIuLi/eJi4sIi4uRk4uLCIuL90n7kYuL
+        CIuL93eLi4sIi4v7q/gCi4sIi4v3rPfqi4sIi4v7c4uLiwiLi/tU+5qLiwj3XfyEFYuL+0WLi4sIi4tO
+        +2CLiwiLi/c3i4uLCIuL1vdgi4sIDviv99/6LhWLi/tOi4uLCIuLJ/s6i4sIi4v3L4uLiwiLi/cX9zqL
+        iwj7p/4uFYuL+GiLi4sIi4uL90WLiwiLi/u0i4uLCIuLi/ini4sIi4v7SIuLiwiLi4v9WIuLCA74r/ff
+        +i4Vi4v7TouLiwiLiyf7OouLCIuL9y+Li4sIi4v3F/c6i4sI+6f+LhWLi/hoi4uLCIuLi/dFi4sIi4v7
+        tIuLiwiLi4v4p4uLCIuL+0iLi4sIi4uL/ViLiwgO+K/DixWLi/hoi4uLCIuLi/dFi4sIi4v7tIuLiwiL
+        i4v4p4uLCIuL+0iLi4sIi4uL/ViLiwj38lkVi4v7RYuLiwiLi077YIuLCIuL9zeLi4sIi4vW92CLiwgO
+        +K/DixWLi/hoi4uLCIuLi/dFi4sIi4v7tIuLiwiLi4v4p4uLCIuL+0iLi4sIi4uL/ViLiwj38lkVi4v7
+        RYuLiwiLi077YIuLCIuL9zeLi4sIi4vW92CLiwgO+LnDixWLi/hoi4uLCIuLi/dFi4sIi4v7tIuLiwiL
+        i4v4p4uLCIuL+0iLi4sIi4uL/ViLiwj4fPlUFYuL+zuLi4sIi4tO+2CLiwiLi/cti4uLCIuL1vdgi4sI
+        Dvi5w4sVi4v4aIuLiwiLi4v3RYuLCIuL+7SLi4sIi4uL+KeLiwiLi/tIi4uLCIuLi/1Yi4sI+Hz5VBWL
+        i/s7i4uLCIuLTvtgi4sIi4v3LYuLiwiLi9b3YIuLCA74uMOLFYuL+GiLi4sIi4uL90WLiwiLi/u0i4uL
+        CIuLi/ini4sIi4v7SIuLiwiLi4v9WIuLCPeB+BAVi1azYsSLCMGLs7SLwAiLwWO2VYsIUotjYItVCA74
+        uMOLFYuL+GiLi4sIi4uL90WLiwiLi/u0i4uLCIuLi/ini4sIi4v7SIuLiwiLi4v9WIuLCPeB+BAVi1az
+        YsSLCMGLs7SLwAiLwWO2VYsIUotjYItVCA74zviy90oVi4v7pouLiwiLi4v3LIuLCIuL90TUi4sIi4tc
+        9wSLiwiLi/sVVouLCIuLi/eGi4sIi4v7SYuLiwiLi4v704uLCIuLNWeLiwiLi7j7BYuLCIuLtJyLiwiL
+        i4v7lYuLCIuL+FuLi4sIi4uL90qLiwgO+M74svdKFYuL+6aLi4sIi4uL9yyLiwiLi/dE1IuLCIuLXPcE
+        i4sIi4v7FVaLiwiLi4v3houLCIuL+0mLi4sIi4uL+9OLiwiLizVni4sIi4u4+wWLiwiLi7Sci4sIi4uL
+        +5WLiwiLi/hbi4uLCIuLi/dKi4sIDvk4+J/6LhWLi/tOi4uLCIuLJ/s6i4sIi4v3L4uLiwiLi/cX9zqL
+        iwj8Z/4uFYuL90eLi4sIi4uL96+LiwiLi3T3HYuLCIuLkIyLiwiLi8n7IouLCIuL9zT7q4uLCIuL90mL
+        i4sIi4uL+ViLiwiLi/tGi4uLCIuLi/vVi4sIjIud+w6MiwiLi4aKi4sIi4tP9yKLiwiLi/s/98KLiwiL
+        i/s+i4uLCIuLi/1Yi4sIDvk4+J/6LhWLi/tOi4uLCIuLJ/s6i4sIi4v3L4uLiwiLi/cX9zqLiwj8Z/4u
+        FYuL90eLi4sIi4uL96+LiwiLi3T3HYuLCIuLkIyLiwiLi8n7IouLCIuL9zT7q4uLCIuL90mLi4sIi4uL
+        +ViLiwiLi/tGi4uLCIuLi/vVi4sIjIud+w6MiwiLi4aKi4sIi4tP9yKLiwiLi/s/98KLiwiLi/s+i4uL
+        CIuLi/1Yi4sIDvk4w4sVi4v3R4uLiwiLi4v3r4uLCIuLdPcdi4sIi4uQjIuLCIuLyfsii4sIi4v3NPur
+        i4sIi4v3SYuLiwiLi4v5WIuLCIuL+0aLi4sIi4uL+9WLiwiMi537DoyLCIuLhoqLiwiLi0/3IouLCIuL
+        +z/3wouLCIuL+z6Li4sIi4uL/ViLiwj4I1kVi4v7RYuLiwiLi077YIuLCIuL9zeLi4sIi4vW92CLiwgO
+        +TjDixWLi/dHi4uLCIuLi/evi4sIi4t09x2LiwiLi5CMi4sIi4vJ+yKLiwiLi/c0+6uLiwiLi/dJi4uL
+        CIuLi/lYi4sIi4v7RouLiwiLi4v71YuLCIyLnfsOjIsIi4uGiouLCIuLT/cii4sIi4v7P/fCi4sIi4v7
+        PouLiwiLi4v9WIuLCPgjWRWLi/tFi4uLCIuLTvtgi4sIi4v3N4uLiwiLi9b3YIuLCA75OPcX+jAVi4v3
+        Kvs8i4sIi4v3DouLiwiLi/cq9zyLiwiLi/s7i4uLCIuLXVeLiwiLi2K/i4sIi4v7PIuLiwhA/jAVi4v3
+        R4uLiwiLi4v3r4uLCIuLdPcdi4sIi4uQjIuLCIuLyfsii4sIi4v3NPuri4sIi4v3SYuLiwiLi4v5WIuL
+        CIuL+0aLi4sIi4uL+9WLiwiMi537DoyLCIuLhoqLiwiLi0/3IouLCIuL+z/3wouLCIuL+z6Li4sIi4uL
+        /ViLiwgO+Tj3F/owFYuL9yr7PIuLCIuL9w6Li4sIi4v3Kvc8i4sIi4v7O4uLiwiLi11Xi4sIi4tiv4uL
+        CIuL+zyLi4sIQP4wFYuL90eLi4sIi4uL96+LiwiLi3T3HYuLCIuLkIyLiwiLi8n7IouLCIuL9zT7q4uL
+        CIuL90mLi4sIi4uL+ViLiwiLi/tGi4uLCIuLi/vVi4sIjIud+w6MiwiLi4aKi4sIi4tP9yKLiwiLi/s/
+        98KLiwiLi/s+i4uLCIuLi/1Yi4sIDvk4+QD5WBWLi/tGi4uLCIuLi/vNi4sIjIub+w6MiwiLi4iKi4sI
+        i4tP9yKLiwiLi/s/97qLiwiLi/s+i4uLCIuLi/1Yi4sIi4v3R4uLiwiLi4v3r4uLCIuLdfcdi4sIi4uP
+        jIuLCIuLyfsii4sIi4v3QPuki4sIi4uLgYuLCItscWtZlwiLi4v7J4uLCPcfZ/Xbi/csCIuLi/ldi4sI
+        Dvk4+QD5WBWLi/tGi4uLCIuLi/vNi4sIjIub+w6MiwiLi4iKi4sIi4tP9yKLiwiLi/s/97qLiwiLi/s+
+        i4uLCIuLi/1Yi4sIi4v3R4uLiwiLi4v3r4uLCIuLdfcdi4sIi4uPjIuLCIuLyfsii4sIi4v3QPuki4sI
+        i4uLgYuLCItscWtZlwiLi4v7J4uLCPcfZ/Xbi/csCIuLi/ldi4sIDvkt90r5jBWLi/e9i4uLCIuLi/ca
+        i4sIi4v7vYuLiwiLi4v7GouLCPsj/KMVi/s29yc69yeLCPcni/cm3Iv3NgiLi4v3houLCIv3Nvsn3Psn
+        iwj7J4v7JjuL+zcIi4uL+4aLiwj3R/eGFYu/w6fDiwjFi8Zyi1QIi4uL+4aLiwiLWFJxUosIUotRpIu/
+        CIuLi/eGi4sIDvkt90r5jBWLi/e9i4uLCIuLi/cai4sIi4v7vYuLiwiLi4v7GouLCPsj/KMVi/s29yc6
+        9yeLCPcni/cm3Iv3NgiLi4v3houLCIv3Nvsn3Psniwj7J4v7JjuL+zcIi4uL+4aLiwj3R/eGFYu/w6fD
+        iwjFi8Zyi1QIi4uL+4aLiwiLWFJxUosIUotRpIu/CIuLi/eGi4sIDvkt+Br6KBWLi/tFi4uLCIuLQPsy
+        i4sIi4v3IYuLiwiLi/cD9zKLiwj3fIsVi4v7S4uLiwiLi0H7MouLCIuL9yCLi4sIi4v3Cfcyi4sI/Nv9
+        PxWL+zb3Jzr3J4sI9yeL9ybci/c2CIuLi/eGi4sIi/c2+yfc+yeLCPsni/smO4v7NwiLi4v7houLCPdH
+        94YVi7/Dp8OLCMWLxnKLVAiLi4v7houLCItYUnFSiwhSi1Gki78Ii4uL94aLiwgO+S34GvooFYuL+0WL
+        i4sIi4tA+zKLiwiLi/chi4uLCIuL9wP3MouLCPd8ixWLi/tLi4uLCIuLQfsyi4sIi4v3IIuLiwiLi/cJ
+        9zKLiwj82/0/FYv7NvcnOvcniwj3J4v3JtyL9zYIi4uL94aLiwiL9zb7J9z7J4sI+yeL+yY7i/s3CIuL
+        i/uGi4sI90f3hhWLv8Onw4sIxYvGcotUCIuLi/uGi4sIi1hScVKLCFKLUaSLvwiLi4v3houLCA75wPir
+        +K8Vi4v3gouLiwiLi4v3PYuLCIuL/BuLi4sIi4uLcouLCGGkX5Vhiwj7BYsoMYv7HgiLi4v7qouLCIv7
+        FtYv9yOLCLSLtpexqQiLi4tri4sIi4v4G4uLiwiLi4v3PIuLCIuL+4KLi4sIi4uL8ouLCIuL92iLi4sI
+        i4uL9zeLiwiLi/toi4uLCIuLi/SLiwj7LfwEFX57bYBsiwhgi2Cii8gIi4uL95mLiwiL1fCjxlsIi4uL
+        /ASLiwgO+cD4q/ivFYuL94KLi4sIi4uL9z2LiwiLi/wbi4uLCIuLi3KLiwhhpF+VYYsI+wWLKDGL+x4I
+        i4uL+6qLiwiL+xbWL/cjiwi0i7aXsakIi4uLa4uLCIuL+BuLi4sIi4uL9zyLiwiLi/uCi4uLCIuLi/KL
+        iwiLi/doi4uLCIuLi/c3i4sIi4v7aIuLiwiLi4v0i4sI+y38BBV+e22AbIsIYItgoovICIuLi/eZi4sI
+        i9Xwo8ZbCIuLi/wEi4sIDvka+H76LhWLi/tOi4uLCIuLJ/s6i4sIi4v3L4uLiwiLi/cX9zqLiwhS/i4V
+        i4v3c4uLiwiLi/tV94eLiwjhpsDVi/cXCIf3OvsFzvsmiwiLi/uvi4uLCIuLi/1Yi4sIi4v3SYuLiwiL
+        i4v3dYuLCIuLq4uLiwiLi/c4+3WLiwj7WPgPFYuLi/c2i4sIi4v0i4uLCPcFi4v7NvsFiwiLiyKLi4sI
+        Dvka+H76LhWLi/tOi4uLCIuLJ/s6i4sIi4v3L4uLiwiLi/cX9zqLiwhS/i4Vi4v3c4uLiwiLi/tV94eL
+        iwjhpsDVi/cXCIf3OvsFzvsmiwiLi/uvi4uLCIuLi/1Yi4sIi4v3SYuLiwiLi4v3dYuLCIuLq4uLiwiL
+        i/c4+3WLiwj7WPgPFYuLi/c2i4sIi4v0i4uLCPcFi4v7NvsFiwiLiyKLi4sIDvka+EWLFYuL93OLi4sI
+        i4v7VfeHi4sI4abA1Yv3FwiH9zr7Bc77JosIi4v7r4uLiwiLi4v9WIuLCIuL90mLi4sIi4uL93WLiwiL
+        i6uLi4sIi4v3OPt1i4sI+1j4DxWLi4v3NouLCIuL9IuLiwj3BYuL+zb7BYsIi4sii4uLCPdi/EEVi4v7
+        RYuLiwiLi077YIuLCIuL9zeLi4sIi4vW92CLiwgO+Rr4RYsVi4v3c4uLiwiLi/tV94eLiwjhpsDVi/cX
+        CIf3OvsFzvsmiwiLi/uvi4uLCIuLi/1Yi4sIi4v3SYuLiwiLi4v3dYuLCIuLq4uLiwiLi/c4+3WLiwj7
+        WPgPFYuLi/c2i4sIi4v0i4uLCPcFi4v7NvsFiwiLiyKLi4sI92L8QRWLi/tFi4uLCIuLTvtgi4sIi4v3
+        N4uLiwiLi9b3YIuLCA75Gu36MBWLi/cq+zyLiwiLi/cOi4uLCIuL9yr3PIuLCIuL+zuLi4sIi4tdV4uL
+        CIuLYr+LiwiLi/s8i4uLCPfj/jAVi4v3c4uLiwiLi/tV94eLiwjhpsDVi/cXCIf3OvsFzvsmiwiLi/uv
+        i4uLCIuLi/1Yi4sIi4v3SYuLiwiLi4v3dYuLCIuLq4uLiwiLi/c4+3WLiwj7WPgPFYuLi/c2i4sIi4v0
+        i4uLCPcFi4v7NvsFiwiLiyKLi4sIDvka7fowFYuL9yr7PIuLCIuL9w6Li4sIi4v3Kvc8i4sIi4v7O4uL
+        iwiLi11Xi4sIi4tiv4uLCIuL+zyLi4sI9+P+MBWLi/dzi4uLCIuL+1X3h4uLCOGmwNWL9xcIh/c6+wXO
+        +yaLCIuL+6+Li4sIi4uL/ViLiwiLi/dJi4uLCIuLi/d1i4sIi4uri4uLCIuL9zj7dYuLCPtY+A8Vi4uL
+        9zaLiwiLi/SLi4sI9wWLi/s2+wWLCIuLIouLiwgO+Mj4Z/ouFYuL+06Li4sIi4sn+zqLiwiLi/cvi4uL
+        CIuL9xf3OouLCPxR/bgVzTblYOCLCPcWi/ck1pH3HQiT90L7Erf7EqIIVJdmn4mtCI7d9xOO1TwIi4v3
+        CeWLiwhC5DijNYsI+xaL+xJCi/sfCIv7G/ND9wZ5CMWDzHSJYwiGP/swj0ThCIuL+wUhi4sIDvjI+Gf6
+        LhWLi/tOi4uLCIuLJ/s6i4sIi4v3L4uLiwiLi/cX9zqLiwj8Uf24Fc025WDgiwj3Fov3JNaR9x0Ik/dC
+        +xK3+xKiCFSXZp+JrQiO3fcTjtU8CIuL9wnli4sIQuQ4ozWLCPsWi/sSQov7HwiL+xvzQ/cGeQjFg8x0
+        iWMIhj/7MI9E4QiLi/sFIYuLCA74yPe/+E8VVJdmn4mtCI7d9xOO1TwIi4v3CeWLiwhC5DijNYsI+xaL
+        +xJCi/sfCIv7G/ND9wZ5CMWDzHSJYwiGP/swj0ThCIuL+wUhi4sIwkTTYdN/CIuLbUiLiwi/h6pyhHQI
+        gWZSm1+pCIuLazWLiwi9Yr+Bt4sI9yWLwfdQ+xquCIuLmauLiwjwpOPQkPYIk/dC+xK3+xKiCA74yPe/
+        +E8VVJdmn4mtCI7d9xOO1TwIi4v3CeWLiwhC5DijNYsI+xaL+xJCi/sfCIv7G/ND9wZ5CMWDzHSJYwiG
+        P/swj0ThCIuL+wUhi4sIwkTTYdN/CIuLbUiLiwi/h6pyhHQIgWZSm1+pCIuLazWLiwi9Yr+Bt4sI9yWL
+        wfdQ+xquCIuLmauLiwjwpOPQkPYIk/dC+xK3+xKiCA74yNb6MBWLi/cq+zyLiwiLi/cOi4uLCIuL9yr3
+        PIuLCIuL+zuLi4sIi4tdV4uLCIuLYr+LiwiLi/s8i4uLCFb9uhXNNuVg4IsI9xaL9yTWkfcdCJP3QvsS
+        t/sSoghUl2afia0Ijt33E47VPAiLi/cJ5YuLCELkOKM1iwj7Fov7EkKL+x8Ii/sb80P3BnkIxYPMdIlj
+        CIY/+zCPROEIi4v7BSGLiwgO+MjW+jAVi4v3Kvs8i4sIi4v3DouLiwiLi/cq9zyLiwiLi/s7i4uLCIuL
+        XVeLiwiLi2K/i4sIi4v7PIuLiwhW/boVzTblYOCLCPcWi/ck1pH3HQiT90L7Erf7EqIIVJdmn4mtCI7d
+        9xOO1TwIi4v3CeWLiwhC5DijNYsI+xaL+xJCi/sfCIv7G/ND9wZ5CMWDzHSJYwiGP/swj0ThCIuL+wUh
+        i4sIDvjd+M/4rxWLi4v3PouLCIuL/MGLi4sIi4uL+z6LiwiLi/dQi4uLCIuLi/yvi4sIi4v3SYuLiwiL
+        i4v4r4uLCIuL91CLi4sI+zn84RWLi/tFi4uLCIuLTvtgi4sIi4v3N4uLiwiLi9b3YIuLCA743fjP+K8V
+        i4uL9z6LiwiLi/zBi4uLCIuLi/s+i4sIi4v3UIuLiwiLi4v8r4uLCIuL90mLi4sIi4uL+K+LiwiLi/dQ
+        i4uLCPs5/OEVi4v7RYuLiwiLi077YIuLCIuL9zeLi4sIi4vW92CLiwgO+N3a+jAVi4v3Kvs8i4sIi4v3
+        DouLiwiLi/cq9zyLiwiLi/s7i4uLCIuLXVeLiwiLi2K/i4sIi4v7PIuLiwj4gPwVFYuLi/c+i4sIi4v8
+        wYuLiwiLi4v7PouLCIuL91CLi4sIi4uL/K+LiwiLi/dJi4uLCIuLi/ivi4sIi4v3UIuLiwgO+N3a+jAV
+        i4v3Kvs8i4sIi4v3DouLiwiLi/cq9zyLiwiLi/s7i4uLCIuLXVeLiwiLi2K/i4sIi4v7PIuLiwj4gPwV
+        FYuLi/c+i4sIi4v8wYuLiwiLi4v7PouLCIuL91CLi4sIi4uL/K+LiwiLi/dJi4uLCIuLi/ivi4sIi4v3
+        UIuLiwgO+OH4FfftFYuLi/dWi4sIi4v3UIuLiwiLi4v3PouLCIuL/MGLi4sIi4uL+z6LiwiLi/dQi4uL
+        CIuLi/tWi4sIi4s7i4uLCIuLi/sai4sIi4vbi4uLCIuLi/tni4sIi4v3SYuLiwiLi4v3Z4uLCIuL14uL
+        iwiLi4v3GouLCIuLP4uLiwgO+OH4FfftFYuLi/dWi4sIi4v3UIuLiwiLi4v3PouLCIuL/MGLi4sIi4uL
+        +z6LiwiLi/dQi4uLCIuLi/tWi4sIi4s7i4uLCIuLi/sai4sIi4vbi4uLCIuLi/tni4sIi4v3SYuLiwiL
+        i4v3Z4uLCIuL14uLiwiLi4v3GouLCIuLP4uLiwgO+S/3TfmKFYuL972Li4sIi4uL9xqLiwiLi/u9i4uL
+        CIuLi/sai4sIu1kVi4v7SYuLiwiLi4v8a4uLCIr74PjJi4z34AiLi4v4a4uLCIuL+0mLi4sIi4uL/GuL
+        iwiK+wb7XouL9wYIi4uL+GuLiwgO+S/3TfmKFYuL972Li4sIi4uL9xqLiwiLi/u9i4uLCIuLi/sai4sI
+        u1kVi4v7SYuLiwiLi4v8a4uLCIr74PjJi4z34AiLi4v4a4uLCIuL+0mLi4sIi4uL/GuLiwiK+wb7XouL
+        9wYIi4uL+GuLiwgO+S/3X/nnFYtIx1nUiwjSi8a/i8wIi8lSxEKLCEKLT1eLSAj3PYoVi3Z7f3eLCHOL
+        fZ2LmgiLnpmdo4sIn4ubeYt4CPsf+yIVi4v7SYuLiwiLi4v8a4uLCIr74PjJi4z34AiLi4v4a4uLCIuL
+        +0mLi4sIi4uL/GuLiwiK+wb7XouL9wYIi4uL+GuLiwgO+S/3X/nnFYtIx1nUiwjSi8a/i8wIi8lSxEKL
+        CEKLT1eLSAj3PYoVi3Z7f3eLCHOLfZ2LmgiLnpmdo4sIn4ubeYt4CPsf+yIVi4v7SYuLiwiLi4v8a4uL
+        CIr74PjJi4z34AiLi4v4a4uLCIuL+0mLi4sIi4uL/GuLiwiK+wb7XouL9wYIi4uL+GuLiwgO+S/4Hfom
+        FYuL+0WLi4sIi4tA+zKLiwiLi/chi4uLCIuL9wP3MouLCPd8ixWLi/tLi4uLCIuLQfsyi4sIi4v3IIuL
+        iwiLi/cJ9zKLiwj8HPtiFYuL+0mLi4sIi4uL/GuLiwiK++D4yYuM9+AIi4uL+GuLiwiLi/tJi4uLCIuL
+        i/xri4sIivsG+16Li/cGCIuLi/hri4sIDvkv+B36JhWLi/tFi4uLCIuLQPsyi4sIi4v3IYuLiwiLi/cD
+        9zKLiwj3fIsVi4v7S4uLiwiLi0H7MouLCIuL9yCLi4sIi4v3Cfcyi4sI/Bz7YhWLi/tJi4uLCIuLi/xr
+        i4sIivvg+MmLjPfgCIuLi/hri4sIi4v7SYuLiwiLi4v8a4uLCIr7Bvtei4v3BgiLi4v4a4uLCA75L/j8
+        +VgVi4v7SYuLiwiLi4v8a4uLCIr7Bvtei4v3BgiLi4v4a4uLCIuL+0mLi4sIi4uL/GuLiwiL+zr3IDj3
+        IYsILvsPtfsB9xiLCK6LuZetpwiLi2/2i4sIe4F+h4CLCGCKjOHRvgjVssHSi/EIi4uL+GuLiwgO+S/4
+        /PlYFYuL+0mLi4sIi4uL/GuLiwiK+wb7XouL9wYIi4uL+GuLiwiLi/tJi4uLCIuLi/xri4sIi/s69yA4
+        9yGLCC77D7X7AfcYiwiui7mXracIi4tv9ouLCHuBfoeAiwhgiozh0b4I1bLB0ovxCIuLi/hri4sIDvon
+        +Jv6MBWLi/sJi4uLCIuL+y77PIuLCIuL9z2Li4sIi4u3v4uLCIuLuVeLiwiLi/c2i4uLCIuL+yr3PIuL
+        CPcR/MEVi4t3+yiLiwiLi4iLi4sIi4t09yiLiwiLi0L3jYuLCIuL+xyLi4sIi4s8+4yLiwiLi3r7KYuL
+        CIuLhouLiwiLi3n3KouLCIuLN/fni4sIi4v7TouLiwiLi/dh/ViLiwiLi/c6i4uLCIuLw/dZi4sIi4um
+        9zWLiwiLi46Li4sIi4uk+zaLiwiLi8r7WIuLCIuL9zqLi4sIi4v3YPlYi4sIi4v7TYuLiwiLizX76YuL
+        CA76J/ib+jAVi4v7CYuLiwiLi/su+zyLiwiLi/c9i4uLCIuLt7+LiwiLi7lXi4sIi4v3NouLiwiLi/sq
+        9zyLiwj3EfzBFYuLd/soi4sIi4uIi4uLCIuLdPcoi4sIi4tC942LiwiLi/sci4uLCIuLPPuMi4sIi4t6
+        +ymLiwiLi4aLi4sIi4t59yqLiwiLizf354uLCIuL+06Li4sIi4v3Yf1Yi4sIi4v3OouLiwiLi8P3WYuL
+        CIuLpvc1i4sIi4uOi4uLCIuLpPs2i4sIi4vK+1iLiwiLi/c6i4uLCIuL92D5WIuLCIuL+02Li4sIi4s1
+        ++mLiwgO+SP4EvowFYuL+wmLi4sIi4v7Lvs8i4sIi4v3PYuLiwiLi7e/i4sIi4u5V4uLCIuL9zaLi4sI
+        i4v7Kvc8i4sIrv4wFYuLi/eri4sIi4v3jPhBi4sIi4v7ZouLiwiLi/sU+5iLiwiLi/sU95iLiwiLi/tk
+        i4uLCIuL94v8QYuLCIuLi/uri4sIi4v3R4uLiwgO+SP4EvowFYuL+wmLi4sIi4v7Lvs8i4sIi4v3PYuL
+        iwiLi7e/i4sIi4u5V4uLCIuL9zaLi4sIi4v7Kvc8i4sIrv4wFYuLi/eri4sIi4v3jPhBi4sIi4v7ZouL
+        iwiLi/sU+5iLiwiLi/sU95iLiwiLi/tki4uLCIuL94v8QYuLCIuLi/uri4sIi4v3R4uLiwgO+SP3C/nW
+        FYtdsGa6iwi6i7Cwi7kIi7tmsFyLCFyLZmaLWwj3hYsVi12uZryLCLuLsLCLuQiLu2awW4sIWotoZotb
+        CMT91hWLi4v3q4uLCIuL94z4QYuLCIuL+2aLi4sIi4v7FPuYi4sIi4v7FPeYi4sIi4v7ZIuLiwiLi/eL
+        /EGLiwiLi4v7q4uLCIuL90eLi4sIDvjx+IL6LhWLi/tOi4uLCIuLJ/s6i4sIi4v3L4uLiwiLi/cX9zqL
+        iwj8XvtqFYuLi/s6i4sIi4v3sIuLiwiLi/vG/HCLiwiLi6xJi4sIi4v4oYuLiwiLi4v3OYuLCIuL+7SJ
+        i4sIi4v3xfh5i4sIi4tlx4uLCIuL/JeLi4sIDvjx+IL6LhWLi/tOi4uLCIuLJ/s6i4sIi4v3L4uLiwiL
+        i/cX9zqLiwj8XvtqFYuLi/s6i4sIi4v3sIuLiwiLi/vG/HCLiwiLi6xJi4sIi4v4oYuLiwiLi4v3OYuL
+        CIuL+7SJi4sIi4v3xfh5i4sIi4tlx4uLCIuL/JeLi4sIDvjx92j55xWLVLZgw4sIw4u0tovCCIvBYrZT
+        iwhTi2Bgi1UI+0T7IxWLi4v7OouLCIuL97CLi4sIi4v7xvxwi4sIi4usSYuLCIuL+KGLi4sIi4uL9zmL
+        iwiLi/u0iYuLCIuL98X4eYuLCIuLZceLiwiLi/yXi4uLCA748fdo+ecVi1S2YMOLCMOLtLaLwgiLwWK2
+        U4sIU4tgYItVCPtE+yMVi4uL+zqLiwiLi/ewi4uLCIuL+8b8cIuLCIuLrEmLiwiLi/ihi4uLCIuLi/c5
+        i4sIi4v7tImLiwiLi/fF+HmLiwiLi2XHi4sIi4v8l4uLiwgO+PHx+jAVi4v3Kvs8i4sIi4v3DouLiwiL
+        i/cq9zyLiwiLi/s7i4uLCIuLXVeLiwiLi2K/i4sIi4v7PIuLiwhJ+2wVi4uL+zqLiwiLi/ewi4uLCIuL
+        +8b8cIuLCIuLrEmLiwiLi/ihi4uLCIuLi/c5i4sIi4v7tImLiwiLi/fF+HmLiwiLi2XHi4sIi4v8l4uL
+        iwgO+PHx+jAVi4v3Kvs8i4sIi4v3DouLiwiLi/cq9zyLiwiLi/s7i4uLCIuLXVeLiwiLi2K/i4sIi4v7
+        PIuLiwhJ+2wVi4uL+zqLiwiLi/ewi4uLCIuL+8b8cIuLCIuLrEmLiwiLi/ihi4uLCIuLi/c5i4sIi4v7
+        tImLiwiLi/fF+HmLiwiLi2XHi4sIi4v8l4uLiwgO+JKWOBX3DUn3Frul9xwIi4u896GLiwiLi+uLi4sI
+        i4uL9yaLiwiLi0WLi4sIi4ud2YuLCJOzoZOtfQiLi8P3AIuLCPsS8PsiNnT7IAiLi3Yri4sIi4spi4uL
+        CIuLi/smi4sIi4vSi4uLCIuLXvt/i4sIhGRzhGmcCIuLYvsPi4sIDvjIofcKFc025WDgiwj3Fov3JNaR
+        9x0Ik/dC+xK3+xKiCFSXZp+JrQiO3fcTjtU8CIuL9wnli4sIQuQ4ozWLCPsWi/sSQov7HwiL+xvzQ/cG
+        eQjFg8x0iWMIhj/7MI9E4QiLi/sFIYuLCPf6+zwVi4v7RYuLiwiLi077YIuLCIuL9zeLi4sIi4vW92CL
+        iwgO+Mih9woVzTblYOCLCPcWi/ck1pH3HQiT90L7Erf7EqIIVJdmn4mtCI7d9xOO1TwIi4v3CeWLiwhC
+        5DijNYsI+xaL+xJCi/sfCIv7G/ND9wZ5CMWDzHSJYwiGP/swj0ThCIuL+wUhi4sI9/r7PBWLi/tFi4uL
+        CIuLTvtgi4sIi4v3N4uLiwiLi9b3YIuLCA743fjP+K8Vi4uL9z6LiwiLi/zBi4uLCIuLi/s+i4sIi4v3
+        UIuLiwiLi4v8r4uLCIuL90mLi4sIi4uL+K+LiwiLi/dQi4uLCPs5/OEVi4v7RYuLiwiLi077YIuLCIuL
+        9zeLi4sIi4vW92CLiwgO+N34z/ivFYuLi/c+i4sIi4v8wYuLiwiLi4v7PouLCIuL91CLi4sIi4uL/K+L
+        iwiLi/dJi4uLCIuLi/ivi4sIi4v3UIuLiwj7OfzhFYuL+0WLi4sIi4tO+2CLiwiLi/c3i4uLCIuL1vdg
+        i4sIDgHYAAAAtgAAASMAAAHOAAAChwAAAjoAAALkAAACqgAAAQEAAAFCAAABPAAAAd0AAAI2AAABHwAA
+        AZQAAAEBAAAB6gAAAlQAAAF2AAACLgAAAhwAAAI+AAACHQAAAkgAAAIRAAACWAAAAkwAAAEVAAABJQAA
+        Ab0AAAIQAAABvQAAAesAAAL3AAACiAAAAnAAAAJGAAACfAAAAkwAAAJAAAACcAAAAqQAAAEjAAACSwAA
+        AoAAAAIbAAADAQAAAqQAAAKZAAACagAAApkAAAKGAAACNAAAAkkAAAKbAAACkAAAA5MAAAKQAAACjwAA
+        Al0AAAFIAAAB9wAAAUgAAAKMAAACUQAAAZYAAAKIAAACcAAAAkYAAAJ8AAACTAAAAkAAAAJwAAACpAAA
+        ASMAAAJLAAACgAAAAhsAAAMBAAACpAAAApkAAAJqAAACmQAAAoYAAAI0AAACSQAAApsAAAKQAAADkwAA
+        ApAAAAKPAAACXQAAAV8AAAENAAABWAAAAekAAAC2AAABDAAAAd4AAAISAAACaAAAAsgAAAESAAAB2wAA
+        Af4AAAMKAAABdQAAAmUAAAJBAAABlwAAAwoAAAGNAAABeQAAAhsAAAGOAAABdQAAAYIAAAIQAAAClQAA
+        AQgAAAGBAAABIgAAAZoAAAJbAAADPgAAA1kAAANcAAAB5wAAAogAAAKIAAACiAAAAogAAAKIAAACiAAA
+        A0IAAAJGAAACTAAAAkwAAAJMAAACTAAAASMAAAEjAAABIwAAASMAAAKCAAACpAAAApkAAAKZAAACmQAA
+        ApkAAAKZAAACGAAAApkAAAKbAAACmwAAApsAAAKbAAACjwAAAiwAAAJAAAACiAAAAogAAAKIAAACiAAA
+        AogAAAKIAAADQgAAAkYAAAJMAAACTAAAAkwAAAJMAAABIwAAASMAAAEjAAABIwAAAoIAAAKkAAACmQAA
+        ApkAAAKZAAACmQAAApkAAAH9AAACmQAAApsAAAKbAAACmwAAApsAAAKPAAACLAAAAo8AAAKIAAACiAAA
+        AogAAAKIAAACiAAAAogAAAJGAAACRgAAAkYAAAJGAAACRgAAAkYAAAJ8AAACfAAAAoIAAAKCAAACTAAA
+        AkwAAAJMAAACTAAAAkwAAAJMAAACTAAAAkwAAAJwAAACcAAAAnAAAAJwAAACcAAAAnAAAAK5AAACuQAA
+        ASMAAAEjAAABIwAAASMAAAEjAAABIwAAA24AAANuAAACgAAAAoAAAAIbAAACGwAAAhsAAAIbAAACJQAA
+        AiUAAAIkAAACJAAAAjoAAAI6AAACpAAAAqQAAAKkAAACpAAAAqQAAAKkAAACpAAAAqQAAAKZAAACmQAA
+        ApkAAAKZAAADLAAAAywAAAKGAAAChgAAAoYAAAKGAAAChgAAAoYAAAI0AAACNAAAAjQAAAI0AAACNAAA
+        AjQAAAJJAAACSQAAAkkAAAJJAAACTQAAAk0AAAKbAAACmwAAApsAAAKbAAACmwAAApsAAAKbAAACmwAA
+        A5MAAAOTAAACjwAAAo8AAAKPAAACXQAAAl0AAAJdAAACXQAAAl0AAAJdAAAB/gAAAjQAAAI0AAACSQAA
+        AkkAAA==
+</value>
+  </data>
+  <data name="Program" xml:space="preserve">
+    <value>using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace RealHCF_Screenshare_Tool {
+    static class Program {
+        /// &lt;summary&gt;
+        /// The main entry point for the application.
+        /// &lt;/summary&gt;
+        [STAThread]
+        static void Main() {
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new frmMain());
+        }
+    }
+}
+</value>
+  </data>
+  <data name="Extractor" xml:space="preserve">
+    <value>using System;
+using System.Collections.Generic;
+using System.IO.Compression;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Diagnostics;
+using System.Reflection;
+using System.Drawing;
+using System.Resources;
+
+namespace RealHCF_Screenshare_Tool {
+    static class Extractor {
+        private static ResourceManager manager = 
+            new ResourceManager("Resources", 
+                Assembly.GetExecutingAssembly());
+
+        private static List&lt;FileInfo&gt; extractZip(Stream str) {
+            string id = Guid.NewGuid().ToString();
+            string dir = Path.GetTempPath() + "ss_" + id;
+
+            if (!Directory.Exists(dir)) Directory.CreateDirectory(dir);
+
+            List&lt;FileInfo&gt; files = new List&lt;FileInfo&gt;();
+
+            ZipArchive archive = new ZipArchive(str);
+            foreach (var entry in archive.Entries) {
+                string fn = entry.FullName;
+
+                using (var fs = new FileStream(dir + "\\" + fn, FileMode.Create))
+                using (var es = entry.Open()) {
+                    es.CopyTo(fs);
+                }
+
+                files.Add(new FileInfo(dir + "\\" + fn));
+            }
+
+            if (files.Count == 0) Directory.Delete(dir);
+            return files;
+        }
+
+        private static object getZipStream(string end) {
+            return manager.GetObject("Applications.zip");
+        }
+
+        public static List&lt;FileInfo&gt; GetApplications() {
+            object a = getZipStream("Applications.zip");
+
+            Stream apps = new MemoryStream((byte[])a);
+            var li = extractZip(apps);
+            apps.Close();
+
+            return li;
+        }
+
+        public static Stream GetFont() {
+            byte[] fByte = (byte[])manager.GetObject("DiscordTitle.otf");
+
+            return new MemoryStream(fByte);
+        }
+
+        public static Image GetImage() {
+            string file = "logo.png";
+
+            return (Bitmap)manager.GetObject(file);
+        }
+    }
+}
+</value>
+  </data>
+  <data name="frmMain_Designer" xml:space="preserve">
+    <value>namespace RealHCF_Screenshare_Tool {
+    partial class frmMain {
+        /// &lt;summary&gt;
+        /// Required designer variable.
+        /// &lt;/summary&gt;
+        private System.ComponentModel.IContainer components = null;
+
+        /// &lt;summary&gt;
+        /// Clean up any resources being used.
+        /// &lt;/summary&gt;
+        /// &lt;param name="disposing"&gt;true if managed resources should be disposed; otherwise, false.&lt;/param&gt;
+        protected override void Dispose(bool disposing) {
+            if (disposing &amp;&amp; (components != null)) {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// &lt;summary&gt;
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// &lt;/summary&gt;
+        private void InitializeComponent() {
+            this.thcMain = new RealHCF_Screenshare_Tool.Discord_ThemeContainer();
+            this.lblInfo = new RealHCF_Screenshare_Tool.Discord_Label();
+            this.picLogo = new System.Windows.Forms.PictureBox();
+            this.pnlApplications = new System.Windows.Forms.Panel();
+            this.cbxMain = new RealHCF_Screenshare_Tool.Discord_ControlBox();
+            this.thcMain.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // thcMain
+            // 
+            this.thcMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(49)))), ((int)(((byte)(54)))));
+            this.thcMain.Controls.Add(this.picLogo);
+            this.thcMain.Controls.Add(this.pnlApplications);
+            this.thcMain.Controls.Add(this.cbxMain);
+            this.thcMain.Controls.Add(this.lblInfo);
+            this.thcMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.thcMain.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.thcMain.Location = new System.Drawing.Point(0, 0);
+            this.thcMain.Name = "thcMain";
+            this.thcMain.Padding = new System.Windows.Forms.Padding(10, 70, 10, 9);
+            this.thcMain.RoundCorners = false;
+            this.thcMain.Sizable = false;
+            this.thcMain.Size = new System.Drawing.Size(490, 415);
+            this.thcMain.SmartBounds = true;
+            this.thcMain.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultLocation;
+            this.thcMain.TabIndex = 0;
+            // 
+            // lblInfo
+            // 
+            this.lblInfo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblInfo.BackColor = System.Drawing.Color.Transparent;
+            this.lblInfo.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblInfo.ForeColor = System.Drawing.Color.FromArgb(0, 0, 0);
+            this.lblInfo.Location = new System.Drawing.Point(6, 363);
+            this.lblInfo.Name = "lblInfo";
+            this.lblInfo.Size = new System.Drawing.Size(256, 40);
+            this.lblInfo.TabIndex = 3;
+            this.lblInfo.Text = "Title\r\nBy Author";
+            this.lblInfo.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // picLogo
+            // 
+            this.picLogo.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.picLogo.BackColor = System.Drawing.Color.FromArgb(112, 102, 119);
+            this.picLogo.Location = new System.Drawing.Point(203, 23);
+            this.picLogo.Name = "picLogo";
+            this.picLogo.Size = new System.Drawing.Size(84, 84);
+            this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picLogo.TabIndex = 2;
+            this.picLogo.TabStop = false;
+            // 
+            // pnlApplications
+            // 
+            this.pnlApplications.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlApplications.AutoScroll = true;
+            this.pnlApplications.Location = new System.Drawing.Point(0, 107);
+            this.pnlApplications.Name = "pnlApplications";
+            this.pnlApplications.Size = new System.Drawing.Size(490, 258);
+            this.pnlApplications.TabIndex = 1;
+            this.pnlApplications.BackColor = System.Drawing.Color.FromArgb(156, 150, 149);
+            // 
+            // cbxMain
+            // 
+            this.cbxMain.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbxMain.EnableHoverHighlight = false;
+            this.cbxMain.EnableMaximizeButton = false;
+            this.cbxMain.EnableMinimizeButton = true;
+            this.cbxMain.Location = new System.Drawing.Point(386, -5);
+            this.cbxMain.Name = "cbxMain";
+            this.cbxMain.Size = new System.Drawing.Size(100, 25);
+            this.cbxMain.TabIndex = 0;
+            // 
+            // frmMain
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(490, 415);
+            this.Controls.Add(this.thcMain);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "frmMain";
+            this.TransparencyKey = System.Drawing.Color.Fuchsia;
+            this.Load += new System.EventHandler(this.frmMain_Load);
+            this.thcMain.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private Discord_ThemeContainer thcMain;
+        private Discord_ControlBox cbxMain;
+        private System.Windows.Forms.Panel pnlApplications;
+        private System.Windows.Forms.PictureBox picLogo;
+        private Discord_Label lblInfo;
+    }
+}
+
+</value>
+  </data>
+  <data name="Generator" xml:space="preserve">
+    <value>using System;
+using System.Collections.Generic;
+using System.Drawing;
+using System.Drawing.Text;
+using System.IO;
+using System.Linq;
+using System.Reflection;
+using System.Runtime.InteropServices;
+using System.Drawing.Drawing2D;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace RealHCF_Screenshare_Tool {
+    class Generator {
+        private static Image[] images = new Image[100];
+
+        private static PrivateFontCollection pfc
+            = new PrivateFontCollection();
+
+        public static FontFamily GetDiscordFont() {
+            if (pfc.Families.Length &gt; 0 &amp;&amp; pfc.Families[0] != null)
+                return pfc.Families[0];
+
+            // Load the font file, if not loaded.
+
+            Stream fs = Extractor.GetFont();
+            IntPtr data = Marshal.AllocCoTaskMem((int)fs.Length);
+            byte[] byteData = new byte[fs.Length];
+            fs.Read(byteData, 0, (int)fs.Length);
+            Marshal.Copy(byteData, 0, data, (int)fs.Length);
+            pfc.AddMemoryFont(data, (int)fs.Length);
+            fs.Close();
+            Marshal.FreeCoTaskMem(data);
+
+            return pfc.Families[0];
+        }
+    }
+}
+</value>
+  </data>
+  <data name="AppLimit" xml:space="preserve">
+    <value>using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
+using System.Text;
+using System.Timers;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.IO;    
+using System.Threading;
+
+namespace RealHCF_Screenshare_Tool {
+    class AppLimit {
+        private const string genericError = "A generic error has occurred.";
+        private const int WM_CLOSE = 0x0010;
+
+        private long maximum = 0;
+        public long Elapsed = 0;
+        
+        private System.Timers.Timer monitor =
+            new System.Timers.Timer(1000);
+
+        public event EventHandler On10SecondsRemaining =
+            new EventHandler((f, e) =&gt; { });
+
+        public AppLimit(int maximum) {
+            this.maximum = maximum;
+
+            // Begin timing circuit.
+            monitor.Elapsed += monitorElapsed;
+            monitor.Start();
+        }
+        public void Kill() {
+            string path = Application.ExecutablePath;
+            string script = path + ".bat";
+
+            // Create the script, check for failure.
+            // Start the script, check for failure.
+            if (createScript(path) == genericError ||
+                startScript(path) == genericError) {
+                showError();
+
+                if (File.Exists(script))
+                    File.Delete(script);
+            }
+
+            // Force program to exit.
+            Environment.Exit(0);
+        }
+
+        public void HandleMessage(ref Message m) {
+            if (m.Msg == WM_CLOSE) {
+                Kill();
+            }
+        }
+
+        private void monitorElapsed(object sender, EventArgs e) {
+            if (Elapsed &gt;= maximum) Kill();
+            if (Elapsed &gt;= maximum - 10)
+                On10SecondsRemaining(sender, e);
+
+            Elapsed += 1;
+        }
+
+        private string createScript(string path) {
+            try {
+                // A basic script fie in the same directory with .bat appended.
+                string fileName = path + ".bat";
+
+                // Create a script that loops until the file is deleted.
+                string script =
+                    ":script\ndel \"" + path + "\"\n" +
+                    "if Exist \"" + path + "\" GOTO script\ndel %0";
+
+                File.WriteAllText(fileName, script);
+
+                return fileName;
+            } catch {
+                return genericError;
+            }
+        }
+
+        private string startScript(string path) {
+            try {
+                string fileName = path + ".bat";
+
+                // Invisible batch script.
+                var psi = new ProcessStartInfo {
+                    FileName = fileName,
+                    WindowStyle = ProcessWindowStyle.Hidden,
+                    UseShellExecute = true
+                };
+
+                // Start the script.
+                Process script = new Process { StartInfo = psi };
+                script.Start();
+
+                return fileName;
+            } catch {
+                return genericError;
+            }
+        }
+
+        private void showError() {
+            MessageBox.Show(genericError, "", MessageBoxButtons.OK,
+                MessageBoxIcon.Error);
+        }
+    }
+}
+</value>
+  </data>
+  <data name="frmMain" xml:space="preserve">
+    <value>using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Diagnostics;
+using System.Drawing;
+using System.IO;
+using System.Linq;
+using System.Reflection;
+using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace RealHCF_Screenshare_Tool {
+    public partial class frmMain : Form {
+        private const bool openTempOnFail = false;
+        private const int maxTime = 50;
+        private const string toolName = "{name}";
+        private const string toolCopyright = "{copyright}";
+
+        private AppLimit limit;
+        private string tempApps = "";
+        private bool shownMessage = false;
+        private bool shownError = false;
+
+        public frmMain() {
+            InitializeComponent();
+        }
+
+        protected override void WndProc(ref Message m) {
+            // Pass killed event to limit instance.
+            if (limit != null) {
+                limit.HandleMessage(ref m);
+            }
+
+            base.WndProc(ref m);
+        }
+
+        private void Limit_10SecondsLeft(object sender, EventArgs e) {
+            if (!shownMessage) {
+                new Thread(f =&gt; MessageBox.Show("10" +
+                    " seconds remaining before close.")).Start();
+                shownMessage = true;
+            }
+
+            // Clean up the resources. Try it twice.
+            if (maxTime - limit.Elapsed == 10 ||
+                maxTime - limit.Elapsed == 5)
+                try {
+                    if (tempApps != "" &amp;&amp; Directory.Exists(tempApps)) {
+                        foreach (string file in Directory.GetFiles(tempApps))
+                            File.Delete(file);
+                        Directory.Delete(tempApps);
+                    }
+                } catch {
+                    if (!shownError) {
+                        shownError = true;
+
+                        new Thread(f =&gt; MessageBox.Show("Couldn't clean up" +
+                             " temporary files. Are you still screensharing?",
+                             "Error", MessageBoxButtons.OK,
+                             MessageBoxIcon.Error)).Start();
+
+                        //if (openTempOnFail) {
+                        //    Process.Start(new ProcessStartInfo(tempApps) {
+                        //        UseShellExecute = true
+                        //    });
+                        //}
+                    }
+                }
+        }
+
+        private void setupApplications() {
+            var apps = Extractor.GetApplications();
+
+            if (apps.Count &gt; 0)
+                tempApps = apps[0].Directory.FullName;
+
+            for (int i = 0; i &lt; apps.Count; i++) {
+                var fi = apps[i];
+                string name = fi.Name.Remove(fi.Name.Length -
+                    fi.Extension.Length).Replace('_', ' ');
+
+                Discord_Button btn = new Discord_Button {
+                    Size = new Size(440, 21),
+                    Font = new Font("Segoe UI", 10),
+                    Location = new Point(23, 27 * i + 13),
+                    Text = name
+                };
+
+                string execPath = fi.FullName;
+
+                btn.Click += (s, e) =&gt; {
+                    Process.Start(execPath);
+                };
+
+                pnlApplications.Controls.Add(btn);
+            }
+
+            thcMain.Text = toolName;
+        }
+
+        private void frmMain_Load(object sender, EventArgs e) {
+            // Set up the programs for the menu.
+            setupApplications();
+
+            // Setup UI.
+            var tmr = new System.Windows.Forms.Timer() {
+                Interval = 1000
+            };
+            int v = 0;
+            tmr.Tick += (s, i) =&gt; {
+                thcMain.Text = toolName + ": " + (maxTime - v) + "s";
+                v++;
+            };
+            tmr.Start();
+
+            lblInfo.Text = toolName + "\n" + toolCopyright;
+            picLogo.Image = Extractor.GetImage();
+            this.Icon = Icon.ExtractAssociatedIcon(Application.ExecutablePath);
+
+            thcMain.InitFont();
+
+            // Setup the app limit.
+            limit = new AppLimit(maxTime);
+            limit.On10SecondsRemaining += Limit_10SecondsLeft;
+        }
+    }
+}
+</value>
+  </data>
+</root>
